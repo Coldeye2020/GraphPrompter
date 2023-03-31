@@ -1,8 +1,9 @@
 import torch
-from aug import *
+import numpy as np
 from copy import deepcopy
 from ogb.graphproppred import PygGraphPropPredDataset
 from torch_geometric.datasets import TUDataset
+from utils.aug import *
 
 
 class OGBDataset_aug(PygGraphPropPredDataset):

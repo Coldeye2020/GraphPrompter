@@ -1,35 +1,18 @@
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import random
-import argparse
-import os
-import os.path as osp
-import shutil
-import numpy as np
-import pickle
-import yaml
-from copy import deepcopy
-from itertools import repeat
-from torch_geometric.data import DataLoader, InMemoryDataset, download_url, extract_zip
+from torch_geometric.data import DataLoader
 from torch_geometric.io import read_tu_data
 from torch_geometric.utils import degree
-from torch.nn import Sequential, Linear, ReLU
-from torch_geometric.nn import GINConv, global_add_pool, global_mean_pool, global_max_pool
-from sklearn.model_selection import GridSearchCV, StratifiedKFold
-from sklearn.svm import SVC
-from sklearn import preprocessing
 from sklearn.metrics import accuracy_score
 from torch_geometric.loader import DataLoader
-import sys
-from ..utils.dataset import TUDataset_aug, OGBDataset_aug
-from ..utils.utils import setup_seed, evaluate_embedding, arg_parse
-from baseline import DGCL
+from code.GraphPrompter.model.model import DGCL
 import optuna
 import time
+from utils.dataset import TUDataset_aug, OGBDataset_aug
+from utils.utils import setup_seed, evaluate_embedding, arg_parse
 
 
-def objective(trial, model="DGCL", DS="MUTAG"):
+
+def objective(trial, model="DGCL", DS="HIV"):
     # hyperparameters
     args = arg_parse(DS)
     setup_seed(args.seed)
@@ -47,13 +30,14 @@ def objective(trial, model="DGCL", DS="MUTAG"):
 
 
     # Dataloader
-    path = '../data/'
+    path = './data/'
     if DS in ["HIV", "BBBP", "CLINTOX", "TOX21", "SIDER"]:
         dataset = OGBDataset_aug(root=path, name=DS, aug=args.aug)
         dataset_eval = OGBDataset_aug(root=path, name=DS, aug='none')
     elif DS in ["MUTAG", "IMDB-MULTI", "PROTEINS", "PTC_MR"]:
         dataset = TUDataset_aug(root=path, name=DS, aug=args.aug)
         dataset_eval = TUDataset_aug(root=path, name=DS, aug='none')
+    # split_idx = dataset.get_idx_split() 
     print(len(dataset))
     print(dataset.get_num_feature())
     try:
@@ -64,7 +48,7 @@ def objective(trial, model="DGCL", DS="MUTAG"):
     dataloader_eval = DataLoader(dataset_eval, batch_size=batch_size, num_workers=args.num_workers)
 
     # Device, Model & Optimizer
-    device = torch.device(f'cuda:{args.device}' if torch.cuda.is_available() else 'cpu')
+    device = torch.device(f'cuda:5' if torch.cuda.is_available() else 'cpu')
     if model == "DGCL":
         model = DGCL(
             num_features=dataset_num_features,
@@ -119,26 +103,27 @@ def objective(trial, model="DGCL", DS="MUTAG"):
         aug_r = t_aug / t_total
         read_r = t_read / t_total
         train_r = 1 - aug_r - read_r
-        print('Training loss: {:.3f}, Time comsumption: aug={:.2f}, read={:.2f}, train_r={:.2f}'.format(loss_all / len(dataloader), aug_r, read_r, train_r))
+        print('Training loss: {:.3f}, Time comsumption: total={:.1f} aug={:.2f}, read={:.2f}, train_r={:.2f}'.format(loss_all / len(dataloader), t_total, aug_r, read_r, train_r))
+        
         if log_interval > 0 and epoch % log_interval == 0:
             model.eval()
             emb, y = model.encoder.get_embeddings(dataloader_eval)
-            result, result_val = evaluate_embedding(emb, y)
-            accuracies['result'].append(result)
-            accuracies['result_val'].append(result_val)
-            trial.report(result_val, epoch)
+            # result, result_val = evaluate_embedding(emb, y)
+            # accuracies['result'].append(result)
+            # accuracies['result_val'].append(result_val)
+            # trial.report(result_val, epoch)
 
-            # Handle pruning based on the intermediate value.
-            if trial.should_prune():
-                raise optuna.exceptions.TrialPruned()
-
-    print(accuracies)
+            # # Handle pruning based on the intermediate value.
+            # if trial.should_prune():
+            #     raise optuna.exceptions.TrialPruned()
+            print('Validation: Time comsumption: total={:.1f}'.format(time.time() - t_current))
+    # print(accuracies)
     return accuracies["result_val"][-1]
 
 
 if __name__ == "__main__":
     study = optuna.create_study(direction="maximize")
-    study.optimize(objective, n_trials=100, timeout=600)
+    study.optimize(objective, n_trials=100, timeout=600, args=1)
 
     pruned_trials = [t for t in study.trials if t.state == optuna.trial.TrialState.PRUNED]
     complete_trials = [t for t in study.trials if t.state == optuna.trial.TrialState.COMPLETE]

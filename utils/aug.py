@@ -4,12 +4,12 @@ import numpy as np
 
 def drop_nodes(data):
     node_num, _ = data.x.size()
-    _, edge_num = data.edge_index.size()
+    # _, edge_num = data.edge_index.size()
     drop_num = int(node_num * 0.2)
 
     idx_drop = np.random.choice(node_num, drop_num, replace=False)
-    idx_nondrop = [n for n in range(node_num) if not n in idx_drop]
-    idx_dict = {idx_nondrop[n]: n for n in list(range(node_num - drop_num))}
+    # idx_nondrop = [n for n in range(node_num) if not n in idx_drop]
+    # idx_dict = {idx_nondrop[n]: n for n in list(range(node_num - drop_num))}
 
     edge_index = data.edge_index.numpy()
 
@@ -30,7 +30,7 @@ def permute_edges(data):
 
     edge_index = data.edge_index.transpose(0, 1).numpy()
 
-    idx_add = np.random.choice(node_num, (permute_num, 2))
+    # idx_add = np.random.choice(node_num, (permute_num, 2))
 
     edge_index = edge_index[np.random.choice(edge_num, edge_num - permute_num, replace=False)]
     data.edge_index = torch.tensor(edge_index).transpose_(0, 1)
@@ -81,6 +81,7 @@ def mask_nodes(data):
     mask_num = int(node_num * 0.2)
 
     idx_mask = np.random.choice(node_num, mask_num, replace=False)
+    print(idx_mask)
     data.x[idx_mask] = torch.tensor(np.random.normal(loc=0.5, scale=0.5, size=(mask_num, feat_dim)),
                                     dtype=torch.float32)
 

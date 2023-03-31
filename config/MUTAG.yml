@@ -16,4 +16,3 @@ num_latent_factors: 3
 tau: 0.2
 drop_ratio: 0.3
 log_dir: "log"
-device: 1
