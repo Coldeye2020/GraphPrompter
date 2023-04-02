@@ -21,6 +21,7 @@ from ogb.graphproppred import Evaluator
 import argparse
 from model.model import *
 from model.encoder import *
+import time
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -37,17 +38,16 @@ def create_objective(args):
         if args.dataset.lower() in ogb_list:
             evaluator = Evaluator("ogbg-mol" + args.dataset.lower())
             if args.dataset.lower() == 'hiv':
-                evaluator = OGBEvaluator(evaluator, base_classifier='svm')
+                evaluator = OGBEvaluator(evaluator, base_classifier='svm', param_search=False)
             else:
-                evaluator = OGBEvaluator(evaluator, base_classifier='lr')
+                evaluator = OGBEvaluator(evaluator, base_classifier='lr', param_search=False)
         else:
             evaluator = SVMEvaluator(linear=True)
         
         
-        
         # Hyperparameters:
         args.lr = trial.suggest_float("learning_rate", 1e-4, 1e-2, log=True)
-        args.h_dim = trial.suggest_int("hidden_dim", 128, 512, log=True)
+        args.h_dim = trial.suggest_int("hidden_dim", 16, 128, log=True)
         # args.num_gc_layers = trial.suggest_int("num_gc_layer", 2, 4)
         args.drop_ratio = trial.suggest_float("drop_rate", 0.2, 0.8)
         args.intraview_negs = trial.suggest_categorical('intraview_negs', [True, False])
@@ -60,9 +60,10 @@ def create_objective(args):
             args.h_dim = int(args.h_dim // args.num_latent_factors) * args.num_latent_factors
         if args.model == "GPrompter":
             args.lam_d = trial.suggest_float('lam_d', 0.5, 2) # 这个超参数还是不能太确定，得看具体的去相关Loss的值来估算下
+        
         # Dataset: dataloader, train_loader, val_loader, test_loader
         # Augmentation: aug1, aug2
-        dataloader, train_loader, val_loader, test_loader = get_split_loader(name=args.dataset, root=args.root, train_ratio=args.train_ratio, val_ratio=args.val_ratio, batch_size=args.batch_size, num_workers=args.num_workers)
+        dataloader, train_loader, val_loader, test_loader, part_train_loader = get_split_loader(name=args.dataset, root=args.root, train_ratio=args.train_ratio, val_ratio=args.val_ratio, batch_size=args.batch_size, num_workers=args.num_workers)
         if args.dataset.lower() not in ogb_list:
             try:
                 args.in_dim = next(iter(dataloader)).x.shape[-1]
@@ -118,7 +119,7 @@ def create_objective(args):
         #     model = eval(args.encoder + "_E")(encoder=encoder, augmentor=(aug1, aug2), contrast_model=contrast_model, args=args) # 需要包含1.利用augmentor生成不同的视图，通过encoder得到表征，2.自己的cal_loss,记得加入projection head，3.建议把project head放到model中。
         # elif args.model == "GPrompter":
         #     model = GPrompter(encoder=encoder, augmentor=(aug1, aug2), contrast_model=contrast_model, args=args)
-
+        
         if args.use_scheduler:
             optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
             scheduler = CosineDecayScheduler(max_val=args.lr, warmup_steps=args.epochs//10, total_steps=args.epochs)
@@ -131,6 +132,7 @@ def create_objective(args):
         best_epoch = 0
         best_val, best_test = 0, 0
         for epoch in range(1, args.epochs+1):
+            t_0 = time.time()
             model.train()
             epoch_loss = 0
             optimizer.zero_grad()
@@ -142,7 +144,10 @@ def create_objective(args):
         
             for batch in dataloader:
                 batch = batch.to(device)
-                z, g, z1, z2, g1, g2 = model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
+                if args.dataset.lower() in ogb_list:
+                    z, g, z1, z2, g1, g2 = model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
+                else:
+                    z, g, z1, z2, g1, g2 = model(batch.x, batch.edge_index, batch.batch)
                 if args.model == "GPrompter":
                     loss, closs, dloss = model.cal_loss(g=g, g1=g1, g2=g2) # 1.通过不同的loss，记录一下不同loss之间的大小关系，方便调节超参数 2.如果之后想加入一个GVAE用来原始数据和表征之间的互信息，则可以在loss层面作出改动
                     loss.backward()
@@ -156,21 +161,22 @@ def create_objective(args):
                     optimizer.step()
                     epoch_loss += loss.item()
 
+            t_1 = time.time()
             if args.model == "GPrompter":
-                print("Epoch: {:03d}, loss: {:.2f}, closs:{:.2f}, dloss:{:.2f}".format(epoch, epoch_loss, epoch_closs, epoch_dloss))
+                print("Epoch: {:03d}, loss: {:.2f}, closs:{:.2f}, dloss:{:.2f}, time consumption: {:.2f}s".format(epoch, epoch_loss, epoch_closs, epoch_dloss, t_1 - t_0))
             elif args.model == "DGCL" or "GraphCL":
-                print("Epoch: {:03d}, loss: {:.2f}".format(epoch, epoch_loss))
+                print("Epoch: {:03d}, loss: {:.2f}, time consumption: {:.2f}s".format(epoch, epoch_loss, t_1 - t_0))
 
+           
             # Evaluating
             if args.log_interval > 0 and epoch % args.log_interval == 0:
                 model.eval()
 
                 if args.dataset.lower() in ogb_list:
-                    train_x, train_y = model.encoder.get_embedding(train_loader, device)
+                    train_x, train_y = model.encoder.get_embedding(part_train_loader, device)
                     val_x, val_y = model.encoder.get_embedding(val_loader, device)
                     test_x, test_y = model.encoder.get_embedding(test_loader, device)
                     train_score, val_score, test_score = evaluator.evaluate(train_x, train_y, val_x, val_y, test_x, test_y)
-                    print("haha")
                 else:
                     x, y = model.encoder.get_embedding(dataloader, device)
                     kf = StratifiedKFold(n_splits=10, shuffle=True, random_state=args.seed)
@@ -186,8 +192,16 @@ def create_objective(args):
                         # mif1s.append(result["micro_f1"])
                     # results = {'micro_f1': np.mean(mif1s), 'macro_f1': np.mean(maf1s), 'accuracy': np.mean(accuracies)}
                     test_score = np.mean(accuracies)
-            
-        return test_score
+                t_2 = time.time()
+                print("Epoch: {:03d}, acc: {:.2f}, time consumption: {:.2f}s".format(epoch, test_score, t_2 - t_1))
+                if best_test < test_score:
+                    best_test = test_score
+                trial.report(test_score, epoch)
+                # Handle pruning based on the intermediate value.
+                if trial.should_prune():
+                    raise optuna.exceptions.TrialPruned()
+                
+        return best_test
 
     return objective
 
@@ -195,7 +209,7 @@ def create_objective(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DGCL Arguments.')
-    parser.add_argument('--dataset', type=str, default="HIV")
+    parser.add_argument('--dataset', type=str, default="MUTAG")
     parser.add_argument('--model', type=str, choices=["GraphCL"], default="GraphCL")
     parser.add_argument('--encoder', type=str, choices=["GConv"], default="GConv")
     parser.add_argument("--device", type=int, default=5)

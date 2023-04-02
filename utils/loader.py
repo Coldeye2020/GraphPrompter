@@ -22,7 +22,15 @@ def get_split_loader(name, root, train_ratio, val_ratio, batch_size, num_workers
         raise NameError
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
     train_loader = DataLoader(dataset[split_idx["train"]], batch_size=batch_size, shuffle=True, num_workers=num_workers)
+    if len(split_idx["train"]) > 3500:
+        perm = torch.randperm(split_idx['train'].size(0))
+        k = int(len(split_idx['train']) * 0.1)
+        idx = perm[:k]
+        selected_idx = split_idx['train'][idx]
+        part_train_loader = DataLoader(dataset[selected_idx], batch_size=batch_size, shuffle=True)
+    else:
+        part_train_loader = train_loader
     valid_loader = DataLoader(dataset[split_idx["valid"]], batch_size=batch_size, shuffle=False, num_workers=num_workers)
     test_loader = DataLoader(dataset[split_idx["test"]], batch_size=batch_size, shuffle=False, num_workers=num_workers)
 
-    return loader, train_loader, valid_loader, test_loader
+    return loader, train_loader, valid_loader, test_loader, part_train_loader

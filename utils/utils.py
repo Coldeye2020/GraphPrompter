@@ -79,7 +79,7 @@ def arg_parse(parser, model, encoder, DS):
     # parser.add_argument('--fe', type=int)
     parser.add_argument('--num_workers', type=int)
     # parser.add_argument('--log_dir', type=str)
-    parser.add_argument('--log_interval', type=int, default=2)
+    parser.add_argument('--log_interval', type=int, default=5)
     parser.add_argument('--weight_decay', type=int)
     # parser.add_argument("--debug", action='store_true', default=False)
     # parser.add_argument("--lam_d", type=float)

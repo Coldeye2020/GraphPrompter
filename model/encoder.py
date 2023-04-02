@@ -57,8 +57,8 @@ class GConv_E(nn.Module):
             x.append(g)
             y.append(data.y)
 
-        x = torch.cat(x, dim=0).cpu()
-        y = torch.cat(y, dim=0).cpu()
+        x = torch.cat(x, dim=0).cpu().numpy()
+        y = torch.cat(y, dim=0).cpu().numpy()
 
         return x, y
 
@@ -85,7 +85,7 @@ class GConv(nn.Module):
             z = self.layers[layer](z, edge_index)
             z = self.batch_norms[layer](z)
 
-            if layer == self.num_layers -1:
+            if layer == self.n_layers -1:
                 z = F.dropout(z, self.dropout, training=self.training)
             else:
                 z = F.dropout(F.relu(z), self.dropout, training=self.training)
@@ -105,13 +105,13 @@ class GConv(nn.Module):
                 data.x = torch.ones((num_nodes, 1), dtype=torch.float32, device=device)
 
             # Get embedding
-            g, _, _, _ = self.forward(data.x, data.edge_index, data.batch)
+            _, g = self.forward(data.x, data.edge_index, data.batch)
         
             x.append(g)
             y.append(data.y)
 
-        x = torch.cat(x, dim=0).cpu()
-        y = torch.cat(y, dim=0).cpu()
+        x = torch.cat(x, dim=0).cpu().numpy()
+        y = torch.cat(y, dim=0).cpu().numpy()
 
         return x, y
 

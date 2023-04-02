@@ -154,7 +154,7 @@ class OGBEvaluator():
                 StandardScaler(),
                 base_classifier,)
         elif self.base_classifier == 'svm':
-            base_classifier = SVC(kernel='linear',probability=True)
+            base_classifier = SVC(kernel='linear', probability=True, C=C)
             classifier = make_pipeline(
                 StandardScaler(),
                 base_classifier,)
