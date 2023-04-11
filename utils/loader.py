@@ -30,7 +30,8 @@ def get_split_loader(name, root, train_ratio, val_ratio, batch_size, num_workers
         part_train_loader = DataLoader(dataset[selected_idx], batch_size=batch_size, shuffle=True)
     else:
         part_train_loader = train_loader
+    non_test_loader = DataLoader(dataset[torch.hstack([split_idx["train"], split_idx["valid"]])], batch_size=batch_size, shuffle=True, num_workers=num_workers)
     valid_loader = DataLoader(dataset[split_idx["valid"]], batch_size=batch_size, shuffle=False, num_workers=num_workers)
     test_loader = DataLoader(dataset[split_idx["test"]], batch_size=batch_size, shuffle=False, num_workers=num_workers)
 
-    return loader, train_loader, valid_loader, test_loader, part_train_loader
+    return loader, non_test_loader, train_loader, valid_loader, test_loader, part_train_loader, dataset[split_idx["train"]]

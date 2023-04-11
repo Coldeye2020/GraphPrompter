@@ -1,11 +1,11 @@
 search: True
-# seed: 42
+seed: 42
 # fe: 0
 # proj: 1
 num_workers: 8
 aug: "dnodes"
 epochs: 50
-batch_size: 1024
+batch_size: 512
 lr: 0.001
 n_layers: 4
 head_layers: 1

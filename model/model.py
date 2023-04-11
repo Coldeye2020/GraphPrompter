@@ -14,6 +14,8 @@ from sklearn.metrics import accuracy_score
 from torch_geometric.loader import DataLoader
 
 
+
+
 class GraphCL_E(nn.Module):
     def __init__(self, encoder, augmentor, contrast_model, args):
         super(GraphCL_E, self).__init__()
@@ -136,20 +138,72 @@ class GraphCL(nn.Module):
 #         return loss
 
 
+class PNA(nn.Module):
+    def __init__(self, encoder, args):
+        super(PNA, self).__init__()
+        self.encoder = encoder
+        self.project = MLPReadout(args.h_dim, args.num_classes)
+    
+    def forward(self, x, edge_index, batch, edge_attr=None):
+        z, g = self.encoder(x=x, edge_index=edge_index, edge_attr=edge_attr, batch=batch)
+        pred = self.project(g)
+        return z, pred
+
+    def cal_loss(self, pred, labels):
+        return F.cross_entropy(pred, labels[:,0])
+    
+    @torch.no_grad()
+    def get_pred(self, dataloader, device):
+        x, y = [], []
+        for data in dataloader:
+            data = data.to(device)
+            if data.x is None:
+                num_nodes = data.batch.size(0)
+                data.x = torch.ones((num_nodes, 1), dtype=torch.float32, device=device)
+
+            # Get embedding
+            _, g = self.forward(x=data.x, edge_index=data.edge_index, batch=data.batch)
+        
+            x.append(g)
+            y.append(data.y)
+
+        x = torch.cat(x, dim=0).cpu().numpy()
+        y = torch.cat(y, dim=0).cpu().numpy()
+
+        return x, y
+
+
+
+
 class MLP(nn.Module):
     def __init__(self, in_dim, h_dim, norm_type='batch'):
         super(MLP, self).__init__()
-
         self.layer1 = nn.Linear(in_dim, h_dim)
         self.layer2 = nn.Linear(h_dim, h_dim)
         self.norm = nn.BatchNorm1d(h_dim)
         self.act_fn = nn.ReLU()
 
     def forward(self, x):
-
         x = self.layer1(x)
         x = self.norm(x)
         x = self.act_fn(x)
         x = self.layer2(x)
-
         return x
+
+
+
+class MLPReadout(nn.Module):
+    def __init__(self, input_dim, output_dim, L=2):  # L=nb_hidden_layers
+        super().__init__()
+        list_FC_layers = [nn.Linear(input_dim // 2 ** l, input_dim // 2 ** (l + 1), bias=True) for l in range(L)]
+        list_FC_layers.append(nn.Linear(input_dim // 2 ** L, output_dim, bias=True))
+        self.FC_layers = nn.ModuleList(list_FC_layers)
+        self.L = L
+
+    def forward(self, x):
+        y = x
+        for l in range(self.L):
+            y = self.FC_layers[l](y)
+            y = F.relu(y)
+        y = self.FC_layers[self.L](y)
+        return y

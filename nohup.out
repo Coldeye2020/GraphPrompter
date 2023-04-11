@@ -1,0 +1,52 @@
+WARNING:root:The OGB package is out of date. Your version is 1.3.5, while the latest version is 1.3.6.
+[32m[I 2023-04-11 17:18:05,307][0m A new study created in memory with name: no-name-635d829a-62b8-4b17-b4d3-fd100b76bbfa[0m
+Epoch: 005, rocauc: 0.74(train) 0.65(valid), 0.65(test) || time consumption: 31.50s
+Epoch: 010, rocauc: 0.71(train) 0.60(valid), 0.65(test) || time consumption: 40.04s
+Epoch: 015, rocauc: 0.74(train) 0.63(valid), 0.66(test) || time consumption: 51.41s
+Epoch: 020, rocauc: 0.75(train) 0.67(valid), 0.63(test) || time consumption: 35.96s
+Epoch: 025, rocauc: 0.73(train) 0.63(valid), 0.70(test) || time consumption: 44.99s
+Epoch: 030, rocauc: 0.72(train) 0.61(valid), 0.67(test) || time consumption: 51.79s
+Epoch: 035, rocauc: 0.69(train) 0.56(valid), 0.70(test) || time consumption: 34.97s
+Epoch: 040, rocauc: 0.73(train) 0.65(valid), 0.72(test) || time consumption: 47.33s
+Epoch: 045, rocauc: 0.73(train) 0.57(valid), 0.68(test) || time consumption: 54.06s
+[32m[I 2023-04-11 17:39:21,899][0m Trial 0 finished with value: 0.7157032773904478 and parameters: {'learning_rate': 0.00020157968154690622, 'hidden_dim': 39, 'drop_rate': 0.541312490005775, 'intraview_negs': False, 'temperature': 0.9715178884511908, 'n_layers': 2, 'weight_decay': 1e-05, 'aug_strength': 0.3}. Best is trial 0 with value: 0.7157032773904478.[0m
+Epoch: 050, rocauc: 0.72(train) 0.57(valid), 0.71(test) || time consumption: 45.12s
+Epoch: 005, rocauc: 0.81(train) 0.67(valid), 0.69(test) || time consumption: 314.53s
+Epoch: 010, rocauc: 0.80(train) 0.63(valid), 0.71(test) || time consumption: 190.84s
+Epoch: 015, rocauc: 0.80(train) 0.69(valid), 0.67(test) || time consumption: 263.07s
+Epoch: 020, rocauc: 0.79(train) 0.63(valid), 0.72(test) || time consumption: 218.63s
+Epoch: 025, rocauc: 0.76(train) 0.71(valid), 0.71(test) || time consumption: 234.02s
+Epoch: 030, rocauc: 0.76(train) 0.66(valid), 0.74(test) || time consumption: 225.87s
+Epoch: 035, rocauc: 0.77(train) 0.69(valid), 0.74(test) || time consumption: 242.81s
+Epoch: 040, rocauc: 0.74(train) 0.71(valid), 0.75(test) || time consumption: 185.36s
+Epoch: 045, rocauc: 0.77(train) 0.70(valid), 0.74(test) || time consumption: 251.07s
+[32m[I 2023-04-11 18:33:06,001][0m Trial 1 finished with value: 0.7507869985901621 and parameters: {'learning_rate': 0.006774933456238719, 'hidden_dim': 166, 'drop_rate': 0.6290917968169564, 'intraview_negs': False, 'temperature': 0.5557948114676818, 'n_layers': 3, 'weight_decay': 0.001, 'aug_strength': 0.2}. Best is trial 1 with value: 0.7507869985901621.[0m
+Epoch: 050, rocauc: 0.78(train) 0.68(valid), 0.75(test) || time consumption: 189.37s
+Epoch: 005, rocauc: 0.81(train) 0.69(valid), 0.78(test) || time consumption: 117.78s
+Epoch: 010, rocauc: 0.82(train) 0.68(valid), 0.71(test) || time consumption: 155.51s
+Epoch: 015, rocauc: 0.82(train) 0.65(valid), 0.74(test) || time consumption: 146.70s
+Epoch: 020, rocauc: 0.81(train) 0.70(valid), 0.75(test) || time consumption: 141.58s
+Epoch: 025, rocauc: 0.83(train) 0.68(valid), 0.76(test) || time consumption: 140.45s
+Epoch: 030, rocauc: 0.83(train) 0.71(valid), 0.75(test) || time consumption: 89.33s
+Epoch: 035, rocauc: 0.84(train) 0.70(valid), 0.78(test) || time consumption: 113.69s
+Epoch: 040, rocauc: 0.83(train) 0.68(valid), 0.76(test) || time consumption: 144.93s
+Epoch: 045, rocauc: 0.83(train) 0.69(valid), 0.75(test) || time consumption: 121.19s
+[32m[I 2023-04-11 19:08:04,363][0m Trial 2 finished with value: 0.7777651171324282 and parameters: {'learning_rate': 0.0005978254279071257, 'hidden_dim': 120, 'drop_rate': 0.39452569290144884, 'intraview_negs': True, 'temperature': 0.47785075674196426, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.82(train) 0.70(valid), 0.75(test) || time consumption: 105.70s
+Epoch: 005, rocauc: 0.72(train) 0.67(valid), 0.70(test) || time consumption: 36.75s
+Epoch: 010, rocauc: 0.68(train) 0.69(valid), 0.68(test) || time consumption: 39.19s
+Epoch: 015, rocauc: 0.70(train) 0.63(valid), 0.69(test) || time consumption: 43.85s
+Epoch: 020, rocauc: 0.70(train) 0.66(valid), 0.70(test) || time consumption: 41.10s
+Epoch: 025, rocauc: 0.70(train) 0.62(valid), 0.70(test) || time consumption: 42.14s
+Epoch: 030, rocauc: 0.70(train) 0.62(valid), 0.69(test) || time consumption: 25.10s
+Epoch: 035, rocauc: 0.73(train) 0.64(valid), 0.71(test) || time consumption: 42.00s
+Epoch: 040, rocauc: 0.72(train) 0.60(valid), 0.69(test) || time consumption: 40.85s
+Epoch: 045, rocauc: 0.72(train) 0.66(valid), 0.71(test) || time consumption: 33.74s
+[32m[I 2023-04-11 19:27:32,231][0m Trial 3 finished with value: 0.7185770292975917 and parameters: {'learning_rate': 0.00016593444878381058, 'hidden_dim': 36, 'drop_rate': 0.4684928579315908, 'intraview_negs': True, 'temperature': 0.6519965872454954, 'n_layers': 2, 'weight_decay': 0, 'aug_strength': 0.3}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.73(train) 0.65(valid), 0.72(test) || time consumption: 41.76s
+Epoch: 005, rocauc: 0.80(train) 0.65(valid), 0.72(test) || time consumption: 155.55s
+Epoch: 010, rocauc: 0.80(train) 0.68(valid), 0.68(test) || time consumption: 108.76s
+Epoch: 015, rocauc: 0.82(train) 0.67(valid), 0.70(test) || time consumption: 97.84s
+Epoch: 020, rocauc: 0.80(train) 0.65(valid), 0.70(test) || time consumption: 148.73s
+Epoch: 025, rocauc: 0.82(train) 0.65(valid), 0.74(test) || time consumption: 126.19s
+Epoch: 030, rocauc: 0.80(train) 0.59(valid), 0.71(test) || time consumption: 115.56s

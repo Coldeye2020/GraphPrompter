@@ -1,15 +1,18 @@
 import torch
 import torch.nn.functional as F
 from torch import nn
-from torch_geometric.nn import GINConv, GINEConv, global_add_pool
+from torch_geometric.nn import GINConv, GINEConv, global_add_pool, global_mean_pool, global_max_pool
+from torch_geometric.nn import PNAConv as PNALayer
 from ogb.graphproppred.mol_encoder import AtomEncoder, BondEncoder
 
 
+
 def make_gine_conv(in_dim, out_dim):
-    return GINEConv(nn.Sequential(nn.Linear(in_dim, out_dim*2), torch.nn.BatchNorm1d(2*out_dim), nn.ReLU(), nn.Linear(out_dim*2, out_dim)))
+    return GINEConv(nn.Sequential(nn.Linear(in_dim, out_dim*2), torch.nn.BatchNorm1d(out_dim*2), nn.ReLU(), nn.Linear(out_dim*2, out_dim)))
 def make_gin_conv(in_dim, out_dim):
     return GINConv(nn.Sequential(nn.Linear(in_dim, out_dim), nn.ReLU(), nn.Linear(out_dim, out_dim)))
-    
+
+
 class GConv_E(nn.Module):
     def __init__(self, in_dim, h_dim, n_layers, drop_ratio, args=None):
         super(GConv_E, self).__init__()
@@ -22,7 +25,6 @@ class GConv_E(nn.Module):
         for i in range(n_layers):
             self.layers.append(make_gine_conv(h_dim, h_dim))
             self.batch_norms.append(nn.BatchNorm1d(h_dim))
-        
         
     def forward(self, x, edge_index, edge_attr, batch):
         # z = x
@@ -253,3 +255,70 @@ class GConv(nn.Module):
 #         ret = np.concatenate(ret, 0)
 #         y = np.concatenate(y, 0)
 #         return ret, y
+
+
+
+class PNAConv(nn.Module):
+    def __init__(self, in_dim, h_dim, n_layers, drop_ratio, deg=None, args=None):
+        super(PNAConv, self).__init__()
+        self.h_dim = h_dim
+        self.out_dim = h_dim
+        self.dropout = drop_ratio
+        self.n_layers = n_layers
+        self.readout = "mean"
+        self.aggregators = ['mean', 'min', 'max', 'std']
+        self.scalers = ['identity', 'amplification', 'attenuation']
+        self.deg = deg
+        self.residual = True
+        self.atom_encoder = AtomEncoder(emb_dim=h_dim)
+        self.bond_encoder = BondEncoder(h_dim)
+        self.layers = nn.ModuleList()
+        self.batch_norms = nn.ModuleList()
+
+        for i in range(n_layers):
+            self.layers.append(PNALayer(in_channels=self.h_dim, out_channels=self.out_dim, aggregators=self.aggregators, scalers=self.scalers,
+                                    deg=self.deg))
+            self.batch_norms.append(nn.BatchNorm1d(h_dim))
+
+    def forward(self, x, edge_index, batch, edge_attr=None):
+        z = self.atom_encoder(x)
+        if edge_attr is not None:
+            edge_attr = self.bond_encoder(edge_attr)
+
+        for layer, (conv, bn) in enumerate(zip(self.layers, self.batch_norms)):
+            z_in = z
+            z = conv(z, edge_index, edge_attr)
+            z = bn(z)
+
+            if layer == self.n_layers -1:
+                z = F.dropout(z, self.dropout, training=self.training)
+            else:
+                z = F.dropout(z_in + F.relu(z), self.dropout, training=self.training)
+        
+        if self.readout == "sum":
+            g = global_add_pool(z, batch)
+        elif self.readout == "max":
+            g = global_max_pool(z, batch)
+        else:
+            g = global_mean_pool(z, batch)
+        return z, g
+    
+    @torch.no_grad()
+    def get_embedding(self, dataloader, device):
+        x, y = [], []
+        for data in dataloader:
+            data = data.to(device)
+            if data.x is None:
+                num_nodes = data.batch.size(0)
+                data.x = torch.ones((num_nodes, 1), dtype=torch.float32, device=device)
+
+            # Get embedding
+            _, g = self.forward(x=data.x, edge_index=data.edge_index, batch=data.batch)
+        
+            x.append(g)
+            y.append(data.y)
+
+        x = torch.cat(x, dim=0).cpu().numpy()
+        y = torch.cat(y, dim=0).cpu().numpy()
+
+        return x, y

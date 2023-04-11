@@ -47,12 +47,12 @@ def create_objective(args):
         
         # Hyperparameters:
         args.lr = trial.suggest_float("learning_rate", 1e-4, 1e-2, log=True)
-        args.h_dim = trial.suggest_int("hidden_dim", 16, 128, log=True)
+        args.h_dim = trial.suggest_int("hidden_dim", 32, 200, log=True)
         # args.num_gc_layers = trial.suggest_int("num_gc_layer", 2, 4)
-        args.drop_ratio = trial.suggest_float("drop_rate", 0.2, 0.8)
+        args.drop_ratio = trial.suggest_float("drop_rate", 0.3, 0.7)
         args.intraview_negs = trial.suggest_categorical('intraview_negs', [True, False])
         args.tau = trial.suggest_float('temperature', 0.2, 1.0)
-        args.n_layers = trial.suggest_int("n_layers",2,4)
+        args.n_layers = trial.suggest_int("n_layers", 2, 4)
         args.weight_decay = trial.suggest_categorical("weight_decay", [0, 1e-3, 1e-4, 1e-5])
         if args.model == "DGCL":
             args.pool = trial.suggest_categorical("pooling", ["max", "mean"])
@@ -60,10 +60,11 @@ def create_objective(args):
             args.h_dim = int(args.h_dim // args.num_latent_factors) * args.num_latent_factors
         if args.model == "GPrompter":
             args.lam_d = trial.suggest_float('lam_d', 0.5, 2) # 这个超参数还是不能太确定，得看具体的去相关Loss的值来估算下
+        args.aug_strength = trial.suggest_categorical('aug_strength', [0.1, 0.2, 0.3])
         
         # Dataset: dataloader, train_loader, val_loader, test_loader
         # Augmentation: aug1, aug2
-        dataloader, train_loader, val_loader, test_loader, part_train_loader = get_split_loader(name=args.dataset, root=args.root, train_ratio=args.train_ratio, val_ratio=args.val_ratio, batch_size=args.batch_size, num_workers=args.num_workers)
+        dataloader, non_test_loader, train_loader, val_loader, test_loader, part_train_loader, num_classes = get_split_loader(name=args.dataset, root=args.root, train_ratio=args.train_ratio, val_ratio=args.val_ratio, batch_size=args.batch_size, num_workers=args.num_workers)
         if args.dataset.lower() not in ogb_list:
             try:
                 args.in_dim = next(iter(dataloader)).x.shape[-1]
@@ -73,14 +74,14 @@ def create_objective(args):
         if args.two_aug:
             aug1 = [Identity(),
                     RWSampling(num_seeds=1000, walk_length=10),
-                    NodeDropping(pn=0.1),
-                    FeatureMasking(pf=0.1),
-                    EdgeRemoving(pe=0.1)]
+                    NodeDropping(pn=args.aug_strength),
+                    FeatureMasking(pf=args.aug_strength),
+                    EdgeRemoving(pe=args.aug_strength)]
             aug2 = RandomChoice([Identity(),
                     RWSampling(num_seeds=1000, walk_length=10),
-                    NodeDropping(pn=0.1),
-                    FeatureMasking(pf=0.1),
-                    EdgeRemoving(pe=0.1)], 1)
+                    NodeDropping(pn=args.aug_strength),
+                    FeatureMasking(pf=args.aug_strength),
+                    EdgeRemoving(pe=args.aug_strength)], 1)
 
         else:
             aug1 = Identity()
@@ -132,7 +133,7 @@ def create_objective(args):
         best_epoch = 0
         best_val, best_test = 0, 0
         for epoch in range(1, args.epochs+1):
-            t_0 = time.time()
+            # t_0 = time.time()
             model.train()
             epoch_loss = 0
             optimizer.zero_grad()
@@ -142,7 +143,7 @@ def create_objective(args):
                 for param_group in optimizer.param_groups:
                     param_group['lr'] = lr
         
-            for batch in dataloader:
+            for batch in non_test_loader:
                 batch = batch.to(device)
                 if args.dataset.lower() in ogb_list:
                     z, g, z1, z2, g1, g2 = model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
@@ -162,10 +163,10 @@ def create_objective(args):
                     epoch_loss += loss.item()
 
             t_1 = time.time()
-            if args.model == "GPrompter":
-                print("Epoch: {:03d}, loss: {:.2f}, closs:{:.2f}, dloss:{:.2f}, time consumption: {:.2f}s".format(epoch, epoch_loss, epoch_closs, epoch_dloss, t_1 - t_0))
-            elif args.model == "DGCL" or "GraphCL":
-                print("Epoch: {:03d}, loss: {:.2f}, time consumption: {:.2f}s".format(epoch, epoch_loss, t_1 - t_0))
+            # if args.model == "GPrompter":
+            #     print("Epoch: {:03d}, loss: {:.2f}, closs:{:.2f}, dloss:{:.2f}, time consumption: {:.2f}s".format(epoch, epoch_loss, epoch_closs, epoch_dloss, t_1 - t_0))
+            # elif args.model == "DGCL" or "GraphCL":
+            #     print("Epoch: {:03d}, loss: {:.2f}, time consumption: {:.2f}s".format(epoch, epoch_loss, t_1 - t_0))
 
            
             # Evaluating
@@ -177,6 +178,8 @@ def create_objective(args):
                     val_x, val_y = model.encoder.get_embedding(val_loader, device)
                     test_x, test_y = model.encoder.get_embedding(test_loader, device)
                     train_score, val_score, test_score = evaluator.evaluate(train_x, train_y, val_x, val_y, test_x, test_y)
+                    t_2 = time.time()
+                    print("Epoch: {:03d}, {}: {:.2f}(train) {:.2f}(valid), {:.2f}(test) || time consumption: {:.2f}s".format(epoch, evaluator.eval_metric, train_score, val_score, test_score, t_2 - t_1))
                 else:
                     x, y = model.encoder.get_embedding(dataloader, device)
                     kf = StratifiedKFold(n_splits=10, shuffle=True, random_state=args.seed)
@@ -192,8 +195,9 @@ def create_objective(args):
                         # mif1s.append(result["micro_f1"])
                     # results = {'micro_f1': np.mean(mif1s), 'macro_f1': np.mean(maf1s), 'accuracy': np.mean(accuracies)}
                     test_score = np.mean(accuracies)
-                t_2 = time.time()
-                print("Epoch: {:03d}, acc: {:.2f}, time consumption: {:.2f}s".format(epoch, test_score, t_2 - t_1))
+                    t_2 = time.time()
+                    print("Epoch: {:03d}, acc: {:.2f}, time consumption: {:.2f}s".format(epoch, test_score, t_2 - t_1))
+                # print("Epoch: {:03d}, acc: {:.2f}, time consumption: {:.2f}s".format(epoch, test_score, t_2 - t_1))
                 if best_test < test_score:
                     best_test = test_score
                 trial.report(test_score, epoch)
@@ -209,7 +213,7 @@ def create_objective(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DGCL Arguments.')
-    parser.add_argument('--dataset', type=str, default="MUTAG")
+    parser.add_argument('--dataset', type=str, default="HIV")
     parser.add_argument('--model', type=str, choices=["GraphCL"], default="GraphCL")
     parser.add_argument('--encoder', type=str, choices=["GConv"], default="GConv")
     parser.add_argument("--device", type=int, default=5)
