@@ -3,10 +3,19 @@ import numpy as np
 import random
 from sklearn import preprocessing
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
+from torch_geometric.utils import to_networkx, sort_edge_index
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 import argparse
 import yaml
+
+def reorder_like(from_edge_index, to_edge_index, values):
+    from_edge_index, values = sort_edge_index(from_edge_index, values)
+    ranking_score = to_edge_index[0] * (to_edge_index.max()+1) + to_edge_index[1]
+    ranking = ranking_score.argsort().argsort()
+    if not (from_edge_index[:, ranking] == to_edge_index).all():
+        raise ValueError("Edges in from_edge_index and to_edge_index are different, impossible to match both.")
+    return values[ranking]
 
 def setup_seed(seed):
     torch.manual_seed(seed)
@@ -53,7 +62,7 @@ def evaluate_embedding(embeddings, labels, search=True):
     return acc, acc_val
 
 def arg_parse(parser, model, encoder, DS):
-    parser.add_argument('--search', type=bool, default=True)
+    parser.add_argument('--search', type=bool)
     # parser.add_argument('--dataset', type=str, default="HIV")
     parser.add_argument('--num_classes', type=int)
     parser.add_argument('--seed', type=int)
@@ -82,7 +91,7 @@ def arg_parse(parser, model, encoder, DS):
     parser.add_argument('--num_workers', type=int)
 
     # parser.add_argument('--log_dir', type=str)
-    parser.add_argument('--log_interval', type=int, default=5)
+    parser.add_argument('--log_interval', type=int)
     parser.add_argument('--weight_decay', type=int)
     # parser.add_argument("--debug", action='store_true', default=False)
     # parser.add_argument("--lam_d", type=float)
@@ -90,7 +99,7 @@ def arg_parse(parser, model, encoder, DS):
     args, unknown = parser.parse_known_args([])
     
 
-    with open(f'config/{DS}.yml', 'r') as f:
+    with open(f'config/{args.model}/{DS}.yml', 'r') as f:
         config_yaml = yaml.load(f, Loader=yaml.FullLoader)
     for k, v in vars(args).items():
         if v is not None:

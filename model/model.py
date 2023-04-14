@@ -12,6 +12,11 @@ from torch.nn import Sequential, Linear, ReLU
 from torch_geometric.nn import GINConv, global_add_pool, global_mean_pool, global_max_pool
 from sklearn.metrics import accuracy_score
 from torch_geometric.loader import DataLoader
+from torch_geometric.nn import InstanceNorm
+from torch_sparse import transpose
+from torch_geometric.utils import is_undirected
+from utils.utils import reorder_like
+
 
 
 
@@ -144,33 +149,40 @@ class PNA(nn.Module):
         self.encoder = encoder
         self.project = MLPReadout(args.h_dim, args.num_classes)
     
-    def forward(self, x, edge_index, batch, edge_attr=None):
-        z, g = self.encoder(x=x, edge_index=edge_index, edge_attr=edge_attr, batch=batch)
+    def forward(self, x, edge_index, batch, edge_attr=None, edge_atten=None):
+        z, g = self.encoder(x=x, edge_index=edge_index, edge_attr=edge_attr, edge_atten=edge_atten, batch=batch)
         pred = self.project(g)
+        pred = F.log_softmax(pred)
         return z, pred
 
     def cal_loss(self, pred, labels):
-        return F.cross_entropy(pred, labels[:,0])
+        return F.nll_loss(pred, labels[:,0])
     
     @torch.no_grad()
     def get_pred(self, dataloader, device):
         x, y = [], []
+        total_num = 0
+        epoch_loss = 0
         for data in dataloader:
             data = data.to(device)
             if data.x is None:
+                print("G")
                 num_nodes = data.batch.size(0)
                 data.x = torch.ones((num_nodes, 1), dtype=torch.float32, device=device)
 
             # Get embedding
-            _, g = self.forward(x=data.x, edge_index=data.edge_index, batch=data.batch)
-        
-            x.append(g)
+            _, pred = self.forward(x=data.x, edge_index=data.edge_index, batch=data.batch)
+            loss = self.cal_loss(pred, data.y)
+            epoch_loss += loss.detach().item() * data.num_graphs
+            total_num += data.num_graphs
+            x.append(pred)
             y.append(data.y)
 
+        
         x = torch.cat(x, dim=0).cpu().numpy()
         y = torch.cat(y, dim=0).cpu().numpy()
 
-        return x, y
+        return x, y, epoch_loss / total_num
 
 
 
@@ -207,3 +219,163 @@ class MLPReadout(nn.Module):
             y = F.relu(y)
         y = self.FC_layers[self.L](y)
         return y
+
+
+class BatchSequential(nn.Sequential):
+    def forward(self, inputs, batch):
+        for module in self._modules.values():
+            if isinstance(module, (InstanceNorm)):
+                inputs = module(inputs, batch)
+            else:
+                inputs = module(inputs)
+        return inputs
+
+
+class BatchMLP(BatchSequential):
+    def __init__(self, channels, dropout, bias=True):
+        m = []
+        for i in range(1, len(channels)):
+            m.append(nn.Linear(channels[i - 1], channels[i], bias))
+
+            if i < len(channels) - 1:
+                m.append(InstanceNorm(channels[i]))
+                m.append(nn.ReLU())
+                m.append(nn.Dropout(dropout))
+
+        super(MLP, self).__init__(*m)
+
+
+class EdgePrompter(nn.Module):
+    def __init__(self, hidden_size, learn_edge_att):
+        super().__init__()
+        self.learn_edge_att = learn_edge_att
+
+        if self.learn_edge_att:
+            self.feature_extractor = BatchMLP([hidden_size * 2, hidden_size * 4, hidden_size, 1], dropout=0.5)
+        else:
+            self.feature_extractor = BatchMLP([hidden_size * 1, hidden_size * 2, hidden_size, 1], dropout=0.5)
+
+    def forward(self, emb, edge_index, batch):
+        if self.learn_edge_att:
+            col, row = edge_index
+            f1, f2 = emb[col], emb[row]
+            f12 = torch.cat([f1, f2], dim=-1)
+            att_log_logits = self.feature_extractor(f12, batch[col])
+        else:
+            att_log_logits = self.feature_extractor(emb, batch)
+        return att_log_logits
+
+
+class GraphPrompter(nn.Module):
+
+    def __init__(self, encoder, n_prompters=2, learn_edge_att=True, args=None):
+        super().__init__()
+        self.encoder = encoder
+        self.e_prompters = nn.ModuleList()
+        self.n_prompters = n_prompters
+        # self.device = next(self.parameters()).device
+        self.learn_edge_att = learn_edge_att
+        self.project = MLPReadout(args.h_dim * n_prompters, args.num_classes)
+        # self.final_r = final_r
+        # self.decay_interval = decay_interval
+        # self.decay_r = decay_r
+        for _ in n_prompters:
+            self.e_prompters.append(EdgePrompter(args.h_dim, learn_edge_att=learn_edge_att))
+
+    # def __loss__(self, att, clf_logits, clf_labels, epoch):
+    #     pred_loss = self.criterion(clf_logits, clf_labels)
+
+    #     r = self.get_r(self.decay_interval, self.decay_r, epoch, final_r=self.final_r)
+    #     info_loss = (att * torch.log(att/r + 1e-6) + (1-att) * torch.log((1-att)/(1-r+1e-6) + 1e-6)).mean()
+
+    #     loss = pred_loss + info_loss
+    #     loss_dict = {'loss': loss.item(), 'pred': pred_loss.item(), 'info': info_loss.item()}
+    #     return loss, loss_dict
+
+    def forward(self, x, edge_index, batch, edge_attr=None):
+        node_emb, _ = self.encoder(x=x, edge_index=edge_index, batch=batch, edge_attr=edge_attr, edge_atten=None)
+        edge_atts = []
+        g_embs = []
+
+        for i, e_p in enumerate(self.e_prompters):
+            att = e_p(node_emb, edge_index, batch)
+
+            if self.learn_edge_att:
+                if is_undirected(edge_index):
+                    trans_idx, trans_val = transpose(edge_index, att, None, None, coalesced=False)
+                    trans_val_perm = reorder_like(trans_idx, edge_index, trans_val)
+                    edge_att = (att + trans_val_perm) / 2
+                else:
+                    edge_att = att
+            else:
+                edge_att = self.lift_node_att_to_edge_att(edge_att, edge_index)
+            
+            edge_atts.append(edge_att)
+        
+        
+        for edge_att in edge_atts:
+            _, g_emb = self.encoder(x, edge_index, batch, edge_attr=edge_attr, edge_atten=edge_att)
+            g_embs.append(g_emb)
+        
+        post_g_emb = torch.cat(g_embs, dim=-1)
+        pred = self.project(post_g_emb)
+        pred = F.log_softmax(pred)
+        
+        return torch.cat([i.unsqueeze(1) for i in g_embs], dim=1), pred, edge_atts
+    
+
+    def cal_loss(self, data):
+        post_g_emb, pred, edge_att = self.forward(data.x, data.edge_index, data.batch, data.edge_attr)
+        s_loss = F.nll_loss(pred, data.y[:,0])
+        d_loss = 
+        return s_loss, d_loss 
+    
+    @torch.no_grad()
+    def get_pred(self, dataloader, device):
+        x, y = [], []
+        total_num = 0
+        epoch_loss = 0
+        for data in dataloader:
+            data = data.to(device)
+            if data.x is None:
+                print("G")
+                num_nodes = data.batch.size(0)
+                data.x = torch.ones((num_nodes, 1), dtype=torch.float32, device=device)
+
+            # Get embedding
+            _, pred = self.forward(x=data.x, edge_index=data.edge_index, batch=data.batch)
+            loss = self.cal_loss(pred, data.y)
+            epoch_loss += loss.detach().item() * data.num_graphs
+            total_num += data.num_graphs
+            x.append(pred)
+            y.append(data.y)
+        
+        x = torch.cat(x, dim=0).cpu().numpy()
+        y = torch.cat(y, dim=0).cpu().numpy()
+
+        return x, y, epoch_loss / total_num
+
+    # @staticmethod
+    # def sampling(att_log_logit, training):
+    #     temp = 1
+    #     if training:
+    #         random_noise = torch.empty_like(att_log_logit).uniform_(1e-10, 1 - 1e-10)
+    #         random_noise = torch.log(random_noise) - torch.log(1.0 - random_noise)
+    #         att_bern = ((att_log_logit + random_noise) / temp).sigmoid()
+    #     else:
+    #         att_bern = (att_log_logit).sigmoid()
+    #     return att_bern
+
+    # @staticmethod
+    # def get_r(decay_interval, decay_r, current_epoch, init_r=0.9, final_r=0.5):
+    #     r = init_r - current_epoch // decay_interval * decay_r
+    #     if r < final_r:
+    #         r = final_r
+    #     return r
+
+    @staticmethod
+    def lift_node_att_to_edge_att(node_att, edge_index):
+        src_lifted_att = node_att[edge_index[0]]
+        dst_lifted_att = node_att[edge_index[1]]
+        edge_att = src_lifted_att * dst_lifted_att
+        return edge_att

@@ -50,3 +50,435 @@ Epoch: 015, rocauc: 0.82(train) 0.67(valid), 0.70(test) || time consumption: 97.
 Epoch: 020, rocauc: 0.80(train) 0.65(valid), 0.70(test) || time consumption: 148.73s
 Epoch: 025, rocauc: 0.82(train) 0.65(valid), 0.74(test) || time consumption: 126.19s
 Epoch: 030, rocauc: 0.80(train) 0.59(valid), 0.71(test) || time consumption: 115.56s
+Epoch: 035, rocauc: 0.81(train) 0.58(valid), 0.74(test) || time consumption: 99.04s
+Epoch: 040, rocauc: 0.82(train) 0.64(valid), 0.75(test) || time consumption: 100.79s
+Epoch: 045, rocauc: 0.83(train) 0.60(valid), 0.72(test) || time consumption: 79.52s
+[32m[I 2023-04-11 20:01:36,618][0m Trial 4 finished with value: 0.7489928349330809 and parameters: {'learning_rate': 0.0017835433358540122, 'hidden_dim': 63, 'drop_rate': 0.6639037286402841, 'intraview_negs': True, 'temperature': 0.2707907786567996, 'n_layers': 4, 'weight_decay': 1e-05, 'aug_strength': 0.1}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.83(train) 0.65(valid), 0.74(test) || time consumption: 85.02s
+Epoch: 005, rocauc: 0.81(train) 0.68(valid), 0.72(test) || time consumption: 66.23s
+Epoch: 010, rocauc: 0.80(train) 0.68(valid), 0.73(test) || time consumption: 66.85s
+Epoch: 015, rocauc: 0.79(train) 0.67(valid), 0.67(test) || time consumption: 78.44s
+Epoch: 020, rocauc: 0.78(train) 0.63(valid), 0.69(test) || time consumption: 95.54s
+Epoch: 025, rocauc: 0.80(train) 0.61(valid), 0.71(test) || time consumption: 62.77s
+Epoch: 030, rocauc: 0.81(train) 0.62(valid), 0.71(test) || time consumption: 71.17s
+[32m[I 2023-04-11 20:20:22,729][0m Trial 5 pruned. [0m
+Epoch: 035, rocauc: 0.80(train) 0.63(valid), 0.70(test) || time consumption: 77.33s
+[32m[I 2023-04-11 20:22:36,370][0m Trial 6 pruned. [0m
+Epoch: 005, rocauc: 0.79(train) 0.63(valid), 0.67(test) || time consumption: 54.84s
+Epoch: 005, rocauc: 0.81(train) 0.59(valid), 0.74(test) || time consumption: 76.47s
+Epoch: 010, rocauc: 0.82(train) 0.63(valid), 0.74(test) || time consumption: 86.57s
+Epoch: 015, rocauc: 0.83(train) 0.62(valid), 0.73(test) || time consumption: 73.77s
+Epoch: 020, rocauc: 0.82(train) 0.57(valid), 0.72(test) || time consumption: 68.88s
+Epoch: 025, rocauc: 0.82(train) 0.61(valid), 0.74(test) || time consumption: 59.58s
+Epoch: 030, rocauc: 0.80(train) 0.60(valid), 0.71(test) || time consumption: 62.48s
+Epoch: 035, rocauc: 0.81(train) 0.62(valid), 0.72(test) || time consumption: 66.39s
+[32m[I 2023-04-11 20:44:24,557][0m Trial 7 pruned. [0m
+Epoch: 040, rocauc: 0.81(train) 0.62(valid), 0.71(test) || time consumption: 66.22s
+Epoch: 005, rocauc: 0.82(train) 0.58(valid), 0.72(test) || time consumption: 118.89s
+Epoch: 010, rocauc: 0.81(train) 0.72(valid), 0.76(test) || time consumption: 161.15s
+Epoch: 015, rocauc: 0.84(train) 0.60(valid), 0.74(test) || time consumption: 132.09s
+Epoch: 020, rocauc: 0.83(train) 0.64(valid), 0.74(test) || time consumption: 145.54s
+Epoch: 025, rocauc: 0.81(train) 0.59(valid), 0.74(test) || time consumption: 130.83s
+Epoch: 030, rocauc: 0.81(train) 0.65(valid), 0.73(test) || time consumption: 136.57s
+Epoch: 035, rocauc: 0.82(train) 0.66(valid), 0.72(test) || time consumption: 134.42s
+Epoch: 040, rocauc: 0.82(train) 0.67(valid), 0.71(test) || time consumption: 145.61s
+Epoch: 045, rocauc: 0.80(train) 0.70(valid), 0.70(test) || time consumption: 149.63s
+[32m[I 2023-04-11 21:25:35,520][0m Trial 8 finished with value: 0.7585217945499141 and parameters: {'learning_rate': 0.0012733950296532409, 'hidden_dim': 185, 'drop_rate': 0.47148191130624206, 'intraview_negs': False, 'temperature': 0.3084055269250679, 'n_layers': 4, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.81(train) 0.72(valid), 0.72(test) || time consumption: 165.34s
+Epoch: 005, rocauc: 0.85(train) 0.68(valid), 0.75(test) || time consumption: 300.20s
+Epoch: 010, rocauc: 0.87(train) 0.64(valid), 0.73(test) || time consumption: 252.06s
+Epoch: 015, rocauc: 0.83(train) 0.67(valid), 0.75(test) || time consumption: 340.68s
+Epoch: 020, rocauc: 0.84(train) 0.63(valid), 0.74(test) || time consumption: 284.13s
+Epoch: 025, rocauc: 0.85(train) 0.69(valid), 0.73(test) || time consumption: 374.16s
+Epoch: 030, rocauc: 0.86(train) 0.63(valid), 0.74(test) || time consumption: 276.91s
+Epoch: 035, rocauc: 0.85(train) 0.67(valid), 0.73(test) || time consumption: 254.89s
+Epoch: 040, rocauc: 0.84(train) 0.64(valid), 0.72(test) || time consumption: 254.89s
+Epoch: 045, rocauc: 0.84(train) 0.64(valid), 0.72(test) || time consumption: 301.77s
+[32m[I 2023-04-11 22:31:15,847][0m Trial 9 finished with value: 0.7525966125263138 and parameters: {'learning_rate': 0.0007225344743724575, 'hidden_dim': 130, 'drop_rate': 0.585152129142434, 'intraview_negs': False, 'temperature': 0.9012463231772938, 'n_layers': 4, 'weight_decay': 0, 'aug_strength': 0.3}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.84(train) 0.65(valid), 0.72(test) || time consumption: 302.31s
+Epoch: 005, rocauc: 0.83(train) 0.63(valid), 0.72(test) || time consumption: 109.21s
+Epoch: 010, rocauc: 0.81(train) 0.67(valid), 0.69(test) || time consumption: 146.16s
+Epoch: 015, rocauc: 0.81(train) 0.68(valid), 0.72(test) || time consumption: 157.07s
+Epoch: 020, rocauc: 0.80(train) 0.70(valid), 0.73(test) || time consumption: 141.48s
+[32m[I 2023-04-11 22:50:49,956][0m Trial 10 pruned. [0m
+Epoch: 025, rocauc: 0.81(train) 0.70(valid), 0.72(test) || time consumption: 152.49s
+Epoch: 005, rocauc: 0.86(train) 0.67(valid), 0.74(test) || time consumption: 112.25s
+Epoch: 010, rocauc: 0.83(train) 0.67(valid), 0.74(test) || time consumption: 138.28s
+Epoch: 015, rocauc: 0.81(train) 0.73(valid), 0.77(test) || time consumption: 118.74s
+Epoch: 020, rocauc: 0.84(train) 0.75(valid), 0.74(test) || time consumption: 143.74s
+Epoch: 025, rocauc: 0.84(train) 0.69(valid), 0.71(test) || time consumption: 110.57s
+Epoch: 030, rocauc: 0.84(train) 0.71(valid), 0.75(test) || time consumption: 118.13s
+Epoch: 035, rocauc: 0.83(train) 0.68(valid), 0.73(test) || time consumption: 97.11s
+Epoch: 040, rocauc: 0.84(train) 0.69(valid), 0.75(test) || time consumption: 123.02s
+Epoch: 045, rocauc: 0.84(train) 0.68(valid), 0.75(test) || time consumption: 83.13s
+[32m[I 2023-04-11 23:26:49,850][0m Trial 11 finished with value: 0.772106452422797 and parameters: {'learning_rate': 0.0013616490707112304, 'hidden_dim': 179, 'drop_rate': 0.3730917327180397, 'intraview_negs': False, 'temperature': 0.20507719302812577, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.84(train) 0.68(valid), 0.75(test) || time consumption: 94.95s
+Epoch: 005, rocauc: 0.82(train) 0.69(valid), 0.73(test) || time consumption: 153.74s
+Epoch: 010, rocauc: 0.80(train) 0.70(valid), 0.66(test) || time consumption: 134.12s
+Epoch: 015, rocauc: 0.83(train) 0.70(valid), 0.75(test) || time consumption: 71.47s
+Epoch: 020, rocauc: 0.83(train) 0.73(valid), 0.72(test) || time consumption: 147.28s
+Epoch: 025, rocauc: 0.85(train) 0.73(valid), 0.74(test) || time consumption: 115.69s
+Epoch: 030, rocauc: 0.84(train) 0.65(valid), 0.71(test) || time consumption: 134.30s
+Epoch: 035, rocauc: 0.84(train) 0.68(valid), 0.74(test) || time consumption: 108.37s
+Epoch: 040, rocauc: 0.82(train) 0.70(valid), 0.71(test) || time consumption: 130.88s
+Epoch: 045, rocauc: 0.81(train) 0.71(valid), 0.69(test) || time consumption: 136.23s
+[32m[I 2023-04-12 00:02:33,059][0m Trial 12 finished with value: 0.7486741729272485 and parameters: {'learning_rate': 0.0020508327299779846, 'hidden_dim': 123, 'drop_rate': 0.36424901751421906, 'intraview_negs': False, 'temperature': 0.21206573491347902, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 2 with value: 0.7777651171324282.[0m
+Epoch: 050, rocauc: 0.82(train) 0.70(valid), 0.70(test) || time consumption: 111.87s
+Epoch: 005, rocauc: 0.84(train) 0.70(valid), 0.77(test) || time consumption: 105.26s
+Epoch: 010, rocauc: 0.85(train) 0.72(valid), 0.73(test) || time consumption: 127.25s
+Epoch: 015, rocauc: 0.84(train) 0.69(valid), 0.78(test) || time consumption: 141.77s
+Epoch: 020, rocauc: 0.85(train) 0.68(valid), 0.71(test) || time consumption: 153.21s
+Epoch: 025, rocauc: 0.83(train) 0.69(valid), 0.72(test) || time consumption: 106.61s
+Epoch: 030, rocauc: 0.83(train) 0.69(valid), 0.75(test) || time consumption: 90.01s
+Epoch: 035, rocauc: 0.85(train) 0.72(valid), 0.73(test) || time consumption: 119.02s
+Epoch: 040, rocauc: 0.86(train) 0.71(valid), 0.75(test) || time consumption: 121.43s
+Epoch: 045, rocauc: 0.86(train) 0.70(valid), 0.74(test) || time consumption: 118.61s
+[32m[I 2023-04-12 00:38:46,337][0m Trial 13 finished with value: 0.7802410243535023 and parameters: {'learning_rate': 0.00039421910666337064, 'hidden_dim': 199, 'drop_rate': 0.38677080885075155, 'intraview_negs': True, 'temperature': 0.38543124527633815, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.85(train) 0.70(valid), 0.74(test) || time consumption: 77.26s
+[32m[I 2023-04-12 00:41:49,753][0m Trial 14 pruned. [0m
+Epoch: 005, rocauc: 0.80(train) 0.70(valid), 0.70(test) || time consumption: 92.72s
+Epoch: 005, rocauc: 0.85(train) 0.65(valid), 0.73(test) || time consumption: 96.30s
+Epoch: 010, rocauc: 0.84(train) 0.63(valid), 0.74(test) || time consumption: 81.39s
+Epoch: 015, rocauc: 0.85(train) 0.67(valid), 0.75(test) || time consumption: 98.94s
+Epoch: 020, rocauc: 0.84(train) 0.69(valid), 0.74(test) || time consumption: 93.71s
+Epoch: 025, rocauc: 0.84(train) 0.70(valid), 0.76(test) || time consumption: 77.46s
+Epoch: 030, rocauc: 0.86(train) 0.67(valid), 0.74(test) || time consumption: 114.02s
+Epoch: 035, rocauc: 0.86(train) 0.70(valid), 0.77(test) || time consumption: 96.33s
+Epoch: 040, rocauc: 0.86(train) 0.72(valid), 0.77(test) || time consumption: 64.80s
+Epoch: 045, rocauc: 0.85(train) 0.71(valid), 0.76(test) || time consumption: 95.25s
+[32m[I 2023-04-12 01:12:39,968][0m Trial 15 finished with value: 0.7694683172714808 and parameters: {'learning_rate': 0.0003552494528340909, 'hidden_dim': 143, 'drop_rate': 0.3046893318380243, 'intraview_negs': True, 'temperature': 0.4618134075720582, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.86(train) 0.72(valid), 0.76(test) || time consumption: 102.38s
+[32m[I 2023-04-12 01:16:23,471][0m Trial 16 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.69(valid), 0.72(test) || time consumption: 140.03s
+Epoch: 005, rocauc: 0.87(train) 0.68(valid), 0.76(test) || time consumption: 63.12s
+Epoch: 010, rocauc: 0.85(train) 0.65(valid), 0.76(test) || time consumption: 38.73s
+Epoch: 015, rocauc: 0.85(train) 0.64(valid), 0.77(test) || time consumption: 51.36s
+Epoch: 020, rocauc: 0.85(train) 0.67(valid), 0.75(test) || time consumption: 66.86s
+Epoch: 025, rocauc: 0.85(train) 0.61(valid), 0.75(test) || time consumption: 60.99s
+Epoch: 030, rocauc: 0.85(train) 0.69(valid), 0.74(test) || time consumption: 66.90s
+Epoch: 035, rocauc: 0.85(train) 0.68(valid), 0.75(test) || time consumption: 41.26s
+Epoch: 040, rocauc: 0.85(train) 0.65(valid), 0.75(test) || time consumption: 51.48s
+Epoch: 045, rocauc: 0.85(train) 0.68(valid), 0.75(test) || time consumption: 62.08s
+[32m[I 2023-04-12 01:40:25,972][0m Trial 17 finished with value: 0.7703779524517662 and parameters: {'learning_rate': 0.00010467245635410231, 'hidden_dim': 146, 'drop_rate': 0.40913077324277397, 'intraview_negs': True, 'temperature': 0.444402292213929, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.85(train) 0.68(valid), 0.76(test) || time consumption: 58.06s
+[32m[I 2023-04-12 01:43:05,943][0m Trial 18 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.64(valid), 0.68(test) || time consumption: 77.49s
+Epoch: 005, rocauc: 0.81(train) 0.72(valid), 0.75(test) || time consumption: 125.92s
+Epoch: 010, rocauc: 0.82(train) 0.71(valid), 0.77(test) || time consumption: 226.64s
+Epoch: 015, rocauc: 0.81(train) 0.70(valid), 0.75(test) || time consumption: 204.49s
+Epoch: 020, rocauc: 0.82(train) 0.70(valid), 0.74(test) || time consumption: 198.61s
+Epoch: 025, rocauc: 0.83(train) 0.71(valid), 0.75(test) || time consumption: 242.78s
+Epoch: 030, rocauc: 0.83(train) 0.68(valid), 0.74(test) || time consumption: 194.58s
+Epoch: 035, rocauc: 0.83(train) 0.63(valid), 0.72(test) || time consumption: 196.76s
+Epoch: 040, rocauc: 0.83(train) 0.66(valid), 0.73(test) || time consumption: 183.12s
+Epoch: 045, rocauc: 0.84(train) 0.67(valid), 0.74(test) || time consumption: 195.10s
+[32m[I 2023-04-12 02:29:47,192][0m Trial 19 finished with value: 0.7716815697483536 and parameters: {'learning_rate': 0.0007515272934631314, 'hidden_dim': 157, 'drop_rate': 0.35119998075535624, 'intraview_negs': True, 'temperature': 0.33341500192877516, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.83(train) 0.68(valid), 0.73(test) || time consumption: 193.65s
+Epoch: 005, rocauc: 0.80(train) 0.70(valid), 0.74(test) || time consumption: 67.15s
+Epoch: 010, rocauc: 0.83(train) 0.64(valid), 0.74(test) || time consumption: 104.44s
+[32m[I 2023-04-12 02:38:32,853][0m Trial 20 pruned. [0m
+Epoch: 015, rocauc: 0.85(train) 0.66(valid), 0.71(test) || time consumption: 95.27s
+Epoch: 005, rocauc: 0.84(train) 0.73(valid), 0.75(test) || time consumption: 133.79s
+Epoch: 010, rocauc: 0.83(train) 0.76(valid), 0.72(test) || time consumption: 141.00s
+Epoch: 015, rocauc: 0.82(train) 0.75(valid), 0.71(test) || time consumption: 131.23s
+Epoch: 020, rocauc: 0.81(train) 0.73(valid), 0.71(test) || time consumption: 154.04s
+Epoch: 025, rocauc: 0.84(train) 0.63(valid), 0.76(test) || time consumption: 109.29s
+Epoch: 030, rocauc: 0.82(train) 0.76(valid), 0.73(test) || time consumption: 108.25s
+Epoch: 035, rocauc: 0.84(train) 0.74(valid), 0.71(test) || time consumption: 113.72s
+Epoch: 040, rocauc: 0.83(train) 0.76(valid), 0.68(test) || time consumption: 120.21s
+Epoch: 045, rocauc: 0.83(train) 0.73(valid), 0.66(test) || time consumption: 108.59s
+[32m[I 2023-04-12 03:13:05,011][0m Trial 21 finished with value: 0.7622530369454799 and parameters: {'learning_rate': 0.0011260783386586085, 'hidden_dim': 177, 'drop_rate': 0.376111282529954, 'intraview_negs': False, 'temperature': 0.28394247177759036, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.83(train) 0.72(valid), 0.68(test) || time consumption: 111.95s
+Epoch: 005, rocauc: 0.85(train) 0.70(valid), 0.74(test) || time consumption: 59.57s
+Epoch: 010, rocauc: 0.84(train) 0.71(valid), 0.76(test) || time consumption: 89.02s
+Epoch: 015, rocauc: 0.84(train) 0.67(valid), 0.77(test) || time consumption: 108.56s
+Epoch: 020, rocauc: 0.85(train) 0.69(valid), 0.77(test) || time consumption: 93.78s
+Epoch: 025, rocauc: 0.86(train) 0.67(valid), 0.75(test) || time consumption: 48.75s
+Epoch: 030, rocauc: 0.85(train) 0.68(valid), 0.74(test) || time consumption: 97.75s
+Epoch: 035, rocauc: 0.86(train) 0.68(valid), 0.75(test) || time consumption: 86.75s
+Epoch: 040, rocauc: 0.85(train) 0.65(valid), 0.74(test) || time consumption: 71.29s
+Epoch: 045, rocauc: 0.85(train) 0.65(valid), 0.74(test) || time consumption: 60.40s
+[32m[I 2023-04-12 03:40:48,895][0m Trial 22 finished with value: 0.7714266401436877 and parameters: {'learning_rate': 0.00026201539284130657, 'hidden_dim': 198, 'drop_rate': 0.34192844744776013, 'intraview_negs': False, 'temperature': 0.2372510090048715, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.85(train) 0.65(valid), 0.73(test) || time consumption: 85.00s
+[32m[I 2023-04-12 03:43:24,107][0m Trial 23 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.69(valid), 0.72(test) || time consumption: 63.07s
+Epoch: 005, rocauc: 0.83(train) 0.69(valid), 0.76(test) || time consumption: 185.54s
+Epoch: 010, rocauc: 0.83(train) 0.66(valid), 0.74(test) || time consumption: 212.27s
+Epoch: 015, rocauc: 0.82(train) 0.71(valid), 0.77(test) || time consumption: 204.61s
+Epoch: 020, rocauc: 0.82(train) 0.71(valid), 0.74(test) || time consumption: 228.61s
+Epoch: 025, rocauc: 0.84(train) 0.66(valid), 0.73(test) || time consumption: 215.91s
+Epoch: 030, rocauc: 0.83(train) 0.70(valid), 0.73(test) || time consumption: 199.79s
+Epoch: 035, rocauc: 0.81(train) 0.71(valid), 0.72(test) || time consumption: 189.50s
+Epoch: 040, rocauc: 0.82(train) 0.67(valid), 0.73(test) || time consumption: 200.74s
+Epoch: 045, rocauc: 0.82(train) 0.67(valid), 0.74(test) || time consumption: 186.60s
+[32m[I 2023-04-12 04:30:02,312][0m Trial 24 finished with value: 0.7677031228876572 and parameters: {'learning_rate': 0.001522248063672254, 'hidden_dim': 143, 'drop_rate': 0.3804943782477665, 'intraview_negs': True, 'temperature': 0.3729530865108548, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 13 with value: 0.7802410243535023.[0m
+Epoch: 050, rocauc: 0.81(train) 0.69(valid), 0.74(test) || time consumption: 192.94s
+Epoch: 005, rocauc: 0.85(train) 0.67(valid), 0.75(test) || time consumption: 70.82s
+Epoch: 010, rocauc: 0.84(train) 0.65(valid), 0.74(test) || time consumption: 150.73s
+[32m[I 2023-04-12 04:40:01,414][0m Trial 25 pruned. [0m
+Epoch: 015, rocauc: 0.85(train) 0.69(valid), 0.74(test) || time consumption: 109.89s
+Epoch: 005, rocauc: 0.85(train) 0.72(valid), 0.75(test) || time consumption: 115.16s
+Epoch: 010, rocauc: 0.83(train) 0.67(valid), 0.73(test) || time consumption: 147.05s
+[32m[I 2023-04-12 04:50:39,711][0m Trial 26 pruned. [0m
+Epoch: 015, rocauc: 0.82(train) 0.68(valid), 0.75(test) || time consumption: 119.60s
+[32m[I 2023-04-12 04:53:25,148][0m Trial 27 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.65(valid), 0.71(test) || time consumption: 71.71s
+[32m[I 2023-04-12 04:58:17,528][0m Trial 28 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.66(valid), 0.73(test) || time consumption: 216.49s
+Epoch: 005, rocauc: 0.82(train) 0.69(valid), 0.79(test) || time consumption: 104.62s
+Epoch: 010, rocauc: 0.83(train) 0.72(valid), 0.72(test) || time consumption: 150.00s
+Epoch: 015, rocauc: 0.84(train) 0.76(valid), 0.75(test) || time consumption: 131.18s
+Epoch: 020, rocauc: 0.83(train) 0.69(valid), 0.76(test) || time consumption: 141.52s
+Epoch: 025, rocauc: 0.86(train) 0.67(valid), 0.73(test) || time consumption: 125.14s
+Epoch: 030, rocauc: 0.85(train) 0.64(valid), 0.76(test) || time consumption: 105.76s
+Epoch: 035, rocauc: 0.84(train) 0.61(valid), 0.78(test) || time consumption: 136.03s
+Epoch: 040, rocauc: 0.84(train) 0.62(valid), 0.75(test) || time consumption: 109.47s
+Epoch: 045, rocauc: 0.84(train) 0.65(valid), 0.75(test) || time consumption: 110.30s
+[32m[I 2023-04-12 05:33:47,470][0m Trial 29 finished with value: 0.789451321964503 and parameters: {'learning_rate': 0.0012239884529312666, 'hidden_dim': 198, 'drop_rate': 0.5025080775486432, 'intraview_negs': False, 'temperature': 0.2702835515977441, 'n_layers': 3, 'weight_decay': 1e-05, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.85(train) 0.65(valid), 0.75(test) || time consumption: 121.98s
+[32m[I 2023-04-12 05:36:07,883][0m Trial 30 pruned. [0m
+Epoch: 005, rocauc: 0.79(train) 0.69(valid), 0.72(test) || time consumption: 72.55s
+[32m[I 2023-04-12 05:39:35,480][0m Trial 31 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.72(valid), 0.70(test) || time consumption: 110.92s
+[32m[I 2023-04-12 05:44:08,632][0m Trial 32 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.72(valid), 0.71(test) || time consumption: 191.26s
+[32m[I 2023-04-12 05:47:33,328][0m Trial 33 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.62(valid), 0.74(test) || time consumption: 117.91s
+[32m[I 2023-04-12 05:50:34,920][0m Trial 34 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.65(valid), 0.74(test) || time consumption: 96.82s
+[32m[I 2023-04-12 05:53:58,311][0m Trial 35 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.65(valid), 0.72(test) || time consumption: 113.92s
+[32m[I 2023-04-12 05:56:17,608][0m Trial 36 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.67(valid), 0.72(test) || time consumption: 62.96s
+[32m[I 2023-04-12 05:59:06,232][0m Trial 37 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.69(valid), 0.71(test) || time consumption: 85.55s
+[32m[I 2023-04-12 06:02:10,560][0m Trial 38 pruned. [0m
+Epoch: 005, rocauc: 0.82(train) 0.65(valid), 0.72(test) || time consumption: 106.37s
+[32m[I 2023-04-12 06:06:13,578][0m Trial 39 pruned. [0m
+Epoch: 005, rocauc: 0.81(train) 0.70(valid), 0.71(test) || time consumption: 167.91s
+[32m[I 2023-04-12 06:08:52,066][0m Trial 40 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.64(valid), 0.72(test) || time consumption: 67.50s
+Epoch: 005, rocauc: 0.82(train) 0.70(valid), 0.77(test) || time consumption: 154.07s
+Epoch: 010, rocauc: 0.83(train) 0.67(valid), 0.75(test) || time consumption: 188.89s
+Epoch: 015, rocauc: 0.84(train) 0.68(valid), 0.75(test) || time consumption: 172.98s
+Epoch: 020, rocauc: 0.82(train) 0.71(valid), 0.76(test) || time consumption: 134.18s
+Epoch: 025, rocauc: 0.83(train) 0.68(valid), 0.74(test) || time consumption: 172.61s
+Epoch: 030, rocauc: 0.83(train) 0.70(valid), 0.74(test) || time consumption: 111.83s
+Epoch: 035, rocauc: 0.83(train) 0.66(valid), 0.74(test) || time consumption: 141.03s
+Epoch: 040, rocauc: 0.82(train) 0.65(valid), 0.74(test) || time consumption: 163.01s
+Epoch: 045, rocauc: 0.82(train) 0.68(valid), 0.75(test) || time consumption: 146.97s
+[32m[I 2023-04-12 06:47:36,512][0m Trial 41 finished with value: 0.7684852932656097 and parameters: {'learning_rate': 0.0007679122156970748, 'hidden_dim': 160, 'drop_rate': 0.35246729977392094, 'intraview_negs': True, 'temperature': 0.32873740181921496, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.83(train) 0.68(valid), 0.76(test) || time consumption: 162.76s
+[32m[I 2023-04-12 06:51:05,492][0m Trial 42 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.72(valid), 0.74(test) || time consumption: 128.45s
+Epoch: 005, rocauc: 0.82(train) 0.67(valid), 0.76(test) || time consumption: 122.56s
+Epoch: 010, rocauc: 0.84(train) 0.73(valid), 0.74(test) || time consumption: 163.80s
+Epoch: 015, rocauc: 0.85(train) 0.67(valid), 0.73(test) || time consumption: 219.23s
+Epoch: 020, rocauc: 0.83(train) 0.68(valid), 0.74(test) || time consumption: 205.72s
+Epoch: 025, rocauc: 0.86(train) 0.62(valid), 0.74(test) || time consumption: 186.82s
+Epoch: 030, rocauc: 0.84(train) 0.67(valid), 0.76(test) || time consumption: 188.87s
+Epoch: 035, rocauc: 0.83(train) 0.65(valid), 0.75(test) || time consumption: 147.46s
+Epoch: 040, rocauc: 0.83(train) 0.64(valid), 0.74(test) || time consumption: 168.48s
+Epoch: 045, rocauc: 0.84(train) 0.65(valid), 0.76(test) || time consumption: 210.92s
+[32m[I 2023-04-12 07:34:45,728][0m Trial 43 finished with value: 0.7611425481372757 and parameters: {'learning_rate': 0.0006282785098751567, 'hidden_dim': 182, 'drop_rate': 0.386868365797367, 'intraview_negs': True, 'temperature': 0.3656972308908095, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.83(train) 0.66(valid), 0.76(test) || time consumption: 214.47s
+Epoch: 005, rocauc: 0.78(train) 0.68(valid), 0.75(test) || time consumption: 129.17s
+Epoch: 010, rocauc: 0.79(train) 0.66(valid), 0.70(test) || time consumption: 167.48s
+Epoch: 015, rocauc: 0.80(train) 0.68(valid), 0.74(test) || time consumption: 178.23s
+Epoch: 020, rocauc: 0.80(train) 0.63(valid), 0.71(test) || time consumption: 151.08s
+Epoch: 025, rocauc: 0.80(train) 0.62(valid), 0.73(test) || time consumption: 163.13s
+Epoch: 030, rocauc: 0.83(train) 0.66(valid), 0.71(test) || time consumption: 193.46s
+Epoch: 035, rocauc: 0.80(train) 0.67(valid), 0.74(test) || time consumption: 173.27s
+Epoch: 040, rocauc: 0.81(train) 0.65(valid), 0.73(test) || time consumption: 204.09s
+Epoch: 045, rocauc: 0.80(train) 0.66(valid), 0.74(test) || time consumption: 168.36s
+[32m[I 2023-04-12 08:16:21,743][0m Trial 44 finished with value: 0.7503949477587439 and parameters: {'learning_rate': 0.0016766478113297602, 'hidden_dim': 133, 'drop_rate': 0.36330714942263553, 'intraview_negs': True, 'temperature': 0.246667631505126, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.81(train) 0.67(valid), 0.75(test) || time consumption: 203.58s
+Epoch: 005, rocauc: 0.84(train) 0.71(valid), 0.76(test) || time consumption: 110.81s
+Epoch: 010, rocauc: 0.83(train) 0.72(valid), 0.72(test) || time consumption: 141.48s
+Epoch: 015, rocauc: 0.83(train) 0.68(valid), 0.74(test) || time consumption: 133.53s
+Epoch: 020, rocauc: 0.84(train) 0.69(valid), 0.72(test) || time consumption: 129.28s
+Epoch: 025, rocauc: 0.84(train) 0.67(valid), 0.73(test) || time consumption: 101.61s
+Epoch: 030, rocauc: 0.84(train) 0.72(valid), 0.71(test) || time consumption: 142.29s
+Epoch: 035, rocauc: 0.84(train) 0.67(valid), 0.71(test) || time consumption: 168.43s
+Epoch: 040, rocauc: 0.83(train) 0.66(valid), 0.71(test) || time consumption: 155.52s
+Epoch: 045, rocauc: 0.82(train) 0.70(valid), 0.70(test) || time consumption: 151.65s
+[32m[I 2023-04-12 08:52:51,329][0m Trial 45 finished with value: 0.7609629386430793 and parameters: {'learning_rate': 0.00042072157363419455, 'hidden_dim': 165, 'drop_rate': 0.33495135197917536, 'intraview_negs': True, 'temperature': 0.4085184661706911, 'n_layers': 2, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.83(train) 0.70(valid), 0.71(test) || time consumption: 151.33s
+[32m[I 2023-04-12 08:57:56,185][0m Trial 46 pruned. [0m
+Epoch: 005, rocauc: 0.81(train) 0.70(valid), 0.73(test) || time consumption: 226.74s
+[32m[I 2023-04-12 09:00:48,588][0m Trial 47 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.73(valid), 0.74(test) || time consumption: 91.26s
+[32m[I 2023-04-12 09:03:50,159][0m Trial 48 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.76(valid), 0.74(test) || time consumption: 95.73s
+[32m[I 2023-04-12 09:07:25,351][0m Trial 49 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.72(valid), 0.74(test) || time consumption: 124.62s
+[32m[I 2023-04-12 09:10:26,733][0m Trial 50 pruned. [0m
+Epoch: 005, rocauc: 0.86(train) 0.71(valid), 0.75(test) || time consumption: 67.81s
+Epoch: 005, rocauc: 0.86(train) 0.60(valid), 0.76(test) || time consumption: 48.20s
+Epoch: 010, rocauc: 0.87(train) 0.62(valid), 0.74(test) || time consumption: 70.36s
+Epoch: 015, rocauc: 0.85(train) 0.65(valid), 0.75(test) || time consumption: 62.03s
+Epoch: 020, rocauc: 0.86(train) 0.67(valid), 0.75(test) || time consumption: 67.07s
+Epoch: 025, rocauc: 0.86(train) 0.64(valid), 0.75(test) || time consumption: 67.59s
+Epoch: 030, rocauc: 0.86(train) 0.68(valid), 0.75(test) || time consumption: 56.27s
+Epoch: 035, rocauc: 0.85(train) 0.66(valid), 0.75(test) || time consumption: 77.47s
+Epoch: 040, rocauc: 0.86(train) 0.65(valid), 0.74(test) || time consumption: 80.88s
+Epoch: 045, rocauc: 0.86(train) 0.63(valid), 0.74(test) || time consumption: 73.73s
+[32m[I 2023-04-12 09:36:50,280][0m Trial 51 finished with value: 0.7640201626141874 and parameters: {'learning_rate': 0.00014484591618822986, 'hidden_dim': 200, 'drop_rate': 0.342622359065755, 'intraview_negs': False, 'temperature': 0.2500826943760659, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.85(train) 0.63(valid), 0.74(test) || time consumption: 70.82s
+[32m[I 2023-04-12 09:39:32,382][0m Trial 52 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.72(valid), 0.72(test) || time consumption: 69.19s
+Epoch: 005, rocauc: 0.83(train) 0.70(valid), 0.77(test) || time consumption: 52.82s
+Epoch: 010, rocauc: 0.85(train) 0.69(valid), 0.74(test) || time consumption: 81.43s
+Epoch: 015, rocauc: 0.86(train) 0.70(valid), 0.75(test) || time consumption: 96.20s
+Epoch: 020, rocauc: 0.86(train) 0.71(valid), 0.75(test) || time consumption: 73.67s
+Epoch: 025, rocauc: 0.85(train) 0.64(valid), 0.75(test) || time consumption: 77.56s
+Epoch: 030, rocauc: 0.84(train) 0.65(valid), 0.74(test) || time consumption: 73.27s
+Epoch: 035, rocauc: 0.84(train) 0.71(valid), 0.73(test) || time consumption: 53.56s
+Epoch: 040, rocauc: 0.85(train) 0.72(valid), 0.74(test) || time consumption: 60.34s
+Epoch: 045, rocauc: 0.84(train) 0.70(valid), 0.73(test) || time consumption: 98.60s
+[32m[I 2023-04-12 10:06:21,639][0m Trial 53 finished with value: 0.7669441279283107 and parameters: {'learning_rate': 0.00025556863386574, 'hidden_dim': 184, 'drop_rate': 0.33188075926491273, 'intraview_negs': False, 'temperature': 0.28643490085589546, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.84(train) 0.70(valid), 0.73(test) || time consumption: 77.99s
+[32m[I 2023-04-12 10:09:16,356][0m Trial 54 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.70(valid), 0.74(test) || time consumption: 86.35s
+[32m[I 2023-04-12 10:11:48,917][0m Trial 55 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.66(valid), 0.75(test) || time consumption: 61.14s
+Epoch: 005, rocauc: 0.85(train) 0.70(valid), 0.75(test) || time consumption: 91.00s
+Epoch: 010, rocauc: 0.83(train) 0.73(valid), 0.75(test) || time consumption: 136.22s
+Epoch: 015, rocauc: 0.84(train) 0.67(valid), 0.71(test) || time consumption: 132.25s
+Epoch: 020, rocauc: 0.82(train) 0.68(valid), 0.71(test) || time consumption: 136.95s
+Epoch: 025, rocauc: 0.83(train) 0.69(valid), 0.74(test) || time consumption: 109.50s
+Epoch: 030, rocauc: 0.85(train) 0.71(valid), 0.74(test) || time consumption: 122.59s
+Epoch: 035, rocauc: 0.84(train) 0.65(valid), 0.73(test) || time consumption: 109.11s
+Epoch: 040, rocauc: 0.84(train) 0.66(valid), 0.70(test) || time consumption: 91.80s
+Epoch: 045, rocauc: 0.83(train) 0.69(valid), 0.71(test) || time consumption: 103.02s
+[32m[I 2023-04-12 10:44:42,519][0m Trial 56 finished with value: 0.7521582108576836 and parameters: {'learning_rate': 0.00045892985841975337, 'hidden_dim': 168, 'drop_rate': 0.4136777740648132, 'intraview_negs': False, 'temperature': 0.34656597824994784, 'n_layers': 3, 'weight_decay': 0, 'aug_strength': 0.1}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.83(train) 0.70(valid), 0.71(test) || time consumption: 98.81s
+[32m[I 2023-04-12 10:47:25,372][0m Trial 57 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.65(valid), 0.73(test) || time consumption: 77.88s
+Epoch: 005, rocauc: 0.84(train) 0.68(valid), 0.75(test) || time consumption: 67.41s
+Epoch: 010, rocauc: 0.84(train) 0.69(valid), 0.77(test) || time consumption: 49.58s
+Epoch: 015, rocauc: 0.84(train) 0.68(valid), 0.77(test) || time consumption: 61.34s
+Epoch: 020, rocauc: 0.87(train) 0.66(valid), 0.76(test) || time consumption: 86.55s
+Epoch: 025, rocauc: 0.86(train) 0.66(valid), 0.74(test) || time consumption: 72.73s
+Epoch: 030, rocauc: 0.85(train) 0.65(valid), 0.76(test) || time consumption: 62.34s
+Epoch: 035, rocauc: 0.85(train) 0.64(valid), 0.75(test) || time consumption: 56.69s
+Epoch: 040, rocauc: 0.86(train) 0.64(valid), 0.75(test) || time consumption: 53.51s
+Epoch: 045, rocauc: 0.87(train) 0.61(valid), 0.75(test) || time consumption: 52.43s
+[32m[I 2023-04-12 11:11:51,636][0m Trial 58 finished with value: 0.7707313775855077 and parameters: {'learning_rate': 0.0003763484726808123, 'hidden_dim': 137, 'drop_rate': 0.3175708198200177, 'intraview_negs': False, 'temperature': 0.23208282404960318, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.87(train) 0.62(valid), 0.75(test) || time consumption: 61.13s
+[32m[I 2023-04-12 11:16:11,033][0m Trial 59 pruned. [0m
+Epoch: 005, rocauc: 0.82(train) 0.69(valid), 0.75(test) || time consumption: 179.54s
+Epoch: 005, rocauc: 0.86(train) 0.65(valid), 0.78(test) || time consumption: 55.34s
+Epoch: 010, rocauc: 0.86(train) 0.71(valid), 0.77(test) || time consumption: 51.35s
+Epoch: 015, rocauc: 0.86(train) 0.66(valid), 0.78(test) || time consumption: 75.41s
+Epoch: 020, rocauc: 0.85(train) 0.67(valid), 0.75(test) || time consumption: 71.34s
+Epoch: 025, rocauc: 0.86(train) 0.69(valid), 0.75(test) || time consumption: 59.80s
+Epoch: 030, rocauc: 0.86(train) 0.72(valid), 0.76(test) || time consumption: 66.51s
+Epoch: 035, rocauc: 0.87(train) 0.67(valid), 0.75(test) || time consumption: 72.75s
+Epoch: 040, rocauc: 0.85(train) 0.69(valid), 0.76(test) || time consumption: 59.93s
+Epoch: 045, rocauc: 0.86(train) 0.70(valid), 0.76(test) || time consumption: 72.78s
+[32m[I 2023-04-12 11:41:18,857][0m Trial 60 finished with value: 0.7792657254871667 and parameters: {'learning_rate': 0.00030181104707726654, 'hidden_dim': 151, 'drop_rate': 0.39913764282112135, 'intraview_negs': False, 'temperature': 0.36103895731763913, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.85(train) 0.68(valid), 0.77(test) || time consumption: 62.82s
+[32m[I 2023-04-12 11:44:11,713][0m Trial 61 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.71(valid), 0.75(test) || time consumption: 85.87s
+[32m[I 2023-04-12 11:47:00,568][0m Trial 62 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.70(valid), 0.73(test) || time consumption: 79.15s
+Epoch: 005, rocauc: 0.84(train) 0.68(valid), 0.77(test) || time consumption: 71.02s
+Epoch: 010, rocauc: 0.86(train) 0.66(valid), 0.74(test) || time consumption: 108.07s
+Epoch: 015, rocauc: 0.86(train) 0.71(valid), 0.74(test) || time consumption: 133.84s
+Epoch: 020, rocauc: 0.84(train) 0.72(valid), 0.72(test) || time consumption: 78.25s
+Epoch: 025, rocauc: 0.85(train) 0.71(valid), 0.70(test) || time consumption: 83.41s
+Epoch: 030, rocauc: 0.84(train) 0.67(valid), 0.74(test) || time consumption: 107.64s
+Epoch: 035, rocauc: 0.86(train) 0.62(valid), 0.73(test) || time consumption: 73.34s
+Epoch: 040, rocauc: 0.85(train) 0.61(valid), 0.72(test) || time consumption: 94.22s
+Epoch: 045, rocauc: 0.85(train) 0.61(valid), 0.73(test) || time consumption: 59.48s
+[32m[I 2023-04-12 12:16:25,660][0m Trial 63 finished with value: 0.7678112748411519 and parameters: {'learning_rate': 0.00021438718681967095, 'hidden_dim': 188, 'drop_rate': 0.3540541995904199, 'intraview_negs': False, 'temperature': 0.45454589875767704, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.1}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.86(train) 0.61(valid), 0.72(test) || time consumption: 77.02s
+[32m[I 2023-04-12 12:18:39,985][0m Trial 64 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.72(valid), 0.73(test) || time consumption: 46.05s
+[32m[I 2023-04-12 12:21:54,535][0m Trial 65 pruned. [0m
+Epoch: 005, rocauc: 0.82(train) 0.66(valid), 0.73(test) || time consumption: 105.44s
+[32m[I 2023-04-12 12:24:40,580][0m Trial 66 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.73(valid), 0.74(test) || time consumption: 72.20s
+[32m[I 2023-04-12 12:27:19,599][0m Trial 67 pruned. [0m
+Epoch: 005, rocauc: 0.82(train) 0.74(valid), 0.75(test) || time consumption: 82.60s
+[32m[I 2023-04-12 12:30:26,551][0m Trial 68 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.67(valid), 0.69(test) || time consumption: 92.21s
+Epoch: 005, rocauc: 0.85(train) 0.68(valid), 0.75(test) || time consumption: 110.50s
+Epoch: 010, rocauc: 0.83(train) 0.67(valid), 0.70(test) || time consumption: 139.71s
+Epoch: 015, rocauc: 0.86(train) 0.70(valid), 0.73(test) || time consumption: 90.27s
+Epoch: 020, rocauc: 0.84(train) 0.68(valid), 0.73(test) || time consumption: 98.85s
+Epoch: 025, rocauc: 0.86(train) 0.71(valid), 0.71(test) || time consumption: 116.77s
+Epoch: 030, rocauc: 0.86(train) 0.68(valid), 0.72(test) || time consumption: 92.91s
+Epoch: 035, rocauc: 0.86(train) 0.64(valid), 0.71(test) || time consumption: 116.73s
+Epoch: 040, rocauc: 0.86(train) 0.68(valid), 0.73(test) || time consumption: 102.44s
+Epoch: 045, rocauc: 0.87(train) 0.65(valid), 0.74(test) || time consumption: 102.56s
+[32m[I 2023-04-12 13:04:31,021][0m Trial 69 finished with value: 0.7526545510728286 and parameters: {'learning_rate': 0.0006485229080824798, 'hidden_dim': 179, 'drop_rate': 0.4682286963638851, 'intraview_negs': True, 'temperature': 0.22641519337112773, 'n_layers': 3, 'weight_decay': 0, 'aug_strength': 0.1}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.87(train) 0.64(valid), 0.73(test) || time consumption: 105.20s
+[32m[I 2023-04-12 13:07:25,554][0m Trial 70 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.72(valid), 0.73(test) || time consumption: 79.47s
+[32m[I 2023-04-12 13:10:17,788][0m Trial 71 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.64(valid), 0.75(test) || time consumption: 71.85s
+[32m[I 2023-04-12 13:12:51,453][0m Trial 72 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.74(valid), 0.75(test) || time consumption: 57.52s
+[32m[I 2023-04-12 13:15:30,272][0m Trial 73 pruned. [0m
+Epoch: 005, rocauc: 0.84(train) 0.70(valid), 0.75(test) || time consumption: 62.26s
+Epoch: 005, rocauc: 0.85(train) 0.66(valid), 0.76(test) || time consumption: 102.93s
+Epoch: 010, rocauc: 0.84(train) 0.69(valid), 0.75(test) || time consumption: 140.83s
+Epoch: 015, rocauc: 0.84(train) 0.76(valid), 0.75(test) || time consumption: 104.61s
+Epoch: 020, rocauc: 0.83(train) 0.72(valid), 0.75(test) || time consumption: 86.98s
+Epoch: 025, rocauc: 0.83(train) 0.68(valid), 0.73(test) || time consumption: 122.32s
+Epoch: 030, rocauc: 0.83(train) 0.66(valid), 0.71(test) || time consumption: 120.32s
+Epoch: 035, rocauc: 0.83(train) 0.67(valid), 0.72(test) || time consumption: 70.88s
+Epoch: 040, rocauc: 0.84(train) 0.69(valid), 0.74(test) || time consumption: 84.27s
+Epoch: 045, rocauc: 0.84(train) 0.65(valid), 0.74(test) || time consumption: 99.52s
+[32m[I 2023-04-12 13:47:37,334][0m Trial 74 finished with value: 0.7617779408640569 and parameters: {'learning_rate': 0.0013689788318695453, 'hidden_dim': 128, 'drop_rate': 0.34821846698277886, 'intraview_negs': False, 'temperature': 0.2975098746304411, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.84(train) 0.66(valid), 0.74(test) || time consumption: 89.43s
+Epoch: 005, rocauc: 0.86(train) 0.62(valid), 0.78(test) || time consumption: 67.23s
+Epoch: 010, rocauc: 0.85(train) 0.68(valid), 0.74(test) || time consumption: 64.48s
+Epoch: 015, rocauc: 0.85(train) 0.69(valid), 0.73(test) || time consumption: 63.17s
+Epoch: 020, rocauc: 0.83(train) 0.72(valid), 0.75(test) || time consumption: 58.02s
+Epoch: 025, rocauc: 0.86(train) 0.72(valid), 0.76(test) || time consumption: 77.94s
+Epoch: 030, rocauc: 0.83(train) 0.71(valid), 0.75(test) || time consumption: 79.43s
+Epoch: 035, rocauc: 0.84(train) 0.64(valid), 0.75(test) || time consumption: 55.69s
+Epoch: 040, rocauc: 0.85(train) 0.63(valid), 0.76(test) || time consumption: 88.63s
+Epoch: 045, rocauc: 0.85(train) 0.61(valid), 0.76(test) || time consumption: 79.82s
+[32m[I 2023-04-12 14:12:48,207][0m Trial 75 finished with value: 0.7754553004113637 and parameters: {'learning_rate': 0.00039704520738928094, 'hidden_dim': 154, 'drop_rate': 0.3313715783252457, 'intraview_negs': False, 'temperature': 0.25224994983744087, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.85(train) 0.62(valid), 0.77(test) || time consumption: 75.76s
+[32m[I 2023-04-12 14:15:07,085][0m Trial 76 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.70(valid), 0.74(test) || time consumption: 55.67s
+[32m[I 2023-04-12 14:18:11,454][0m Trial 77 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.66(valid), 0.75(test) || time consumption: 112.17s
+[32m[I 2023-04-12 14:20:55,542][0m Trial 78 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.67(valid), 0.72(test) || time consumption: 80.09s
+[32m[I 2023-04-12 14:24:34,210][0m Trial 79 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.61(valid), 0.69(test) || time consumption: 136.60s
+[32m[I 2023-04-12 14:27:03,481][0m Trial 80 pruned. [0m
+Epoch: 005, rocauc: 0.83(train) 0.74(valid), 0.75(test) || time consumption: 81.85s
+Epoch: 005, rocauc: 0.86(train) 0.68(valid), 0.77(test) || time consumption: 41.18s
+Epoch: 010, rocauc: 0.86(train) 0.68(valid), 0.75(test) || time consumption: 53.52s
+Epoch: 015, rocauc: 0.85(train) 0.71(valid), 0.77(test) || time consumption: 48.17s
+Epoch: 020, rocauc: 0.85(train) 0.59(valid), 0.76(test) || time consumption: 50.02s
+Epoch: 025, rocauc: 0.86(train) 0.64(valid), 0.74(test) || time consumption: 45.52s
+Epoch: 030, rocauc: 0.86(train) 0.69(valid), 0.75(test) || time consumption: 58.06s
+Epoch: 035, rocauc: 0.85(train) 0.66(valid), 0.74(test) || time consumption: 47.13s
+Epoch: 040, rocauc: 0.86(train) 0.68(valid), 0.74(test) || time consumption: 58.31s
+Epoch: 045, rocauc: 0.85(train) 0.69(valid), 0.75(test) || time consumption: 43.70s
+[32m[I 2023-04-12 14:46:42,725][0m Trial 81 finished with value: 0.7696073697831166 and parameters: {'learning_rate': 0.0004033672011266218, 'hidden_dim': 135, 'drop_rate': 0.3108561699286055, 'intraview_negs': False, 'temperature': 0.26362557744218196, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.85(train) 0.68(valid), 0.74(test) || time consumption: 39.30s
+[32m[I 2023-04-12 14:48:35,247][0m Trial 82 pruned. [0m
+Epoch: 005, rocauc: 0.85(train) 0.66(valid), 0.71(test) || time consumption: 41.27s
+Epoch: 005, rocauc: 0.84(train) 0.70(valid), 0.75(test) || time consumption: 55.62s
+Epoch: 010, rocauc: 0.86(train) 0.67(valid), 0.75(test) || time consumption: 51.73s
+Epoch: 015, rocauc: 0.86(train) 0.64(valid), 0.76(test) || time consumption: 45.73s
+Epoch: 020, rocauc: 0.85(train) 0.68(valid), 0.75(test) || time consumption: 54.78s
+Epoch: 025, rocauc: 0.84(train) 0.66(valid), 0.76(test) || time consumption: 49.33s
+Epoch: 030, rocauc: 0.84(train) 0.69(valid), 0.74(test) || time consumption: 67.47s
+Epoch: 035, rocauc: 0.85(train) 0.72(valid), 0.76(test) || time consumption: 44.50s
+Epoch: 040, rocauc: 0.86(train) 0.70(valid), 0.75(test) || time consumption: 54.13s
+Epoch: 045, rocauc: 0.85(train) 0.68(valid), 0.75(test) || time consumption: 47.26s
+[32m[I 2023-04-12 15:07:15,394][0m Trial 83 finished with value: 0.7638830413874351 and parameters: {'learning_rate': 0.0004406708071983037, 'hidden_dim': 151, 'drop_rate': 0.31961432923700994, 'intraview_negs': False, 'temperature': 0.28874403077303995, 'n_layers': 3, 'weight_decay': 0.0001, 'aug_strength': 0.2}. Best is trial 29 with value: 0.789451321964503.[0m
+Epoch: 050, rocauc: 0.85(train) 0.69(valid), 0.75(test) || time consumption: 42.75s
+Epoch: 005, rocauc: 0.85(train) 0.71(valid), 0.76(test) || time consumption: 50.79s
+Epoch: 010, rocauc: 0.87(train) 0.74(valid), 0.76(test) || time consumption: 64.36s
+Epoch: 015, rocauc: 0.87(train) 0.70(valid), 0.77(test) || time consumption: 50.98s

@@ -1,0 +1,915 @@
+nohup: 忽略输入
+WARNING:root:The OGB package is out of date. Your version is 1.3.5, while the latest version is 1.3.6.
+[32m[I 2023-04-13 13:42:16,856][0m A new study created in memory with name: no-name-013421e5-5873-41ae-b0fd-6f83e0c70b82[0m
+Degree Time comsumption: 25.894595
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.699(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 12.06s(train), 6.43s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.800(valid), 0.762(test), loss: 0.139(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 7.08s(train), 5.69s(val & test)
+Epoch: 003, rocauc: 0.741(train), 0.793(valid), 0.770(test), loss: 0.135(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 8.90s(train), 6.22s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.803(valid), 0.780(test), loss: 0.131(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 7.63s(train), 6.03s(val & test)
+Epoch: 005, rocauc: 0.771(train), 0.805(valid), 0.793(test), loss: 0.129(train), 0.120(valid), 0.116(test), lr:0.01000 || time consumption: 7.75s(train), 6.57s(val & test)
+Epoch: 006, rocauc: 0.783(train), 0.834(valid), 0.794(test), loss: 0.125(train), 0.120(valid), 0.119(test), lr:0.01000 || time consumption: 7.50s(train), 7.68s(val & test)
+Epoch: 007, rocauc: 0.792(train), 0.818(valid), 0.795(test), loss: 0.123(train), 0.115(valid), 0.113(test), lr:0.01000 || time consumption: 6.87s(train), 6.13s(val & test)
+Epoch: 008, rocauc: 0.787(train), 0.827(valid), 0.797(test), loss: 0.124(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 6.91s(train), 4.59s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.813(valid), 0.790(test), loss: 0.121(train), 0.118(valid), 0.114(test), lr:0.01000 || time consumption: 5.50s(train), 4.65s(val & test)
+Epoch: 010, rocauc: 0.796(train), 0.828(valid), 0.814(test), loss: 0.121(train), 0.112(valid), 0.108(test), lr:0.01000 || time consumption: 7.57s(train), 5.90s(val & test)
+Epoch: 011, rocauc: 0.802(train), 0.841(valid), 0.814(test), loss: 0.119(train), 0.109(valid), 0.108(test), lr:0.01000 || time consumption: 5.91s(train), 6.75s(val & test)
+Epoch: 012, rocauc: 0.802(train), 0.824(valid), 0.799(test), loss: 0.119(train), 0.110(valid), 0.111(test), lr:0.01000 || time consumption: 7.05s(train), 5.60s(val & test)
+Epoch: 013, rocauc: 0.802(train), 0.834(valid), 0.809(test), loss: 0.120(train), 0.114(valid), 0.111(test), lr:0.01000 || time consumption: 7.36s(train), 6.29s(val & test)
+Epoch: 014, rocauc: 0.806(train), 0.840(valid), 0.811(test), loss: 0.117(train), 0.119(valid), 0.116(test), lr:0.01000 || time consumption: 8.06s(train), 5.90s(val & test)
+Epoch: 015, rocauc: 0.812(train), 0.844(valid), 0.807(test), loss: 0.117(train), 0.102(valid), 0.104(test), lr:0.01000 || time consumption: 8.40s(train), 5.50s(val & test)
+Epoch: 016, rocauc: 0.809(train), 0.827(valid), 0.815(test), loss: 0.117(train), 0.108(valid), 0.107(test), lr:0.01000 || time consumption: 6.40s(train), 5.34s(val & test)
+Epoch: 017, rocauc: 0.814(train), 0.844(valid), 0.824(test), loss: 0.116(train), 0.105(valid), 0.104(test), lr:0.01000 || time consumption: 6.87s(train), 4.67s(val & test)
+Epoch: 018, rocauc: 0.812(train), 0.824(valid), 0.802(test), loss: 0.117(train), 0.118(valid), 0.116(test), lr:0.01000 || time consumption: 6.05s(train), 6.46s(val & test)
+Epoch: 019, rocauc: 0.822(train), 0.837(valid), 0.807(test), loss: 0.117(train), 0.111(valid), 0.113(test), lr:0.01000 || time consumption: 8.04s(train), 5.36s(val & test)
+Epoch: 020, rocauc: 0.817(train), 0.833(valid), 0.807(test), loss: 0.116(train), 0.109(valid), 0.109(test), lr:0.01000 || time consumption: 6.67s(train), 4.65s(val & test)
+Epoch: 021, rocauc: 0.825(train), 0.843(valid), 0.815(test), loss: 0.114(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 6.91s(train), 5.46s(val & test)
+Epoch: 022, rocauc: 0.820(train), 0.837(valid), 0.812(test), loss: 0.114(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 5.68s(train), 4.19s(val & test)
+Epoch: 023, rocauc: 0.825(train), 0.851(valid), 0.822(test), loss: 0.114(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 6.25s(train), 5.82s(val & test)
+Epoch: 024, rocauc: 0.823(train), 0.856(valid), 0.813(test), loss: 0.114(train), 0.116(valid), 0.117(test), lr:0.01000 || time consumption: 5.79s(train), 5.97s(val & test)
+Epoch: 025, rocauc: 0.819(train), 0.828(valid), 0.802(test), loss: 0.114(train), 0.104(valid), 0.105(test), lr:0.01000 || time consumption: 7.51s(train), 6.20s(val & test)
+Epoch: 026, rocauc: 0.830(train), 0.835(valid), 0.812(test), loss: 0.112(train), 0.116(valid), 0.116(test), lr:0.01000 || time consumption: 7.16s(train), 4.73s(val & test)
+Epoch: 027, rocauc: 0.830(train), 0.855(valid), 0.809(test), loss: 0.112(train), 0.108(valid), 0.107(test), lr:0.01000 || time consumption: 6.22s(train), 5.54s(val & test)
+Epoch: 028, rocauc: 0.823(train), 0.852(valid), 0.808(test), loss: 0.114(train), 0.103(valid), 0.104(test), lr:0.01000 || time consumption: 6.31s(train), 6.41s(val & test)
+Epoch: 029, rocauc: 0.826(train), 0.837(valid), 0.800(test), loss: 0.113(train), 0.122(valid), 0.123(test), lr:0.01000 || time consumption: 6.53s(train), 6.10s(val & test)
+Epoch: 030, rocauc: 0.825(train), 0.850(valid), 0.810(test), loss: 0.113(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 6.97s(train), 6.00s(val & test)
+Epoch: 031, rocauc: 0.829(train), 0.841(valid), 0.799(test), loss: 0.111(train), 0.109(valid), 0.109(test), lr:0.01000 || time consumption: 7.43s(train), 6.20s(val & test)
+Epoch: 032, rocauc: 0.819(train), 0.824(valid), 0.804(test), loss: 0.115(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 6.85s(train), 6.45s(val & test)
+Epoch: 033, rocauc: 0.819(train), 0.833(valid), 0.809(test), loss: 0.114(train), 0.107(valid), 0.105(test), lr:0.01000 || time consumption: 7.28s(train), 3.79s(val & test)
+Epoch: 034, rocauc: 0.833(train), 0.828(valid), 0.799(test), loss: 0.112(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 6.86s(train), 6.39s(val & test)
+Epoch: 035, rocauc: 0.827(train), 0.828(valid), 0.802(test), loss: 0.114(train), 0.109(valid), 0.110(test), lr:0.01000 || time consumption: 7.56s(train), 4.70s(val & test)
+Epoch: 036, rocauc: 0.830(train), 0.858(valid), 0.805(test), loss: 0.113(train), 0.112(valid), 0.112(test), lr:0.01000 || time consumption: 5.88s(train), 4.75s(val & test)
+Epoch: 037, rocauc: 0.833(train), 0.834(valid), 0.796(test), loss: 0.112(train), 0.112(valid), 0.109(test), lr:0.01000 || time consumption: 7.24s(train), 4.90s(val & test)
+Epoch: 038, rocauc: 0.833(train), 0.837(valid), 0.807(test), loss: 0.112(train), 0.110(valid), 0.109(test), lr:0.01000 || time consumption: 8.12s(train), 6.17s(val & test)
+Epoch: 039, rocauc: 0.837(train), 0.845(valid), 0.813(test), loss: 0.112(train), 0.103(valid), 0.104(test), lr:0.01000 || time consumption: 7.35s(train), 4.23s(val & test)
+Epoch: 040, rocauc: 0.827(train), 0.843(valid), 0.814(test), loss: 0.113(train), 0.102(valid), 0.102(test), lr:0.01000 || time consumption: 7.68s(train), 5.60s(val & test)
+Epoch: 041, rocauc: 0.831(train), 0.839(valid), 0.797(test), loss: 0.112(train), 0.103(valid), 0.107(test), lr:0.01000 || time consumption: 7.07s(train), 6.62s(val & test)
+Epoch: 042, rocauc: 0.829(train), 0.829(valid), 0.803(test), loss: 0.111(train), 0.110(valid), 0.107(test), lr:0.01000 || time consumption: 6.69s(train), 6.26s(val & test)
+Epoch: 043, rocauc: 0.833(train), 0.839(valid), 0.812(test), loss: 0.111(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 7.93s(train), 6.64s(val & test)
+Epoch: 044, rocauc: 0.834(train), 0.850(valid), 0.803(test), loss: 0.111(train), 0.104(valid), 0.105(test), lr:0.01000 || time consumption: 7.22s(train), 6.72s(val & test)
+Epoch: 045, rocauc: 0.836(train), 0.845(valid), 0.808(test), loss: 0.111(train), 0.104(valid), 0.106(test), lr:0.01000 || time consumption: 8.02s(train), 6.55s(val & test)
+Epoch: 046, rocauc: 0.831(train), 0.843(valid), 0.813(test), loss: 0.113(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 7.05s(train), 5.59s(val & test)
+Epoch: 047, rocauc: 0.825(train), 0.840(valid), 0.810(test), loss: 0.113(train), 0.105(valid), 0.107(test), lr:0.01000 || time consumption: 6.06s(train), 6.22s(val & test)
+Epoch: 048, rocauc: 0.825(train), 0.853(valid), 0.818(test), loss: 0.113(train), 0.105(valid), 0.107(test), lr:0.01000 || time consumption: 6.85s(train), 6.47s(val & test)
+Epoch: 049, rocauc: 0.835(train), 0.842(valid), 0.808(test), loss: 0.112(train), 0.105(valid), 0.104(test), lr:0.01000 || time consumption: 7.57s(train), 6.62s(val & test)
+[32m[I 2023-04-13 13:53:40,485][0m Trial 0 finished with value: 0.8050855782672762 and parameters: {}. Best is trial 0 with value: 0.8050855782672762.[0m
+Epoch: 050, rocauc: 0.838(train), 0.830(valid), 0.795(test), loss: 0.110(train), 0.107(valid), 0.108(test), lr:0.01000 || time consumption: 7.03s(train), 6.24s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.738(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.54s(train), 7.68s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.803(valid), 0.758(test), loss: 0.139(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 7.81s(train), 6.69s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.798(valid), 0.774(test), loss: 0.135(train), 0.122(valid), 0.119(test), lr:0.01000 || time consumption: 7.77s(train), 6.45s(val & test)
+Epoch: 004, rocauc: 0.760(train), 0.793(valid), 0.780(test), loss: 0.131(train), 0.124(valid), 0.122(test), lr:0.01000 || time consumption: 8.18s(train), 7.02s(val & test)
+Epoch: 005, rocauc: 0.769(train), 0.823(valid), 0.801(test), loss: 0.128(train), 0.117(valid), 0.115(test), lr:0.01000 || time consumption: 7.45s(train), 7.08s(val & test)
+Epoch: 006, rocauc: 0.783(train), 0.827(valid), 0.780(test), loss: 0.125(train), 0.121(valid), 0.120(test), lr:0.01000 || time consumption: 6.87s(train), 5.70s(val & test)
+Epoch: 007, rocauc: 0.791(train), 0.829(valid), 0.798(test), loss: 0.122(train), 0.116(valid), 0.114(test), lr:0.01000 || time consumption: 7.05s(train), 5.97s(val & test)
+Epoch: 008, rocauc: 0.790(train), 0.832(valid), 0.787(test), loss: 0.123(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 6.64s(train), 5.15s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.810(valid), 0.801(test), loss: 0.120(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 8.11s(train), 8.42s(val & test)
+Epoch: 010, rocauc: 0.797(train), 0.830(valid), 0.818(test), loss: 0.120(train), 0.110(valid), 0.108(test), lr:0.01000 || time consumption: 8.82s(train), 8.43s(val & test)
+Epoch: 011, rocauc: 0.798(train), 0.849(valid), 0.818(test), loss: 0.119(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 7.81s(train), 6.60s(val & test)
+Epoch: 012, rocauc: 0.797(train), 0.843(valid), 0.812(test), loss: 0.120(train), 0.109(valid), 0.109(test), lr:0.01000 || time consumption: 7.63s(train), 5.54s(val & test)
+Epoch: 013, rocauc: 0.797(train), 0.828(valid), 0.817(test), loss: 0.121(train), 0.111(valid), 0.108(test), lr:0.01000 || time consumption: 7.60s(train), 4.61s(val & test)
+Epoch: 014, rocauc: 0.801(train), 0.845(valid), 0.815(test), loss: 0.118(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 7.39s(train), 5.13s(val & test)
+Epoch: 015, rocauc: 0.811(train), 0.838(valid), 0.809(test), loss: 0.116(train), 0.109(valid), 0.108(test), lr:0.01000 || time consumption: 7.77s(train), 5.95s(val & test)
+Epoch: 016, rocauc: 0.804(train), 0.813(valid), 0.802(test), loss: 0.117(train), 0.111(valid), 0.109(test), lr:0.01000 || time consumption: 6.40s(train), 5.15s(val & test)
+Epoch: 017, rocauc: 0.808(train), 0.833(valid), 0.812(test), loss: 0.117(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 8.76s(train), 7.00s(val & test)
+Epoch: 018, rocauc: 0.812(train), 0.819(valid), 0.808(test), loss: 0.117(train), 0.113(valid), 0.110(test), lr:0.01000 || time consumption: 7.94s(train), 4.31s(val & test)
+Epoch: 019, rocauc: 0.817(train), 0.835(valid), 0.815(test), loss: 0.116(train), 0.110(valid), 0.111(test), lr:0.01000 || time consumption: 7.60s(train), 5.72s(val & test)
+Epoch: 020, rocauc: 0.814(train), 0.837(valid), 0.819(test), loss: 0.116(train), 0.107(valid), 0.105(test), lr:0.01000 || time consumption: 6.51s(train), 5.12s(val & test)
+Epoch: 021, rocauc: 0.824(train), 0.842(valid), 0.822(test), loss: 0.114(train), 0.106(valid), 0.106(test), lr:0.01000 || time consumption: 7.55s(train), 6.97s(val & test)
+Epoch: 022, rocauc: 0.816(train), 0.834(valid), 0.800(test), loss: 0.115(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 8.02s(train), 5.11s(val & test)
+Epoch: 023, rocauc: 0.815(train), 0.846(valid), 0.820(test), loss: 0.116(train), 0.106(valid), 0.105(test), lr:0.01000 || time consumption: 7.72s(train), 6.45s(val & test)
+Epoch: 024, rocauc: 0.822(train), 0.864(valid), 0.826(test), loss: 0.113(train), 0.117(valid), 0.117(test), lr:0.01000 || time consumption: 8.11s(train), 7.87s(val & test)
+Epoch: 025, rocauc: 0.821(train), 0.834(valid), 0.807(test), loss: 0.113(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 7.25s(train), 5.78s(val & test)
+Epoch: 026, rocauc: 0.818(train), 0.817(valid), 0.798(test), loss: 0.113(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 7.79s(train), 5.65s(val & test)
+Epoch: 027, rocauc: 0.827(train), 0.860(valid), 0.799(test), loss: 0.113(train), 0.108(valid), 0.110(test), lr:0.01000 || time consumption: 7.45s(train), 5.62s(val & test)
+Epoch: 028, rocauc: 0.823(train), 0.851(valid), 0.818(test), loss: 0.114(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 7.38s(train), 7.17s(val & test)
+Epoch: 029, rocauc: 0.823(train), 0.842(valid), 0.810(test), loss: 0.114(train), 0.113(valid), 0.114(test), lr:0.01000 || time consumption: 6.65s(train), 8.16s(val & test)
+Epoch: 030, rocauc: 0.817(train), 0.838(valid), 0.814(test), loss: 0.115(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 9.60s(train), 5.92s(val & test)
+Epoch: 031, rocauc: 0.825(train), 0.850(valid), 0.827(test), loss: 0.112(train), 0.101(valid), 0.101(test), lr:0.01000 || time consumption: 7.71s(train), 7.06s(val & test)
+Epoch: 032, rocauc: 0.826(train), 0.837(valid), 0.811(test), loss: 0.113(train), 0.106(valid), 0.106(test), lr:0.01000 || time consumption: 8.21s(train), 6.24s(val & test)
+Epoch: 033, rocauc: 0.818(train), 0.833(valid), 0.815(test), loss: 0.114(train), 0.111(valid), 0.109(test), lr:0.01000 || time consumption: 7.43s(train), 6.32s(val & test)
+Epoch: 034, rocauc: 0.825(train), 0.832(valid), 0.803(test), loss: 0.113(train), 0.105(valid), 0.107(test), lr:0.01000 || time consumption: 7.24s(train), 7.43s(val & test)
+Epoch: 035, rocauc: 0.822(train), 0.844(valid), 0.820(test), loss: 0.115(train), 0.111(valid), 0.110(test), lr:0.01000 || time consumption: 7.66s(train), 4.83s(val & test)
+Epoch: 036, rocauc: 0.831(train), 0.851(valid), 0.817(test), loss: 0.112(train), 0.103(valid), 0.104(test), lr:0.01000 || time consumption: 6.65s(train), 7.07s(val & test)
+Epoch: 037, rocauc: 0.825(train), 0.833(valid), 0.819(test), loss: 0.113(train), 0.105(valid), 0.102(test), lr:0.01000 || time consumption: 7.25s(train), 6.06s(val & test)
+Epoch: 038, rocauc: 0.833(train), 0.834(valid), 0.811(test), loss: 0.111(train), 0.112(valid), 0.111(test), lr:0.01000 || time consumption: 8.04s(train), 5.85s(val & test)
+Epoch: 039, rocauc: 0.834(train), 0.845(valid), 0.823(test), loss: 0.111(train), 0.102(valid), 0.104(test), lr:0.01000 || time consumption: 7.46s(train), 5.33s(val & test)
+Epoch: 040, rocauc: 0.829(train), 0.848(valid), 0.820(test), loss: 0.111(train), 0.105(valid), 0.106(test), lr:0.01000 || time consumption: 9.32s(train), 7.78s(val & test)
+Epoch: 041, rocauc: 0.828(train), 0.833(valid), 0.786(test), loss: 0.113(train), 0.118(valid), 0.121(test), lr:0.01000 || time consumption: 6.40s(train), 5.33s(val & test)
+Epoch: 042, rocauc: 0.829(train), 0.820(valid), 0.804(test), loss: 0.113(train), 0.109(valid), 0.108(test), lr:0.01000 || time consumption: 10.08s(train), 6.36s(val & test)
+Epoch: 043, rocauc: 0.823(train), 0.838(valid), 0.820(test), loss: 0.112(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 8.36s(train), 6.22s(val & test)
+Epoch: 044, rocauc: 0.843(train), 0.845(valid), 0.808(test), loss: 0.110(train), 0.104(valid), 0.106(test), lr:0.01000 || time consumption: 8.36s(train), 6.09s(val & test)
+Epoch: 045, rocauc: 0.829(train), 0.844(valid), 0.819(test), loss: 0.111(train), 0.103(valid), 0.103(test), lr:0.01000 || time consumption: 6.58s(train), 4.74s(val & test)
+Epoch 00045: reducing learning rate of group 0 to 5.0000e-03.
+Epoch: 046, rocauc: 0.844(train), 0.860(valid), 0.821(test), loss: 0.109(train), 0.101(valid), 0.103(test), lr:0.00500 || time consumption: 7.72s(train), 4.84s(val & test)
+Epoch: 047, rocauc: 0.842(train), 0.848(valid), 0.821(test), loss: 0.108(train), 0.100(valid), 0.102(test), lr:0.00500 || time consumption: 7.28s(train), 5.94s(val & test)
+Epoch: 048, rocauc: 0.840(train), 0.866(valid), 0.831(test), loss: 0.107(train), 0.099(valid), 0.102(test), lr:0.00500 || time consumption: 8.97s(train), 5.70s(val & test)
+Epoch: 049, rocauc: 0.849(train), 0.847(valid), 0.818(test), loss: 0.107(train), 0.102(valid), 0.103(test), lr:0.00500 || time consumption: 7.44s(train), 5.80s(val & test)
+[32m[I 2023-04-13 14:05:17,003][0m Trial 1 finished with value: 0.8305644765179281 and parameters: {}. Best is trial 1 with value: 0.8305644765179281.[0m
+Epoch: 050, rocauc: 0.851(train), 0.840(valid), 0.811(test), loss: 0.106(train), 0.100(valid), 0.104(test), lr:0.00500 || time consumption: 7.35s(train), 6.08s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.702(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 8.39s(train), 8.21s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.800(valid), 0.761(test), loss: 0.139(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 8.08s(train), 5.39s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.796(valid), 0.766(test), loss: 0.135(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 6.41s(train), 6.99s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.795(valid), 0.771(test), loss: 0.131(train), 0.128(valid), 0.126(test), lr:0.01000 || time consumption: 6.84s(train), 6.89s(val & test)
+Epoch: 005, rocauc: 0.770(train), 0.822(valid), 0.801(test), loss: 0.128(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 6.94s(train), 5.92s(val & test)
+Epoch: 006, rocauc: 0.781(train), 0.832(valid), 0.787(test), loss: 0.126(train), 0.119(valid), 0.118(test), lr:0.01000 || time consumption: 7.64s(train), 6.37s(val & test)
+Epoch: 007, rocauc: 0.794(train), 0.811(valid), 0.797(test), loss: 0.122(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 8.02s(train), 6.40s(val & test)
+Epoch: 008, rocauc: 0.790(train), 0.827(valid), 0.789(test), loss: 0.123(train), 0.116(valid), 0.115(test), lr:0.01000 || time consumption: 7.62s(train), 6.21s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.813(valid), 0.792(test), loss: 0.121(train), 0.120(valid), 0.116(test), lr:0.01000 || time consumption: 7.44s(train), 5.37s(val & test)
+Epoch: 010, rocauc: 0.802(train), 0.846(valid), 0.823(test), loss: 0.119(train), 0.112(valid), 0.111(test), lr:0.01000 || time consumption: 8.43s(train), 6.36s(val & test)
+Epoch: 011, rocauc: 0.798(train), 0.850(valid), 0.808(test), loss: 0.120(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 6.93s(train), 5.58s(val & test)
+Epoch: 012, rocauc: 0.801(train), 0.840(valid), 0.802(test), loss: 0.119(train), 0.115(valid), 0.118(test), lr:0.01000 || time consumption: 7.22s(train), 6.95s(val & test)
+Epoch: 013, rocauc: 0.803(train), 0.844(valid), 0.820(test), loss: 0.120(train), 0.113(valid), 0.110(test), lr:0.01000 || time consumption: 7.57s(train), 6.00s(val & test)
+Epoch: 014, rocauc: 0.810(train), 0.827(valid), 0.814(test), loss: 0.117(train), 0.114(valid), 0.111(test), lr:0.01000 || time consumption: 6.86s(train), 5.31s(val & test)
+Epoch: 015, rocauc: 0.806(train), 0.855(valid), 0.813(test), loss: 0.116(train), 0.108(valid), 0.109(test), lr:0.01000 || time consumption: 7.89s(train), 6.52s(val & test)
+Epoch: 016, rocauc: 0.808(train), 0.807(valid), 0.804(test), loss: 0.117(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 6.57s(train), 5.88s(val & test)
+Epoch: 017, rocauc: 0.807(train), 0.833(valid), 0.823(test), loss: 0.118(train), 0.110(valid), 0.108(test), lr:0.01000 || time consumption: 7.95s(train), 5.00s(val & test)
+Epoch: 018, rocauc: 0.812(train), 0.839(valid), 0.821(test), loss: 0.117(train), 0.111(valid), 0.109(test), lr:0.01000 || time consumption: 7.51s(train), 4.72s(val & test)
+Epoch: 019, rocauc: 0.821(train), 0.842(valid), 0.811(test), loss: 0.115(train), 0.109(valid), 0.110(test), lr:0.01000 || time consumption: 6.07s(train), 5.16s(val & test)
+Epoch: 020, rocauc: 0.821(train), 0.842(valid), 0.813(test), loss: 0.115(train), 0.108(valid), 0.110(test), lr:0.01000 || time consumption: 6.15s(train), 5.46s(val & test)
+Epoch: 021, rocauc: 0.823(train), 0.857(valid), 0.808(test), loss: 0.114(train), 0.106(valid), 0.108(test), lr:0.01000 || time consumption: 8.04s(train), 6.24s(val & test)
+Epoch: 022, rocauc: 0.826(train), 0.838(valid), 0.817(test), loss: 0.114(train), 0.115(valid), 0.113(test), lr:0.01000 || time consumption: 7.21s(train), 6.41s(val & test)
+Epoch: 023, rocauc: 0.824(train), 0.842(valid), 0.814(test), loss: 0.114(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 7.01s(train), 6.90s(val & test)
+Epoch: 024, rocauc: 0.822(train), 0.858(valid), 0.816(test), loss: 0.114(train), 0.111(valid), 0.114(test), lr:0.01000 || time consumption: 6.83s(train), 4.77s(val & test)
+Epoch: 025, rocauc: 0.819(train), 0.840(valid), 0.811(test), loss: 0.114(train), 0.105(valid), 0.106(test), lr:0.01000 || time consumption: 7.20s(train), 5.80s(val & test)
+Epoch: 026, rocauc: 0.829(train), 0.828(valid), 0.799(test), loss: 0.112(train), 0.111(valid), 0.111(test), lr:0.01000 || time consumption: 6.57s(train), 5.45s(val & test)
+Epoch: 027, rocauc: 0.828(train), 0.863(valid), 0.814(test), loss: 0.113(train), 0.103(valid), 0.108(test), lr:0.01000 || time consumption: 6.64s(train), 4.60s(val & test)
+Epoch: 028, rocauc: 0.824(train), 0.857(valid), 0.822(test), loss: 0.114(train), 0.102(valid), 0.105(test), lr:0.01000 || time consumption: 7.00s(train), 6.12s(val & test)
+Epoch: 029, rocauc: 0.834(train), 0.847(valid), 0.810(test), loss: 0.112(train), 0.115(valid), 0.116(test), lr:0.01000 || time consumption: 7.22s(train), 6.37s(val & test)
+Epoch: 030, rocauc: 0.826(train), 0.830(valid), 0.813(test), loss: 0.114(train), 0.115(valid), 0.114(test), lr:0.01000 || time consumption: 6.80s(train), 5.95s(val & test)
+Epoch: 031, rocauc: 0.828(train), 0.840(valid), 0.814(test), loss: 0.112(train), 0.101(valid), 0.102(test), lr:0.01000 || time consumption: 7.29s(train), 6.14s(val & test)
+Epoch: 032, rocauc: 0.827(train), 0.830(valid), 0.803(test), loss: 0.113(train), 0.106(valid), 0.108(test), lr:0.01000 || time consumption: 5.76s(train), 5.69s(val & test)
+Epoch: 033, rocauc: 0.824(train), 0.841(valid), 0.822(test), loss: 0.114(train), 0.107(valid), 0.104(test), lr:0.01000 || time consumption: 6.44s(train), 4.84s(val & test)
+Epoch: 034, rocauc: 0.831(train), 0.834(valid), 0.805(test), loss: 0.112(train), 0.107(valid), 0.104(test), lr:0.01000 || time consumption: 7.82s(train), 6.37s(val & test)
+Epoch: 035, rocauc: 0.825(train), 0.853(valid), 0.810(test), loss: 0.114(train), 0.109(valid), 0.109(test), lr:0.01000 || time consumption: 7.51s(train), 7.87s(val & test)
+Epoch: 036, rocauc: 0.831(train), 0.851(valid), 0.816(test), loss: 0.112(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 7.63s(train), 5.34s(val & test)
+Epoch: 037, rocauc: 0.836(train), 0.834(valid), 0.814(test), loss: 0.112(train), 0.106(valid), 0.105(test), lr:0.01000 || time consumption: 7.70s(train), 5.73s(val & test)
+Epoch: 038, rocauc: 0.831(train), 0.829(valid), 0.812(test), loss: 0.112(train), 0.110(valid), 0.108(test), lr:0.01000 || time consumption: 6.61s(train), 5.36s(val & test)
+Epoch: 039, rocauc: 0.831(train), 0.862(valid), 0.824(test), loss: 0.112(train), 0.103(valid), 0.105(test), lr:0.01000 || time consumption: 6.98s(train), 5.47s(val & test)
+Epoch: 040, rocauc: 0.835(train), 0.853(valid), 0.812(test), loss: 0.112(train), 0.102(valid), 0.104(test), lr:0.01000 || time consumption: 7.64s(train), 5.82s(val & test)
+Epoch: 041, rocauc: 0.830(train), 0.840(valid), 0.789(test), loss: 0.113(train), 0.108(valid), 0.110(test), lr:0.01000 || time consumption: 7.97s(train), 6.32s(val & test)
+Epoch: 042, rocauc: 0.831(train), 0.846(valid), 0.814(test), loss: 0.112(train), 0.105(valid), 0.103(test), lr:0.01000 || time consumption: 6.60s(train), 6.00s(val & test)
+Epoch: 043, rocauc: 0.838(train), 0.838(valid), 0.820(test), loss: 0.110(train), 0.104(valid), 0.103(test), lr:0.01000 || time consumption: 6.17s(train), 7.67s(val & test)
+Epoch: 044, rocauc: 0.836(train), 0.840(valid), 0.806(test), loss: 0.112(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 6.72s(train), 5.23s(val & test)
+Epoch: 045, rocauc: 0.831(train), 0.842(valid), 0.816(test), loss: 0.112(train), 0.103(valid), 0.107(test), lr:0.01000 || time consumption: 7.35s(train), 7.22s(val & test)
+Epoch: 046, rocauc: 0.833(train), 0.860(valid), 0.813(test), loss: 0.112(train), 0.101(valid), 0.109(test), lr:0.01000 || time consumption: 8.62s(train), 5.94s(val & test)
+Epoch: 047, rocauc: 0.832(train), 0.844(valid), 0.815(test), loss: 0.112(train), 0.107(valid), 0.111(test), lr:0.01000 || time consumption: 7.25s(train), 4.42s(val & test)
+Epoch: 048, rocauc: 0.822(train), 0.859(valid), 0.824(test), loss: 0.115(train), 0.117(valid), 0.118(test), lr:0.01000 || time consumption: 7.66s(train), 6.00s(val & test)
+Epoch 00048: reducing learning rate of group 0 to 5.0000e-03.
+Epoch: 049, rocauc: 0.842(train), 0.855(valid), 0.821(test), loss: 0.109(train), 0.103(valid), 0.108(test), lr:0.00500 || time consumption: 7.81s(train), 6.23s(val & test)
+[32m[I 2023-04-13 14:16:19,436][0m Trial 2 finished with value: 0.8140287905693884 and parameters: {}. Best is trial 1 with value: 0.8305644765179281.[0m
+Epoch: 050, rocauc: 0.850(train), 0.838(valid), 0.807(test), loss: 0.107(train), 0.103(valid), 0.105(test), lr:0.00500 || time consumption: 8.20s(train), 4.39s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 6.52s(train), 6.55s(val & test)
+Epoch: 002, rocauc: 0.726(train), 0.805(valid), 0.768(test), loss: 0.139(train), 0.126(valid), 0.122(test), lr:0.01000 || time consumption: 6.45s(train), 6.62s(val & test)
+Epoch: 003, rocauc: 0.744(train), 0.797(valid), 0.771(test), loss: 0.135(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 7.04s(train), 5.59s(val & test)
+Epoch: 004, rocauc: 0.761(train), 0.804(valid), 0.777(test), loss: 0.131(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 7.46s(train), 5.90s(val & test)
+Epoch: 005, rocauc: 0.772(train), 0.821(valid), 0.791(test), loss: 0.128(train), 0.118(valid), 0.116(test), lr:0.01000 || time consumption: 8.11s(train), 7.93s(val & test)
+Epoch: 006, rocauc: 0.786(train), 0.834(valid), 0.792(test), loss: 0.125(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 7.35s(train), 5.10s(val & test)
+Epoch: 007, rocauc: 0.792(train), 0.811(valid), 0.789(test), loss: 0.123(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 7.55s(train), 6.40s(val & test)
+Epoch: 008, rocauc: 0.791(train), 0.839(valid), 0.791(test), loss: 0.123(train), 0.119(valid), 0.118(test), lr:0.01000 || time consumption: 8.31s(train), 6.74s(val & test)
+Epoch: 009, rocauc: 0.803(train), 0.810(valid), 0.806(test), loss: 0.121(train), 0.119(valid), 0.114(test), lr:0.01000 || time consumption: 8.16s(train), 5.93s(val & test)
+Epoch: 010, rocauc: 0.794(train), 0.838(valid), 0.816(test), loss: 0.121(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 7.69s(train), 5.89s(val & test)
+Epoch: 011, rocauc: 0.803(train), 0.851(valid), 0.799(test), loss: 0.119(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 8.14s(train), 4.56s(val & test)
+Epoch: 012, rocauc: 0.806(train), 0.838(valid), 0.797(test), loss: 0.119(train), 0.116(valid), 0.117(test), lr:0.01000 || time consumption: 7.51s(train), 5.48s(val & test)
+Epoch: 013, rocauc: 0.802(train), 0.839(valid), 0.813(test), loss: 0.120(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 8.85s(train), 5.31s(val & test)
+Epoch: 014, rocauc: 0.805(train), 0.850(valid), 0.812(test), loss: 0.119(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 7.19s(train), 6.22s(val & test)
+Epoch: 015, rocauc: 0.816(train), 0.850(valid), 0.803(test), loss: 0.116(train), 0.112(valid), 0.111(test), lr:0.01000 || time consumption: 8.69s(train), 5.47s(val & test)
+Epoch: 016, rocauc: 0.802(train), 0.816(valid), 0.812(test), loss: 0.118(train), 0.111(valid), 0.108(test), lr:0.01000 || time consumption: 7.31s(train), 6.68s(val & test)
+Epoch: 017, rocauc: 0.809(train), 0.829(valid), 0.810(test), loss: 0.116(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 7.31s(train), 4.24s(val & test)
+Epoch: 018, rocauc: 0.811(train), 0.810(valid), 0.795(test), loss: 0.118(train), 0.120(valid), 0.115(test), lr:0.01000 || time consumption: 8.51s(train), 5.85s(val & test)
+Epoch: 019, rocauc: 0.823(train), 0.831(valid), 0.803(test), loss: 0.115(train), 0.110(valid), 0.109(test), lr:0.01000 || time consumption: 8.24s(train), 5.22s(val & test)
+Epoch: 020, rocauc: 0.814(train), 0.830(valid), 0.807(test), loss: 0.117(train), 0.108(valid), 0.109(test), lr:0.01000 || time consumption: 6.95s(train), 6.06s(val & test)
+Epoch: 021, rocauc: 0.824(train), 0.850(valid), 0.816(test), loss: 0.114(train), 0.104(valid), 0.105(test), lr:0.01000 || time consumption: 7.16s(train), 6.38s(val & test)
+Epoch: 022, rocauc: 0.823(train), 0.837(valid), 0.813(test), loss: 0.114(train), 0.110(valid), 0.108(test), lr:0.01000 || time consumption: 7.07s(train), 6.85s(val & test)
+Epoch: 023, rocauc: 0.825(train), 0.856(valid), 0.818(test), loss: 0.114(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 7.77s(train), 6.42s(val & test)
+Epoch: 024, rocauc: 0.823(train), 0.864(valid), 0.816(test), loss: 0.114(train), 0.114(valid), 0.114(test), lr:0.01000 || time consumption: 6.26s(train), 4.79s(val & test)
+Epoch: 025, rocauc: 0.822(train), 0.844(valid), 0.816(test), loss: 0.113(train), 0.102(valid), 0.105(test), lr:0.01000 || time consumption: 6.66s(train), 5.29s(val & test)
+Epoch: 026, rocauc: 0.826(train), 0.829(valid), 0.804(test), loss: 0.112(train), 0.114(valid), 0.113(test), lr:0.01000 || time consumption: 6.64s(train), 7.08s(val & test)
+Epoch: 027, rocauc: 0.828(train), 0.863(valid), 0.807(test), loss: 0.113(train), 0.104(valid), 0.105(test), lr:0.01000 || time consumption: 6.93s(train), 7.09s(val & test)
+Epoch: 028, rocauc: 0.829(train), 0.848(valid), 0.830(test), loss: 0.113(train), 0.105(valid), 0.103(test), lr:0.01000 || time consumption: 7.40s(train), 5.85s(val & test)
+Epoch: 029, rocauc: 0.829(train), 0.846(valid), 0.806(test), loss: 0.113(train), 0.117(valid), 0.119(test), lr:0.01000 || time consumption: 8.02s(train), 7.68s(val & test)
+Epoch: 030, rocauc: 0.824(train), 0.847(valid), 0.818(test), loss: 0.114(train), 0.112(valid), 0.112(test), lr:0.01000 || time consumption: 6.52s(train), 5.28s(val & test)
+Epoch: 031, rocauc: 0.833(train), 0.840(valid), 0.812(test), loss: 0.111(train), 0.102(valid), 0.103(test), lr:0.01000 || time consumption: 5.66s(train), 4.57s(val & test)
+Epoch: 032, rocauc: 0.826(train), 0.830(valid), 0.814(test), loss: 0.114(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 6.83s(train), 5.76s(val & test)
+Epoch: 033, rocauc: 0.820(train), 0.831(valid), 0.806(test), loss: 0.113(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 7.71s(train), 6.24s(val & test)
+Epoch: 034, rocauc: 0.833(train), 0.837(valid), 0.815(test), loss: 0.112(train), 0.103(valid), 0.104(test), lr:0.01000 || time consumption: 6.35s(train), 6.40s(val & test)
+Epoch: 035, rocauc: 0.832(train), 0.840(valid), 0.810(test), loss: 0.112(train), 0.111(valid), 0.109(test), lr:0.01000 || time consumption: 6.48s(train), 5.38s(val & test)
+Epoch: 036, rocauc: 0.835(train), 0.841(valid), 0.811(test), loss: 0.110(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 9.03s(train), 6.24s(val & test)
+Epoch: 037, rocauc: 0.841(train), 0.830(valid), 0.807(test), loss: 0.110(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 8.13s(train), 6.45s(val & test)
+Epoch: 038, rocauc: 0.836(train), 0.843(valid), 0.813(test), loss: 0.110(train), 0.105(valid), 0.104(test), lr:0.01000 || time consumption: 7.25s(train), 5.60s(val & test)
+Epoch: 039, rocauc: 0.836(train), 0.841(valid), 0.815(test), loss: 0.111(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 7.25s(train), 5.74s(val & test)
+Epoch: 040, rocauc: 0.830(train), 0.843(valid), 0.802(test), loss: 0.111(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 7.40s(train), 4.34s(val & test)
+Epoch: 041, rocauc: 0.829(train), 0.841(valid), 0.785(test), loss: 0.114(train), 0.108(valid), 0.110(test), lr:0.01000 || time consumption: 6.46s(train), 5.72s(val & test)
+Epoch: 042, rocauc: 0.836(train), 0.843(valid), 0.805(test), loss: 0.111(train), 0.105(valid), 0.107(test), lr:0.01000 || time consumption: 6.90s(train), 5.38s(val & test)
+Epoch: 043, rocauc: 0.830(train), 0.843(valid), 0.827(test), loss: 0.110(train), 0.101(valid), 0.102(test), lr:0.01000 || time consumption: 7.38s(train), 4.55s(val & test)
+Epoch: 044, rocauc: 0.847(train), 0.856(valid), 0.809(test), loss: 0.109(train), 0.102(valid), 0.104(test), lr:0.01000 || time consumption: 7.41s(train), 5.86s(val & test)
+Epoch: 045, rocauc: 0.843(train), 0.831(valid), 0.799(test), loss: 0.110(train), 0.105(valid), 0.104(test), lr:0.01000 || time consumption: 7.24s(train), 5.44s(val & test)
+Epoch 00045: reducing learning rate of group 0 to 5.0000e-03.
+Epoch: 046, rocauc: 0.854(train), 0.857(valid), 0.812(test), loss: 0.107(train), 0.103(valid), 0.104(test), lr:0.00500 || time consumption: 5.71s(train), 6.86s(val & test)
+Epoch: 047, rocauc: 0.852(train), 0.847(valid), 0.810(test), loss: 0.106(train), 0.108(valid), 0.110(test), lr:0.00500 || time consumption: 7.91s(train), 5.26s(val & test)
+Epoch: 048, rocauc: 0.847(train), 0.865(valid), 0.821(test), loss: 0.107(train), 0.104(valid), 0.105(test), lr:0.00500 || time consumption: 7.83s(train), 6.21s(val & test)
+Epoch: 049, rocauc: 0.857(train), 0.860(valid), 0.817(test), loss: 0.105(train), 0.100(valid), 0.102(test), lr:0.00500 || time consumption: 8.17s(train), 7.11s(val & test)
+[32m[I 2023-04-13 14:27:26,639][0m Trial 3 finished with value: 0.821356783919598 and parameters: {}. Best is trial 1 with value: 0.8305644765179281.[0m
+Epoch: 050, rocauc: 0.859(train), 0.854(valid), 0.796(test), loss: 0.104(train), 0.100(valid), 0.104(test), lr:0.00500 || time consumption: 7.68s(train), 7.00s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 8.26s(train), 5.07s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.804(valid), 0.769(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 7.83s(train), 6.57s(val & test)
+Epoch: 003, rocauc: 0.741(train), 0.798(valid), 0.769(test), loss: 0.135(train), 0.123(valid), 0.122(test), lr:0.01000 || time consumption: 7.58s(train), 6.40s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.804(valid), 0.780(test), loss: 0.131(train), 0.122(valid), 0.121(test), lr:0.01000 || time consumption: 6.28s(train), 6.05s(val & test)
+Epoch: 005, rocauc: 0.772(train), 0.825(valid), 0.796(test), loss: 0.128(train), 0.117(valid), 0.115(test), lr:0.01000 || time consumption: 9.07s(train), 7.00s(val & test)
+Epoch: 006, rocauc: 0.785(train), 0.826(valid), 0.788(test), loss: 0.125(train), 0.119(valid), 0.118(test), lr:0.01000 || time consumption: 7.49s(train), 6.56s(val & test)
+Epoch: 007, rocauc: 0.791(train), 0.812(valid), 0.792(test), loss: 0.123(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 7.43s(train), 7.62s(val & test)
+Epoch: 008, rocauc: 0.789(train), 0.835(valid), 0.775(test), loss: 0.123(train), 0.118(valid), 0.118(test), lr:0.01000 || time consumption: 7.18s(train), 5.25s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.809(valid), 0.795(test), loss: 0.121(train), 0.119(valid), 0.116(test), lr:0.01000 || time consumption: 7.12s(train), 3.85s(val & test)
+Epoch: 010, rocauc: 0.797(train), 0.826(valid), 0.811(test), loss: 0.121(train), 0.114(valid), 0.112(test), lr:0.01000 || time consumption: 6.25s(train), 5.36s(val & test)
+Epoch: 011, rocauc: 0.804(train), 0.846(valid), 0.810(test), loss: 0.119(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 7.38s(train), 5.50s(val & test)
+Epoch: 012, rocauc: 0.806(train), 0.844(valid), 0.803(test), loss: 0.119(train), 0.112(valid), 0.112(test), lr:0.01000 || time consumption: 7.58s(train), 4.88s(val & test)
+Epoch: 013, rocauc: 0.800(train), 0.838(valid), 0.814(test), loss: 0.120(train), 0.113(valid), 0.111(test), lr:0.01000 || time consumption: 8.61s(train), 6.14s(val & test)
+Epoch: 014, rocauc: 0.806(train), 0.845(valid), 0.809(test), loss: 0.118(train), 0.111(valid), 0.110(test), lr:0.01000 || time consumption: 6.52s(train), 6.39s(val & test)
+Epoch: 015, rocauc: 0.813(train), 0.840(valid), 0.807(test), loss: 0.116(train), 0.114(valid), 0.112(test), lr:0.01000 || time consumption: 7.53s(train), 6.19s(val & test)
+Epoch: 016, rocauc: 0.804(train), 0.818(valid), 0.809(test), loss: 0.119(train), 0.115(valid), 0.112(test), lr:0.01000 || time consumption: 7.58s(train), 5.71s(val & test)
+Epoch: 017, rocauc: 0.810(train), 0.823(valid), 0.813(test), loss: 0.117(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 7.49s(train), 5.56s(val & test)
+Epoch: 018, rocauc: 0.809(train), 0.817(valid), 0.803(test), loss: 0.117(train), 0.123(valid), 0.120(test), lr:0.01000 || time consumption: 6.71s(train), 4.93s(val & test)
+Epoch: 019, rocauc: 0.818(train), 0.834(valid), 0.809(test), loss: 0.115(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 7.04s(train), 6.49s(val & test)
+Epoch: 020, rocauc: 0.817(train), 0.844(valid), 0.814(test), loss: 0.115(train), 0.105(valid), 0.108(test), lr:0.01000 || time consumption: 6.65s(train), 7.56s(val & test)
+Epoch: 021, rocauc: 0.824(train), 0.849(valid), 0.811(test), loss: 0.114(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 7.85s(train), 6.33s(val & test)
+Epoch: 022, rocauc: 0.821(train), 0.831(valid), 0.817(test), loss: 0.114(train), 0.112(valid), 0.109(test), lr:0.01000 || time consumption: 7.95s(train), 6.23s(val & test)
+Epoch: 023, rocauc: 0.819(train), 0.848(valid), 0.811(test), loss: 0.116(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 6.92s(train), 5.70s(val & test)
+Epoch: 024, rocauc: 0.821(train), 0.857(valid), 0.822(test), loss: 0.115(train), 0.113(valid), 0.114(test), lr:0.01000 || time consumption: 5.95s(train), 4.18s(val & test)
+Epoch: 025, rocauc: 0.819(train), 0.841(valid), 0.818(test), loss: 0.114(train), 0.105(valid), 0.106(test), lr:0.01000 || time consumption: 7.04s(train), 5.39s(val & test)
+Epoch: 026, rocauc: 0.827(train), 0.827(valid), 0.799(test), loss: 0.112(train), 0.110(valid), 0.111(test), lr:0.01000 || time consumption: 7.22s(train), 5.65s(val & test)
+Epoch: 027, rocauc: 0.828(train), 0.865(valid), 0.810(test), loss: 0.113(train), 0.103(valid), 0.104(test), lr:0.01000 || time consumption: 6.13s(train), 6.24s(val & test)
+Epoch: 028, rocauc: 0.826(train), 0.847(valid), 0.827(test), loss: 0.113(train), 0.104(valid), 0.103(test), lr:0.01000 || time consumption: 6.34s(train), 5.11s(val & test)
+Epoch: 029, rocauc: 0.827(train), 0.861(valid), 0.810(test), loss: 0.113(train), 0.112(valid), 0.114(test), lr:0.01000 || time consumption: 7.59s(train), 5.94s(val & test)
+Epoch: 030, rocauc: 0.821(train), 0.840(valid), 0.808(test), loss: 0.115(train), 0.113(valid), 0.113(test), lr:0.01000 || time consumption: 7.32s(train), 5.74s(val & test)
+Epoch: 031, rocauc: 0.831(train), 0.838(valid), 0.803(test), loss: 0.112(train), 0.105(valid), 0.107(test), lr:0.01000 || time consumption: 7.59s(train), 5.61s(val & test)
+Epoch: 032, rocauc: 0.824(train), 0.828(valid), 0.808(test), loss: 0.114(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 7.94s(train), 5.92s(val & test)
+Epoch: 033, rocauc: 0.816(train), 0.833(valid), 0.809(test), loss: 0.114(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 6.84s(train), 6.60s(val & test)
+Epoch: 034, rocauc: 0.838(train), 0.835(valid), 0.807(test), loss: 0.112(train), 0.105(valid), 0.106(test), lr:0.01000 || time consumption: 7.71s(train), 6.33s(val & test)
+Epoch: 035, rocauc: 0.826(train), 0.857(valid), 0.819(test), loss: 0.113(train), 0.107(valid), 0.108(test), lr:0.01000 || time consumption: 6.80s(train), 6.75s(val & test)
+Epoch: 036, rocauc: 0.832(train), 0.836(valid), 0.809(test), loss: 0.112(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 5.95s(train), 6.08s(val & test)
+Epoch: 037, rocauc: 0.838(train), 0.846(valid), 0.807(test), loss: 0.112(train), 0.103(valid), 0.105(test), lr:0.01000 || time consumption: 7.39s(train), 5.81s(val & test)
+Epoch: 038, rocauc: 0.828(train), 0.834(valid), 0.812(test), loss: 0.112(train), 0.110(valid), 0.109(test), lr:0.01000 || time consumption: 6.71s(train), 5.39s(val & test)
+Epoch: 039, rocauc: 0.831(train), 0.847(valid), 0.809(test), loss: 0.113(train), 0.113(valid), 0.111(test), lr:0.01000 || time consumption: 6.89s(train), 4.81s(val & test)
+Epoch: 040, rocauc: 0.835(train), 0.850(valid), 0.829(test), loss: 0.111(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 7.27s(train), 4.45s(val & test)
+Epoch: 041, rocauc: 0.833(train), 0.850(valid), 0.803(test), loss: 0.113(train), 0.106(valid), 0.109(test), lr:0.01000 || time consumption: 8.13s(train), 4.84s(val & test)
+Epoch: 042, rocauc: 0.828(train), 0.828(valid), 0.813(test), loss: 0.113(train), 0.110(valid), 0.108(test), lr:0.01000 || time consumption: 7.43s(train), 6.03s(val & test)
+Epoch: 043, rocauc: 0.822(train), 0.840(valid), 0.820(test), loss: 0.112(train), 0.102(valid), 0.104(test), lr:0.01000 || time consumption: 6.91s(train), 5.86s(val & test)
+Epoch: 044, rocauc: 0.841(train), 0.852(valid), 0.821(test), loss: 0.111(train), 0.104(valid), 0.105(test), lr:0.01000 || time consumption: 8.94s(train), 5.81s(val & test)
+Epoch: 045, rocauc: 0.836(train), 0.833(valid), 0.812(test), loss: 0.111(train), 0.106(valid), 0.107(test), lr:0.01000 || time consumption: 7.89s(train), 5.25s(val & test)
+Epoch: 046, rocauc: 0.834(train), 0.860(valid), 0.811(test), loss: 0.112(train), 0.103(valid), 0.106(test), lr:0.01000 || time consumption: 7.24s(train), 7.75s(val & test)
+Epoch: 047, rocauc: 0.831(train), 0.851(valid), 0.825(test), loss: 0.112(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 7.95s(train), 7.02s(val & test)
+Epoch: 048, rocauc: 0.829(train), 0.853(valid), 0.822(test), loss: 0.112(train), 0.115(valid), 0.115(test), lr:0.01000 || time consumption: 7.86s(train), 4.66s(val & test)
+Epoch 00048: reducing learning rate of group 0 to 5.0000e-03.
+Epoch: 049, rocauc: 0.844(train), 0.858(valid), 0.820(test), loss: 0.109(train), 0.102(valid), 0.104(test), lr:0.00500 || time consumption: 7.61s(train), 7.34s(val & test)
+[32m[I 2023-04-13 14:38:29,307][0m Trial 4 finished with value: 0.8101258170552008 and parameters: {}. Best is trial 1 with value: 0.8305644765179281.[0m
+Epoch: 050, rocauc: 0.853(train), 0.847(valid), 0.822(test), loss: 0.106(train), 0.101(valid), 0.102(test), lr:0.00500 || time consumption: 7.74s(train), 6.62s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:38:45,842][0m Trial 5 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.701(test), loss: 0.161(train), 0.137(valid), 0.133(test), lr:0.01000 || time consumption: 8.92s(train), 5.89s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:39:02,943][0m Trial 6 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 8.33s(train), 7.26s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:39:17,320][0m Trial 7 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.732(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 7.68s(train), 5.22s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:39:33,558][0m Trial 8 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.699(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.34s(train), 6.57s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:39:52,202][0m Trial 9 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.732(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.92s(train), 6.04s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.740(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.43s(train), 6.51s(val & test)
+[32m[I 2023-04-13 14:40:28,545][0m Trial 10 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.805(valid), 0.762(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 10.32s(train), 7.07s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.737(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 9.88s(train), 7.40s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.807(valid), 0.770(test), loss: 0.139(train), 0.126(valid), 0.122(test), lr:0.01000 || time consumption: 9.04s(train), 7.74s(val & test)
+Epoch: 003, rocauc: 0.741(train), 0.793(valid), 0.774(test), loss: 0.135(train), 0.125(valid), 0.122(test), lr:0.01000 || time consumption: 7.19s(train), 7.07s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.804(valid), 0.786(test), loss: 0.131(train), 0.120(valid), 0.117(test), lr:0.01000 || time consumption: 11.39s(train), 6.69s(val & test)
+Epoch: 005, rocauc: 0.772(train), 0.826(valid), 0.799(test), loss: 0.128(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 8.84s(train), 7.09s(val & test)
+Epoch: 006, rocauc: 0.784(train), 0.825(valid), 0.783(test), loss: 0.125(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 9.66s(train), 7.68s(val & test)
+Epoch: 007, rocauc: 0.788(train), 0.821(valid), 0.784(test), loss: 0.124(train), 0.122(valid), 0.119(test), lr:0.01000 || time consumption: 10.51s(train), 6.25s(val & test)
+Epoch: 008, rocauc: 0.789(train), 0.828(valid), 0.789(test), loss: 0.123(train), 0.117(valid), 0.115(test), lr:0.01000 || time consumption: 11.31s(train), 9.31s(val & test)
+Epoch: 009, rocauc: 0.801(train), 0.803(valid), 0.778(test), loss: 0.121(train), 0.122(valid), 0.119(test), lr:0.01000 || time consumption: 11.77s(train), 7.57s(val & test)
+[32m[I 2023-04-13 14:43:27,810][0m Trial 11 pruned. [0m
+Epoch: 010, rocauc: 0.800(train), 0.834(valid), 0.812(test), loss: 0.120(train), 0.112(valid), 0.110(test), lr:0.01000 || time consumption: 12.23s(train), 8.81s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.91s(train), 6.65s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.811(valid), 0.773(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 9.18s(train), 6.94s(val & test)
+Epoch: 003, rocauc: 0.744(train), 0.795(valid), 0.771(test), loss: 0.135(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 9.42s(train), 7.30s(val & test)
+[32m[I 2023-04-13 14:44:37,019][0m Trial 12 pruned. [0m
+Epoch: 004, rocauc: 0.760(train), 0.804(valid), 0.779(test), loss: 0.131(train), 0.121(valid), 0.120(test), lr:0.01000 || time consumption: 9.96s(train), 7.13s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:44:58,856][0m Trial 13 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 12.39s(train), 7.83s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.704(test), loss: 0.161(train), 0.137(valid), 0.133(test), lr:0.01000 || time consumption: 8.94s(train), 9.77s(val & test)
+[32m[I 2023-04-13 14:45:38,826][0m Trial 14 pruned. [0m
+Epoch: 002, rocauc: 0.728(train), 0.799(valid), 0.761(test), loss: 0.139(train), 0.127(valid), 0.125(test), lr:0.01000 || time consumption: 11.18s(train), 8.65s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.705(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 10.90s(train), 8.54s(val & test)
+[32m[I 2023-04-13 14:46:16,938][0m Trial 15 pruned. [0m
+Epoch: 002, rocauc: 0.729(train), 0.801(valid), 0.759(test), loss: 0.138(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 10.48s(train), 6.56s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.738(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 12.47s(train), 7.38s(val & test)
+[32m[I 2023-04-13 14:46:55,967][0m Trial 16 pruned. [0m
+Epoch: 002, rocauc: 0.728(train), 0.807(valid), 0.762(test), loss: 0.138(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 9.50s(train), 7.54s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:47:19,658][0m Trial 17 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.730(valid), 0.698(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 12.87s(train), 8.46s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:47:41,917][0m Trial 18 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.735(valid), 0.702(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 12.90s(train), 7.89s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.737(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 12.06s(train), 6.29s(val & test)
+Epoch: 002, rocauc: 0.729(train), 0.805(valid), 0.770(test), loss: 0.138(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 13.10s(train), 7.27s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.789(valid), 0.764(test), loss: 0.135(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 11.41s(train), 7.92s(val & test)
+Epoch: 004, rocauc: 0.760(train), 0.803(valid), 0.783(test), loss: 0.131(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 13.04s(train), 8.60s(val & test)
+[32m[I 2023-04-13 14:49:20,720][0m Trial 19 pruned. [0m
+Epoch: 005, rocauc: 0.772(train), 0.823(valid), 0.794(test), loss: 0.128(train), 0.119(valid), 0.117(test), lr:0.01000 || time consumption: 11.09s(train), 6.16s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:49:39,509][0m Trial 20 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 10.67s(train), 5.83s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:49:56,850][0m Trial 21 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.93s(train), 6.73s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:50:21,526][0m Trial 22 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.735(valid), 0.700(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 12.98s(train), 9.07s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:50:43,774][0m Trial 23 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.735(valid), 0.699(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 13.23s(train), 7.20s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:51:02,314][0m Trial 24 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.49s(train), 7.49s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 11.25s(train), 5.92s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.803(valid), 0.765(test), loss: 0.139(train), 0.127(valid), 0.123(test), lr:0.01000 || time consumption: 9.64s(train), 8.43s(val & test)
+Epoch: 003, rocauc: 0.740(train), 0.797(valid), 0.772(test), loss: 0.135(train), 0.125(valid), 0.122(test), lr:0.01000 || time consumption: 10.57s(train), 7.69s(val & test)
+Epoch: 004, rocauc: 0.757(train), 0.801(valid), 0.780(test), loss: 0.132(train), 0.121(valid), 0.119(test), lr:0.01000 || time consumption: 11.92s(train), 6.87s(val & test)
+[32m[I 2023-04-13 14:52:32,488][0m Trial 25 pruned. [0m
+Epoch: 005, rocauc: 0.771(train), 0.809(valid), 0.793(test), loss: 0.128(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 8.55s(train), 7.31s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 11.27s(train), 6.77s(val & test)
+Epoch: 002, rocauc: 0.729(train), 0.809(valid), 0.765(test), loss: 0.138(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 11.45s(train), 6.93s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.795(valid), 0.773(test), loss: 0.135(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 11.43s(train), 8.14s(val & test)
+[32m[I 2023-04-13 14:53:47,225][0m Trial 26 pruned. [0m
+Epoch: 004, rocauc: 0.758(train), 0.795(valid), 0.776(test), loss: 0.131(train), 0.129(valid), 0.127(test), lr:0.01000 || time consumption: 11.02s(train), 5.81s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.704(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.86s(train), 8.39s(val & test)
+[32m[I 2023-04-13 14:54:30,695][0m Trial 27 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.808(valid), 0.759(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 11.70s(train), 8.98s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:54:51,677][0m Trial 28 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.58s(train), 7.04s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:55:11,260][0m Trial 29 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.730(valid), 0.698(test), loss: 0.161(train), 0.140(valid), 0.135(test), lr:0.01000 || time consumption: 11.54s(train), 6.55s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.737(valid), 0.703(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 13.18s(train), 6.32s(val & test)
+[32m[I 2023-04-13 14:55:53,495][0m Trial 30 pruned. [0m
+Epoch: 002, rocauc: 0.729(train), 0.802(valid), 0.760(test), loss: 0.138(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 12.85s(train), 8.39s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.33s(train), 7.08s(val & test)
+Epoch: 002, rocauc: 0.726(train), 0.803(valid), 0.768(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 11.38s(train), 9.19s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.795(valid), 0.773(test), loss: 0.135(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 14.25s(train), 6.92s(val & test)
+[32m[I 2023-04-13 14:57:10,768][0m Trial 31 pruned. [0m
+Epoch: 004, rocauc: 0.759(train), 0.806(valid), 0.779(test), loss: 0.131(train), 0.120(valid), 0.119(test), lr:0.01000 || time consumption: 10.65s(train), 5.39s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:57:30,848][0m Trial 32 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.730(valid), 0.698(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.17s(train), 7.10s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:57:51,560][0m Trial 33 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.731(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 10.53s(train), 8.47s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 14:58:11,058][0m Trial 34 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.730(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.31s(train), 5.81s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.81s(train), 6.17s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.808(valid), 0.767(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 13.35s(train), 7.21s(val & test)
+Epoch: 003, rocauc: 0.741(train), 0.795(valid), 0.770(test), loss: 0.135(train), 0.122(valid), 0.121(test), lr:0.01000 || time consumption: 12.17s(train), 7.54s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.801(valid), 0.788(test), loss: 0.131(train), 0.127(valid), 0.125(test), lr:0.01000 || time consumption: 13.44s(train), 6.27s(val & test)
+Epoch: 005, rocauc: 0.770(train), 0.821(valid), 0.802(test), loss: 0.128(train), 0.116(valid), 0.114(test), lr:0.01000 || time consumption: 11.31s(train), 7.79s(val & test)
+Epoch: 006, rocauc: 0.781(train), 0.831(valid), 0.786(test), loss: 0.126(train), 0.117(valid), 0.116(test), lr:0.01000 || time consumption: 12.13s(train), 7.01s(val & test)
+Epoch: 007, rocauc: 0.791(train), 0.825(valid), 0.797(test), loss: 0.123(train), 0.119(valid), 0.116(test), lr:0.01000 || time consumption: 11.72s(train), 6.32s(val & test)
+Epoch: 008, rocauc: 0.787(train), 0.824(valid), 0.789(test), loss: 0.123(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 9.99s(train), 6.80s(val & test)
+Epoch: 009, rocauc: 0.801(train), 0.815(valid), 0.808(test), loss: 0.120(train), 0.119(valid), 0.115(test), lr:0.01000 || time consumption: 12.22s(train), 6.81s(val & test)
+[32m[I 2023-04-13 15:01:20,430][0m Trial 35 pruned. [0m
+Epoch: 010, rocauc: 0.795(train), 0.821(valid), 0.814(test), loss: 0.120(train), 0.113(valid), 0.111(test), lr:0.01000 || time consumption: 11.29s(train), 7.06s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:01:38,778][0m Trial 36 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.734(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 8.55s(train), 7.72s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:01:59,274][0m Trial 37 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.700(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 11.06s(train), 7.45s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:02:20,692][0m Trial 38 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 10.69s(train), 8.93s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.734(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.12s(train), 9.34s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.809(valid), 0.767(test), loss: 0.138(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 10.47s(train), 7.60s(val & test)
+Epoch: 003, rocauc: 0.741(train), 0.798(valid), 0.772(test), loss: 0.135(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 8.79s(train), 8.88s(val & test)
+[32m[I 2023-04-13 15:03:38,756][0m Trial 39 pruned. [0m
+Epoch: 004, rocauc: 0.759(train), 0.801(valid), 0.777(test), loss: 0.131(train), 0.130(valid), 0.128(test), lr:0.01000 || time consumption: 11.19s(train), 11.07s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:04:00,686][0m Trial 40 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 9.00s(train), 10.99s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.82s(train), 10.33s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.802(valid), 0.763(test), loss: 0.139(train), 0.127(valid), 0.123(test), lr:0.01000 || time consumption: 11.19s(train), 12.76s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.796(valid), 0.771(test), loss: 0.135(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 11.59s(train), 11.85s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.798(valid), 0.784(test), loss: 0.131(train), 0.129(valid), 0.126(test), lr:0.01000 || time consumption: 10.20s(train), 10.53s(val & test)
+Epoch: 005, rocauc: 0.769(train), 0.807(valid), 0.800(test), loss: 0.129(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 10.54s(train), 10.33s(val & test)
+Epoch: 006, rocauc: 0.778(train), 0.828(valid), 0.794(test), loss: 0.127(train), 0.118(valid), 0.117(test), lr:0.01000 || time consumption: 7.32s(train), 7.28s(val & test)
+Epoch: 007, rocauc: 0.793(train), 0.816(valid), 0.796(test), loss: 0.123(train), 0.117(valid), 0.115(test), lr:0.01000 || time consumption: 8.43s(train), 6.43s(val & test)
+Epoch: 008, rocauc: 0.788(train), 0.820(valid), 0.779(test), loss: 0.123(train), 0.116(valid), 0.114(test), lr:0.01000 || time consumption: 8.60s(train), 8.05s(val & test)
+Epoch: 009, rocauc: 0.802(train), 0.806(valid), 0.788(test), loss: 0.121(train), 0.126(valid), 0.122(test), lr:0.01000 || time consumption: 9.39s(train), 7.52s(val & test)
+Epoch: 010, rocauc: 0.807(train), 0.833(valid), 0.817(test), loss: 0.119(train), 0.113(valid), 0.110(test), lr:0.01000 || time consumption: 9.97s(train), 8.04s(val & test)
+Epoch: 011, rocauc: 0.805(train), 0.838(valid), 0.810(test), loss: 0.119(train), 0.110(valid), 0.108(test), lr:0.01000 || time consumption: 10.79s(train), 7.36s(val & test)
+Epoch: 012, rocauc: 0.800(train), 0.836(valid), 0.808(test), loss: 0.119(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 9.32s(train), 7.33s(val & test)
+Epoch: 013, rocauc: 0.798(train), 0.822(valid), 0.808(test), loss: 0.120(train), 0.120(valid), 0.117(test), lr:0.01000 || time consumption: 8.01s(train), 6.71s(val & test)
+Epoch: 014, rocauc: 0.809(train), 0.838(valid), 0.815(test), loss: 0.118(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 8.37s(train), 7.64s(val & test)
+Epoch: 015, rocauc: 0.810(train), 0.846(valid), 0.805(test), loss: 0.116(train), 0.113(valid), 0.113(test), lr:0.01000 || time consumption: 9.78s(train), 6.16s(val & test)
+Epoch: 016, rocauc: 0.806(train), 0.790(valid), 0.790(test), loss: 0.117(train), 0.127(valid), 0.119(test), lr:0.01000 || time consumption: 7.37s(train), 5.08s(val & test)
+Epoch: 017, rocauc: 0.811(train), 0.829(valid), 0.814(test), loss: 0.118(train), 0.112(valid), 0.110(test), lr:0.01000 || time consumption: 8.91s(train), 5.97s(val & test)
+Epoch: 018, rocauc: 0.822(train), 0.821(valid), 0.806(test), loss: 0.116(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 7.16s(train), 7.52s(val & test)
+Epoch: 019, rocauc: 0.826(train), 0.828(valid), 0.802(test), loss: 0.115(train), 0.108(valid), 0.108(test), lr:0.01000 || time consumption: 7.24s(train), 5.35s(val & test)
+Epoch: 020, rocauc: 0.820(train), 0.823(valid), 0.803(test), loss: 0.116(train), 0.116(valid), 0.116(test), lr:0.01000 || time consumption: 8.77s(train), 6.74s(val & test)
+Epoch: 021, rocauc: 0.824(train), 0.837(valid), 0.808(test), loss: 0.114(train), 0.109(valid), 0.108(test), lr:0.01000 || time consumption: 8.13s(train), 7.00s(val & test)
+Epoch: 022, rocauc: 0.823(train), 0.830(valid), 0.806(test), loss: 0.114(train), 0.113(valid), 0.108(test), lr:0.01000 || time consumption: 9.11s(train), 9.20s(val & test)
+Epoch: 023, rocauc: 0.824(train), 0.841(valid), 0.818(test), loss: 0.116(train), 0.106(valid), 0.105(test), lr:0.01000 || time consumption: 7.86s(train), 6.19s(val & test)
+Epoch: 024, rocauc: 0.825(train), 0.852(valid), 0.810(test), loss: 0.114(train), 0.116(valid), 0.116(test), lr:0.01000 || time consumption: 7.47s(train), 8.07s(val & test)
+Epoch: 025, rocauc: 0.819(train), 0.824(valid), 0.795(test), loss: 0.114(train), 0.110(valid), 0.111(test), lr:0.01000 || time consumption: 8.70s(train), 6.91s(val & test)
+Epoch: 026, rocauc: 0.825(train), 0.843(valid), 0.809(test), loss: 0.113(train), 0.113(valid), 0.113(test), lr:0.01000 || time consumption: 9.66s(train), 7.72s(val & test)
+Epoch: 027, rocauc: 0.826(train), 0.860(valid), 0.792(test), loss: 0.114(train), 0.113(valid), 0.115(test), lr:0.01000 || time consumption: 8.53s(train), 7.57s(val & test)
+[32m[I 2023-04-13 15:11:52,957][0m Trial 41 pruned. [0m
+Epoch: 028, rocauc: 0.826(train), 0.847(valid), 0.820(test), loss: 0.114(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 8.62s(train), 8.19s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.738(valid), 0.705(test), loss: 0.161(train), 0.137(valid), 0.133(test), lr:0.01000 || time consumption: 10.04s(train), 8.01s(val & test)
+Epoch: 002, rocauc: 0.729(train), 0.806(valid), 0.766(test), loss: 0.138(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 9.42s(train), 8.49s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.795(valid), 0.772(test), loss: 0.135(train), 0.124(valid), 0.121(test), lr:0.01000 || time consumption: 7.31s(train), 5.47s(val & test)
+Epoch: 004, rocauc: 0.758(train), 0.805(valid), 0.781(test), loss: 0.131(train), 0.133(valid), 0.131(test), lr:0.01000 || time consumption: 6.10s(train), 6.72s(val & test)
+Epoch: 005, rocauc: 0.771(train), 0.823(valid), 0.799(test), loss: 0.128(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 7.70s(train), 8.34s(val & test)
+Epoch: 006, rocauc: 0.787(train), 0.828(valid), 0.793(test), loss: 0.125(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 9.69s(train), 7.30s(val & test)
+Epoch: 007, rocauc: 0.796(train), 0.829(valid), 0.806(test), loss: 0.122(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 9.32s(train), 6.46s(val & test)
+Epoch: 008, rocauc: 0.789(train), 0.830(valid), 0.792(test), loss: 0.123(train), 0.114(valid), 0.112(test), lr:0.01000 || time consumption: 7.65s(train), 5.95s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.813(valid), 0.796(test), loss: 0.121(train), 0.118(valid), 0.114(test), lr:0.01000 || time consumption: 8.57s(train), 6.95s(val & test)
+Epoch: 010, rocauc: 0.799(train), 0.830(valid), 0.817(test), loss: 0.120(train), 0.113(valid), 0.111(test), lr:0.01000 || time consumption: 8.06s(train), 7.43s(val & test)
+Epoch: 011, rocauc: 0.804(train), 0.843(valid), 0.814(test), loss: 0.119(train), 0.110(valid), 0.109(test), lr:0.01000 || time consumption: 9.60s(train), 6.36s(val & test)
+Epoch: 012, rocauc: 0.805(train), 0.834(valid), 0.803(test), loss: 0.118(train), 0.112(valid), 0.113(test), lr:0.01000 || time consumption: 7.81s(train), 5.09s(val & test)
+Epoch: 013, rocauc: 0.802(train), 0.843(valid), 0.815(test), loss: 0.120(train), 0.117(valid), 0.113(test), lr:0.01000 || time consumption: 9.31s(train), 7.06s(val & test)
+Epoch: 014, rocauc: 0.801(train), 0.842(valid), 0.813(test), loss: 0.119(train), 0.114(valid), 0.111(test), lr:0.01000 || time consumption: 8.07s(train), 7.51s(val & test)
+Epoch: 015, rocauc: 0.810(train), 0.848(valid), 0.800(test), loss: 0.116(train), 0.111(valid), 0.112(test), lr:0.01000 || time consumption: 8.89s(train), 7.23s(val & test)
+Epoch: 016, rocauc: 0.805(train), 0.807(valid), 0.797(test), loss: 0.117(train), 0.117(valid), 0.113(test), lr:0.01000 || time consumption: 8.39s(train), 7.07s(val & test)
+Epoch: 017, rocauc: 0.817(train), 0.818(valid), 0.807(test), loss: 0.116(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 8.08s(train), 6.79s(val & test)
+Epoch: 018, rocauc: 0.806(train), 0.821(valid), 0.805(test), loss: 0.119(train), 0.111(valid), 0.110(test), lr:0.01000 || time consumption: 9.32s(train), 6.62s(val & test)
+Epoch: 019, rocauc: 0.827(train), 0.834(valid), 0.812(test), loss: 0.115(train), 0.107(valid), 0.108(test), lr:0.01000 || time consumption: 8.57s(train), 7.39s(val & test)
+Epoch: 020, rocauc: 0.817(train), 0.843(valid), 0.813(test), loss: 0.116(train), 0.106(valid), 0.109(test), lr:0.01000 || time consumption: 8.50s(train), 7.56s(val & test)
+Epoch: 021, rocauc: 0.820(train), 0.850(valid), 0.816(test), loss: 0.114(train), 0.103(valid), 0.105(test), lr:0.01000 || time consumption: 7.83s(train), 8.15s(val & test)
+Epoch: 022, rocauc: 0.823(train), 0.841(valid), 0.819(test), loss: 0.115(train), 0.111(valid), 0.109(test), lr:0.01000 || time consumption: 9.30s(train), 7.79s(val & test)
+Epoch: 023, rocauc: 0.815(train), 0.851(valid), 0.817(test), loss: 0.115(train), 0.104(valid), 0.106(test), lr:0.01000 || time consumption: 8.39s(train), 9.44s(val & test)
+Epoch: 024, rocauc: 0.818(train), 0.859(valid), 0.815(test), loss: 0.115(train), 0.115(valid), 0.116(test), lr:0.01000 || time consumption: 8.69s(train), 6.85s(val & test)
+Epoch: 025, rocauc: 0.820(train), 0.846(valid), 0.811(test), loss: 0.114(train), 0.107(valid), 0.109(test), lr:0.01000 || time consumption: 8.56s(train), 7.50s(val & test)
+Epoch: 026, rocauc: 0.829(train), 0.829(valid), 0.798(test), loss: 0.112(train), 0.125(valid), 0.126(test), lr:0.01000 || time consumption: 7.88s(train), 7.68s(val & test)
+Epoch: 027, rocauc: 0.827(train), 0.843(valid), 0.777(test), loss: 0.112(train), 0.114(valid), 0.116(test), lr:0.01000 || time consumption: 9.87s(train), 7.40s(val & test)
+[32m[I 2023-04-13 15:19:15,736][0m Trial 42 pruned. [0m
+Epoch: 028, rocauc: 0.818(train), 0.857(valid), 0.816(test), loss: 0.115(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 8.22s(train), 7.33s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.738(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.31s(train), 5.75s(val & test)
+[32m[I 2023-04-13 15:19:49,480][0m Trial 43 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.806(valid), 0.761(test), loss: 0.139(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 8.96s(train), 7.81s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:20:06,022][0m Trial 44 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.731(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 9.18s(train), 5.58s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 9.45s(train), 4.95s(val & test)
+[32m[I 2023-04-13 15:20:39,029][0m Trial 45 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.797(valid), 0.758(test), loss: 0.139(train), 0.128(valid), 0.125(test), lr:0.01000 || time consumption: 10.15s(train), 7.12s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.739(valid), 0.704(test), loss: 0.161(train), 0.137(valid), 0.133(test), lr:0.01000 || time consumption: 10.40s(train), 7.20s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.803(valid), 0.766(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 10.16s(train), 5.64s(val & test)
+[32m[I 2023-04-13 15:21:29,403][0m Trial 46 pruned. [0m
+Epoch: 003, rocauc: 0.743(train), 0.792(valid), 0.768(test), loss: 0.135(train), 0.128(valid), 0.126(test), lr:0.01000 || time consumption: 7.39s(train), 7.86s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.737(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 7.82s(train), 6.25s(val & test)
+[32m[I 2023-04-13 15:22:03,776][0m Trial 47 pruned. [0m
+Epoch: 002, rocauc: 0.728(train), 0.797(valid), 0.761(test), loss: 0.139(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 10.91s(train), 7.41s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:22:21,406][0m Trial 48 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 9.90s(train), 6.33s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:22:40,535][0m Trial 49 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.76s(train), 7.62s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:23:01,748][0m Trial 50 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 10.91s(train), 8.45s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.18s(train), 7.43s(val & test)
+[32m[I 2023-04-13 15:23:37,989][0m Trial 51 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.801(valid), 0.757(test), loss: 0.139(train), 0.127(valid), 0.124(test), lr:0.01000 || time consumption: 10.86s(train), 6.25s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:23:57,737][0m Trial 52 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.732(valid), 0.699(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 12.15s(train), 5.72s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.739(valid), 0.705(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 8.30s(train), 6.74s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.807(valid), 0.765(test), loss: 0.138(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 10.13s(train), 10.19s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.793(valid), 0.773(test), loss: 0.135(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 13.37s(train), 7.93s(val & test)
+[32m[I 2023-04-13 15:25:14,212][0m Trial 53 pruned. [0m
+Epoch: 004, rocauc: 0.759(train), 0.803(valid), 0.778(test), loss: 0.131(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 10.42s(train), 7.81s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:25:33,498][0m Trial 54 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.732(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 10.15s(train), 8.02s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 12.07s(train), 7.81s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.806(valid), 0.763(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 11.08s(train), 6.21s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.796(valid), 0.771(test), loss: 0.135(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 9.85s(train), 7.56s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.803(valid), 0.780(test), loss: 0.131(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 10.20s(train), 7.86s(val & test)
+[32m[I 2023-04-13 15:27:06,282][0m Trial 55 pruned. [0m
+Epoch: 005, rocauc: 0.771(train), 0.808(valid), 0.783(test), loss: 0.128(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 10.49s(train), 7.90s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.738(valid), 0.704(test), loss: 0.161(train), 0.137(valid), 0.133(test), lr:0.01000 || time consumption: 11.67s(train), 7.59s(val & test)
+Epoch: 002, rocauc: 0.726(train), 0.815(valid), 0.772(test), loss: 0.139(train), 0.125(valid), 0.122(test), lr:0.01000 || time consumption: 9.51s(train), 7.33s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.799(valid), 0.774(test), loss: 0.135(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 10.08s(train), 7.94s(val & test)
+Epoch: 004, rocauc: 0.758(train), 0.802(valid), 0.780(test), loss: 0.131(train), 0.125(valid), 0.124(test), lr:0.01000 || time consumption: 9.81s(train), 7.53s(val & test)
+Epoch: 005, rocauc: 0.769(train), 0.817(valid), 0.800(test), loss: 0.128(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 10.14s(train), 6.32s(val & test)
+Epoch: 006, rocauc: 0.783(train), 0.829(valid), 0.796(test), loss: 0.126(train), 0.119(valid), 0.117(test), lr:0.01000 || time consumption: 8.50s(train), 5.73s(val & test)
+Epoch: 007, rocauc: 0.794(train), 0.828(valid), 0.802(test), loss: 0.122(train), 0.113(valid), 0.113(test), lr:0.01000 || time consumption: 10.27s(train), 6.93s(val & test)
+Epoch: 008, rocauc: 0.793(train), 0.826(valid), 0.798(test), loss: 0.123(train), 0.119(valid), 0.116(test), lr:0.01000 || time consumption: 10.08s(train), 5.33s(val & test)
+Epoch: 009, rocauc: 0.794(train), 0.794(valid), 0.784(test), loss: 0.121(train), 0.124(valid), 0.120(test), lr:0.01000 || time consumption: 8.30s(train), 9.36s(val & test)
+[32m[I 2023-04-13 15:29:57,457][0m Trial 56 pruned. [0m
+Epoch: 010, rocauc: 0.799(train), 0.829(valid), 0.814(test), loss: 0.120(train), 0.113(valid), 0.110(test), lr:0.01000 || time consumption: 10.55s(train), 7.00s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:30:16,901][0m Trial 57 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.730(valid), 0.698(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.03s(train), 7.75s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 9.25s(train), 7.97s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.810(valid), 0.764(test), loss: 0.139(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 11.51s(train), 7.61s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.791(valid), 0.772(test), loss: 0.135(train), 0.123(valid), 0.120(test), lr:0.01000 || time consumption: 8.89s(train), 8.30s(val & test)
+Epoch: 004, rocauc: 0.758(train), 0.797(valid), 0.788(test), loss: 0.131(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 10.98s(train), 7.60s(val & test)
+Epoch: 005, rocauc: 0.769(train), 0.811(valid), 0.799(test), loss: 0.129(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 9.38s(train), 9.80s(val & test)
+Epoch: 006, rocauc: 0.781(train), 0.839(valid), 0.790(test), loss: 0.126(train), 0.117(valid), 0.116(test), lr:0.01000 || time consumption: 11.16s(train), 9.31s(val & test)
+Epoch: 007, rocauc: 0.793(train), 0.818(valid), 0.796(test), loss: 0.123(train), 0.123(valid), 0.119(test), lr:0.01000 || time consumption: 10.72s(train), 7.45s(val & test)
+Epoch: 008, rocauc: 0.789(train), 0.820(valid), 0.793(test), loss: 0.123(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 13.85s(train), 9.26s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.818(valid), 0.792(test), loss: 0.121(train), 0.125(valid), 0.123(test), lr:0.01000 || time consumption: 13.10s(train), 10.17s(val & test)
+Epoch: 010, rocauc: 0.795(train), 0.832(valid), 0.819(test), loss: 0.120(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 11.90s(train), 11.04s(val & test)
+Epoch: 011, rocauc: 0.798(train), 0.842(valid), 0.805(test), loss: 0.121(train), 0.109(valid), 0.109(test), lr:0.01000 || time consumption: 12.75s(train), 10.09s(val & test)
+Epoch: 012, rocauc: 0.799(train), 0.840(valid), 0.808(test), loss: 0.120(train), 0.109(valid), 0.111(test), lr:0.01000 || time consumption: 12.93s(train), 12.14s(val & test)
+Epoch: 013, rocauc: 0.800(train), 0.831(valid), 0.812(test), loss: 0.121(train), 0.120(valid), 0.115(test), lr:0.01000 || time consumption: 17.36s(train), 10.53s(val & test)
+Epoch: 014, rocauc: 0.805(train), 0.832(valid), 0.802(test), loss: 0.118(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 13.93s(train), 10.32s(val & test)
+Epoch: 015, rocauc: 0.811(train), 0.847(valid), 0.804(test), loss: 0.116(train), 0.111(valid), 0.110(test), lr:0.01000 || time consumption: 17.15s(train), 12.49s(val & test)
+Epoch: 016, rocauc: 0.806(train), 0.800(valid), 0.801(test), loss: 0.117(train), 0.115(valid), 0.111(test), lr:0.01000 || time consumption: 16.93s(train), 11.30s(val & test)
+Epoch: 017, rocauc: 0.810(train), 0.834(valid), 0.812(test), loss: 0.117(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 15.42s(train), 9.72s(val & test)
+Epoch: 018, rocauc: 0.815(train), 0.821(valid), 0.803(test), loss: 0.116(train), 0.113(valid), 0.110(test), lr:0.01000 || time consumption: 16.12s(train), 13.76s(val & test)
+Epoch: 019, rocauc: 0.822(train), 0.837(valid), 0.801(test), loss: 0.115(train), 0.121(valid), 0.121(test), lr:0.01000 || time consumption: 14.08s(train), 10.54s(val & test)
+Epoch: 020, rocauc: 0.812(train), 0.832(valid), 0.817(test), loss: 0.117(train), 0.106(valid), 0.106(test), lr:0.01000 || time consumption: 17.64s(train), 12.02s(val & test)
+Epoch: 021, rocauc: 0.820(train), 0.843(valid), 0.814(test), loss: 0.115(train), 0.102(valid), 0.104(test), lr:0.01000 || time consumption: 14.94s(train), 7.78s(val & test)
+Epoch: 022, rocauc: 0.821(train), 0.815(valid), 0.810(test), loss: 0.114(train), 0.116(valid), 0.112(test), lr:0.01000 || time consumption: 10.98s(train), 9.71s(val & test)
+Epoch: 023, rocauc: 0.818(train), 0.835(valid), 0.815(test), loss: 0.116(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 12.87s(train), 6.87s(val & test)
+Epoch: 024, rocauc: 0.821(train), 0.853(valid), 0.814(test), loss: 0.114(train), 0.110(valid), 0.109(test), lr:0.01000 || time consumption: 14.78s(train), 10.06s(val & test)
+Epoch: 025, rocauc: 0.821(train), 0.842(valid), 0.808(test), loss: 0.113(train), 0.105(valid), 0.109(test), lr:0.01000 || time consumption: 13.63s(train), 11.13s(val & test)
+Epoch: 026, rocauc: 0.825(train), 0.839(valid), 0.809(test), loss: 0.113(train), 0.107(valid), 0.108(test), lr:0.01000 || time consumption: 16.54s(train), 10.17s(val & test)
+Epoch: 027, rocauc: 0.825(train), 0.865(valid), 0.803(test), loss: 0.113(train), 0.109(valid), 0.110(test), lr:0.01000 || time consumption: 13.06s(train), 12.94s(val & test)
+Epoch: 028, rocauc: 0.826(train), 0.838(valid), 0.824(test), loss: 0.114(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 15.05s(train), 11.26s(val & test)
+Epoch: 029, rocauc: 0.826(train), 0.854(valid), 0.815(test), loss: 0.113(train), 0.116(valid), 0.116(test), lr:0.01000 || time consumption: 11.64s(train), 10.88s(val & test)
+Epoch: 030, rocauc: 0.824(train), 0.838(valid), 0.815(test), loss: 0.115(train), 0.106(valid), 0.106(test), lr:0.01000 || time consumption: 14.91s(train), 12.67s(val & test)
+Epoch: 031, rocauc: 0.828(train), 0.840(valid), 0.809(test), loss: 0.112(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 14.09s(train), 11.78s(val & test)
+Epoch: 032, rocauc: 0.821(train), 0.824(valid), 0.795(test), loss: 0.115(train), 0.106(valid), 0.108(test), lr:0.01000 || time consumption: 17.15s(train), 10.49s(val & test)
+Epoch: 033, rocauc: 0.824(train), 0.830(valid), 0.809(test), loss: 0.113(train), 0.108(valid), 0.107(test), lr:0.01000 || time consumption: 16.91s(train), 9.99s(val & test)
+Epoch: 034, rocauc: 0.827(train), 0.828(valid), 0.803(test), loss: 0.111(train), 0.104(valid), 0.105(test), lr:0.01000 || time consumption: 13.12s(train), 12.42s(val & test)
+Epoch: 035, rocauc: 0.832(train), 0.850(valid), 0.821(test), loss: 0.114(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 15.93s(train), 9.92s(val & test)
+Epoch: 036, rocauc: 0.829(train), 0.843(valid), 0.807(test), loss: 0.112(train), 0.109(valid), 0.111(test), lr:0.01000 || time consumption: 14.11s(train), 11.78s(val & test)
+Epoch: 037, rocauc: 0.837(train), 0.827(valid), 0.800(test), loss: 0.111(train), 0.112(valid), 0.109(test), lr:0.01000 || time consumption: 11.86s(train), 8.84s(val & test)
+Epoch: 038, rocauc: 0.827(train), 0.844(valid), 0.817(test), loss: 0.113(train), 0.111(valid), 0.109(test), lr:0.01000 || time consumption: 11.91s(train), 9.09s(val & test)
+Epoch: 039, rocauc: 0.832(train), 0.839(valid), 0.800(test), loss: 0.113(train), 0.110(valid), 0.109(test), lr:0.01000 || time consumption: 9.89s(train), 8.69s(val & test)
+Epoch: 040, rocauc: 0.829(train), 0.833(valid), 0.807(test), loss: 0.112(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 15.30s(train), 9.57s(val & test)
+Epoch: 041, rocauc: 0.826(train), 0.847(valid), 0.791(test), loss: 0.114(train), 0.105(valid), 0.109(test), lr:0.01000 || time consumption: 13.05s(train), 13.26s(val & test)
+Epoch: 042, rocauc: 0.829(train), 0.829(valid), 0.807(test), loss: 0.113(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 19.35s(train), 13.20s(val & test)
+Epoch: 043, rocauc: 0.830(train), 0.832(valid), 0.812(test), loss: 0.111(train), 0.104(valid), 0.103(test), lr:0.01000 || time consumption: 17.48s(train), 13.85s(val & test)
+Epoch: 044, rocauc: 0.844(train), 0.834(valid), 0.803(test), loss: 0.110(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 17.54s(train), 13.44s(val & test)
+Epoch: 045, rocauc: 0.836(train), 0.835(valid), 0.806(test), loss: 0.112(train), 0.110(valid), 0.110(test), lr:0.01000 || time consumption: 14.87s(train), 10.85s(val & test)
+Epoch: 046, rocauc: 0.832(train), 0.847(valid), 0.807(test), loss: 0.112(train), 0.107(valid), 0.108(test), lr:0.01000 || time consumption: 16.48s(train), 10.00s(val & test)
+Epoch: 047, rocauc: 0.831(train), 0.851(valid), 0.809(test), loss: 0.112(train), 0.115(valid), 0.115(test), lr:0.01000 || time consumption: 18.05s(train), 11.62s(val & test)
+Epoch: 048, rocauc: 0.827(train), 0.861(valid), 0.810(test), loss: 0.113(train), 0.104(valid), 0.106(test), lr:0.01000 || time consumption: 12.96s(train), 15.04s(val & test)
+Epoch 00048: reducing learning rate of group 0 to 5.0000e-03.
+Epoch: 049, rocauc: 0.847(train), 0.854(valid), 0.801(test), loss: 0.108(train), 0.103(valid), 0.106(test), lr:0.00500 || time consumption: 13.29s(train), 9.41s(val & test)
+[32m[I 2023-04-13 15:50:51,375][0m Trial 58 finished with value: 0.8034335209884007 and parameters: {}. Best is trial 1 with value: 0.8305644765179281.[0m
+Epoch: 050, rocauc: 0.854(train), 0.850(valid), 0.797(test), loss: 0.106(train), 0.102(valid), 0.105(test), lr:0.00500 || time consumption: 15.33s(train), 12.15s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:51:17,981][0m Trial 59 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.699(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 12.93s(train), 10.55s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:51:42,398][0m Trial 60 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.44s(train), 11.25s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:52:03,600][0m Trial 61 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 9.51s(train), 9.50s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:52:29,458][0m Trial 62 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.702(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 12.62s(train), 10.89s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.740(valid), 0.706(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 12.28s(train), 13.18s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.810(valid), 0.771(test), loss: 0.138(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 14.19s(train), 11.41s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.803(valid), 0.775(test), loss: 0.135(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 14.60s(train), 14.20s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.808(valid), 0.780(test), loss: 0.131(train), 0.120(valid), 0.119(test), lr:0.01000 || time consumption: 17.60s(train), 10.98s(val & test)
+[32m[I 2023-04-13 15:54:43,940][0m Trial 63 pruned. [0m
+Epoch: 005, rocauc: 0.769(train), 0.812(valid), 0.795(test), loss: 0.128(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 12.55s(train), 11.73s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:55:08,833][0m Trial 64 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.730(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 9.47s(train), 13.34s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.703(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 12.42s(train), 13.55s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.810(valid), 0.763(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 10.48s(train), 10.16s(val & test)
+[32m[I 2023-04-13 15:56:15,547][0m Trial 65 pruned. [0m
+Epoch: 003, rocauc: 0.743(train), 0.793(valid), 0.767(test), loss: 0.135(train), 0.123(valid), 0.120(test), lr:0.01000 || time consumption: 10.20s(train), 8.32s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:56:34,709][0m Trial 66 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 9.02s(train), 8.28s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 15:56:50,981][0m Trial 67 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 7.41s(train), 7.04s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.735(valid), 0.703(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.29s(train), 7.38s(val & test)
+Epoch: 002, rocauc: 0.726(train), 0.809(valid), 0.769(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 9.09s(train), 8.84s(val & test)
+[32m[I 2023-04-13 15:57:44,978][0m Trial 68 pruned. [0m
+Epoch: 003, rocauc: 0.743(train), 0.787(valid), 0.766(test), loss: 0.135(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 9.31s(train), 6.60s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.29s(train), 6.89s(val & test)
+Epoch: 002, rocauc: 0.725(train), 0.805(valid), 0.766(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 7.92s(train), 5.45s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.798(valid), 0.773(test), loss: 0.135(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 8.99s(train), 10.43s(val & test)
+Epoch: 004, rocauc: 0.758(train), 0.797(valid), 0.782(test), loss: 0.131(train), 0.122(valid), 0.119(test), lr:0.01000 || time consumption: 11.94s(train), 11.11s(val & test)
+[32m[I 2023-04-13 15:59:21,151][0m Trial 69 pruned. [0m
+Epoch: 005, rocauc: 0.772(train), 0.811(valid), 0.793(test), loss: 0.128(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 9.31s(train), 13.90s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.737(valid), 0.706(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 13.88s(train), 10.49s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.806(valid), 0.771(test), loss: 0.139(train), 0.126(valid), 0.122(test), lr:0.01000 || time consumption: 14.82s(train), 13.05s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.790(valid), 0.766(test), loss: 0.135(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 9.55s(train), 11.73s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.800(valid), 0.781(test), loss: 0.131(train), 0.123(valid), 0.120(test), lr:0.01000 || time consumption: 14.31s(train), 10.72s(val & test)
+Epoch: 005, rocauc: 0.769(train), 0.827(valid), 0.807(test), loss: 0.128(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 12.23s(train), 10.98s(val & test)
+Epoch: 006, rocauc: 0.778(train), 0.830(valid), 0.786(test), loss: 0.126(train), 0.119(valid), 0.118(test), lr:0.01000 || time consumption: 12.14s(train), 12.59s(val & test)
+Epoch: 007, rocauc: 0.792(train), 0.811(valid), 0.797(test), loss: 0.123(train), 0.119(valid), 0.115(test), lr:0.01000 || time consumption: 12.28s(train), 9.31s(val & test)
+Epoch: 008, rocauc: 0.784(train), 0.832(valid), 0.797(test), loss: 0.124(train), 0.117(valid), 0.114(test), lr:0.01000 || time consumption: 12.85s(train), 9.89s(val & test)
+Epoch: 009, rocauc: 0.800(train), 0.818(valid), 0.797(test), loss: 0.121(train), 0.119(valid), 0.116(test), lr:0.01000 || time consumption: 12.19s(train), 9.48s(val & test)
+Epoch: 010, rocauc: 0.802(train), 0.838(valid), 0.820(test), loss: 0.120(train), 0.115(valid), 0.113(test), lr:0.01000 || time consumption: 11.37s(train), 10.58s(val & test)
+Epoch: 011, rocauc: 0.803(train), 0.847(valid), 0.816(test), loss: 0.120(train), 0.109(valid), 0.108(test), lr:0.01000 || time consumption: 11.34s(train), 12.58s(val & test)
+Epoch: 012, rocauc: 0.803(train), 0.835(valid), 0.807(test), loss: 0.119(train), 0.115(valid), 0.113(test), lr:0.01000 || time consumption: 11.57s(train), 10.22s(val & test)
+Epoch: 013, rocauc: 0.801(train), 0.836(valid), 0.820(test), loss: 0.120(train), 0.119(valid), 0.114(test), lr:0.01000 || time consumption: 9.39s(train), 7.84s(val & test)
+Epoch: 014, rocauc: 0.808(train), 0.849(valid), 0.817(test), loss: 0.118(train), 0.109(valid), 0.109(test), lr:0.01000 || time consumption: 9.15s(train), 7.62s(val & test)
+Epoch: 015, rocauc: 0.810(train), 0.839(valid), 0.811(test), loss: 0.117(train), 0.106(valid), 0.106(test), lr:0.01000 || time consumption: 7.87s(train), 7.79s(val & test)
+Epoch: 016, rocauc: 0.807(train), 0.820(valid), 0.811(test), loss: 0.117(train), 0.112(valid), 0.109(test), lr:0.01000 || time consumption: 8.28s(train), 6.65s(val & test)
+Epoch: 017, rocauc: 0.813(train), 0.842(valid), 0.822(test), loss: 0.117(train), 0.105(valid), 0.104(test), lr:0.01000 || time consumption: 7.62s(train), 7.82s(val & test)
+Epoch: 018, rocauc: 0.813(train), 0.824(valid), 0.803(test), loss: 0.116(train), 0.114(valid), 0.113(test), lr:0.01000 || time consumption: 8.19s(train), 6.50s(val & test)
+Epoch: 019, rocauc: 0.823(train), 0.839(valid), 0.818(test), loss: 0.115(train), 0.106(valid), 0.105(test), lr:0.01000 || time consumption: 8.22s(train), 5.65s(val & test)
+Epoch: 020, rocauc: 0.819(train), 0.835(valid), 0.823(test), loss: 0.116(train), 0.111(valid), 0.110(test), lr:0.01000 || time consumption: 8.66s(train), 5.17s(val & test)
+Epoch: 021, rocauc: 0.827(train), 0.852(valid), 0.816(test), loss: 0.114(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 7.58s(train), 5.75s(val & test)
+Epoch: 022, rocauc: 0.825(train), 0.845(valid), 0.823(test), loss: 0.113(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 7.29s(train), 6.58s(val & test)
+Epoch: 023, rocauc: 0.821(train), 0.846(valid), 0.823(test), loss: 0.115(train), 0.107(valid), 0.106(test), lr:0.01000 || time consumption: 6.73s(train), 5.88s(val & test)
+Epoch: 024, rocauc: 0.824(train), 0.851(valid), 0.819(test), loss: 0.113(train), 0.126(valid), 0.126(test), lr:0.01000 || time consumption: 8.89s(train), 7.70s(val & test)
+Epoch: 025, rocauc: 0.820(train), 0.833(valid), 0.818(test), loss: 0.113(train), 0.105(valid), 0.105(test), lr:0.01000 || time consumption: 10.00s(train), 7.36s(val & test)
+Epoch: 026, rocauc: 0.828(train), 0.826(valid), 0.801(test), loss: 0.113(train), 0.116(valid), 0.116(test), lr:0.01000 || time consumption: 8.44s(train), 7.28s(val & test)
+Epoch: 027, rocauc: 0.822(train), 0.855(valid), 0.798(test), loss: 0.114(train), 0.113(valid), 0.117(test), lr:0.01000 || time consumption: 9.27s(train), 6.94s(val & test)
+Epoch: 028, rocauc: 0.822(train), 0.845(valid), 0.818(test), loss: 0.114(train), 0.113(valid), 0.109(test), lr:0.01000 || time consumption: 9.06s(train), 10.09s(val & test)
+Epoch: 029, rocauc: 0.826(train), 0.844(valid), 0.814(test), loss: 0.113(train), 0.119(valid), 0.121(test), lr:0.01000 || time consumption: 11.23s(train), 9.53s(val & test)
+Epoch: 030, rocauc: 0.824(train), 0.846(valid), 0.827(test), loss: 0.113(train), 0.112(valid), 0.111(test), lr:0.01000 || time consumption: 9.57s(train), 6.07s(val & test)
+Epoch: 031, rocauc: 0.826(train), 0.835(valid), 0.819(test), loss: 0.113(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 9.28s(train), 7.42s(val & test)
+Epoch: 032, rocauc: 0.823(train), 0.831(valid), 0.810(test), loss: 0.113(train), 0.109(valid), 0.107(test), lr:0.01000 || time consumption: 9.21s(train), 7.62s(val & test)
+Epoch: 033, rocauc: 0.827(train), 0.834(valid), 0.821(test), loss: 0.113(train), 0.106(valid), 0.103(test), lr:0.01000 || time consumption: 9.74s(train), 8.44s(val & test)
+Epoch: 034, rocauc: 0.838(train), 0.835(valid), 0.806(test), loss: 0.111(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 10.25s(train), 6.80s(val & test)
+Epoch: 035, rocauc: 0.829(train), 0.850(valid), 0.821(test), loss: 0.113(train), 0.108(valid), 0.106(test), lr:0.01000 || time consumption: 9.85s(train), 8.35s(val & test)
+Epoch: 036, rocauc: 0.831(train), 0.838(valid), 0.815(test), loss: 0.112(train), 0.113(valid), 0.112(test), lr:0.01000 || time consumption: 7.81s(train), 6.33s(val & test)
+Epoch: 037, rocauc: 0.840(train), 0.843(valid), 0.818(test), loss: 0.110(train), 0.104(valid), 0.104(test), lr:0.01000 || time consumption: 8.65s(train), 7.02s(val & test)
+Epoch: 038, rocauc: 0.827(train), 0.843(valid), 0.812(test), loss: 0.113(train), 0.108(valid), 0.107(test), lr:0.01000 || time consumption: 10.10s(train), 6.71s(val & test)
+Epoch: 039, rocauc: 0.832(train), 0.843(valid), 0.816(test), loss: 0.113(train), 0.110(valid), 0.112(test), lr:0.01000 || time consumption: 9.77s(train), 6.32s(val & test)
+Epoch: 040, rocauc: 0.828(train), 0.837(valid), 0.815(test), loss: 0.112(train), 0.105(valid), 0.107(test), lr:0.01000 || time consumption: 8.91s(train), 6.91s(val & test)
+Epoch: 041, rocauc: 0.833(train), 0.840(valid), 0.797(test), loss: 0.112(train), 0.105(valid), 0.109(test), lr:0.01000 || time consumption: 10.91s(train), 7.67s(val & test)
+Epoch: 042, rocauc: 0.828(train), 0.830(valid), 0.821(test), loss: 0.112(train), 0.109(valid), 0.106(test), lr:0.01000 || time consumption: 8.77s(train), 8.71s(val & test)
+Epoch: 043, rocauc: 0.828(train), 0.832(valid), 0.811(test), loss: 0.111(train), 0.108(valid), 0.106(test), lr:0.01000 || time consumption: 12.39s(train), 7.74s(val & test)
+Epoch: 044, rocauc: 0.844(train), 0.852(valid), 0.813(test), loss: 0.110(train), 0.102(valid), 0.103(test), lr:0.01000 || time consumption: 10.42s(train), 8.68s(val & test)
+Epoch: 045, rocauc: 0.835(train), 0.822(valid), 0.806(test), loss: 0.111(train), 0.106(valid), 0.104(test), lr:0.01000 || time consumption: 9.22s(train), 7.48s(val & test)
+Epoch: 046, rocauc: 0.832(train), 0.846(valid), 0.819(test), loss: 0.111(train), 0.105(valid), 0.104(test), lr:0.01000 || time consumption: 9.81s(train), 8.71s(val & test)
+Epoch: 047, rocauc: 0.830(train), 0.853(valid), 0.809(test), loss: 0.111(train), 0.115(valid), 0.118(test), lr:0.01000 || time consumption: 10.66s(train), 7.06s(val & test)
+Epoch: 048, rocauc: 0.820(train), 0.864(valid), 0.820(test), loss: 0.114(train), 0.104(valid), 0.107(test), lr:0.01000 || time consumption: 10.01s(train), 5.50s(val & test)
+Epoch: 049, rocauc: 0.842(train), 0.857(valid), 0.809(test), loss: 0.109(train), 0.107(valid), 0.110(test), lr:0.01000 || time consumption: 7.99s(train), 6.45s(val & test)
+[32m[I 2023-04-13 16:14:29,855][0m Trial 70 finished with value: 0.8200891676427249 and parameters: {}. Best is trial 1 with value: 0.8305644765179281.[0m
+Epoch: 050, rocauc: 0.833(train), 0.827(valid), 0.803(test), loss: 0.112(train), 0.107(valid), 0.107(test), lr:0.01000 || time consumption: 10.38s(train), 8.60s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:14:51,595][0m Trial 71 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.732(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.44s(train), 9.19s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:15:13,115][0m Trial 72 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.731(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.04s(train), 8.87s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:15:33,035][0m Trial 73 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.53s(train), 7.85s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:15:48,684][0m Trial 74 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.699(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 8.31s(train), 6.33s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:16:06,335][0m Trial 75 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.730(valid), 0.699(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.52s(train), 6.89s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.738(valid), 0.704(test), loss: 0.161(train), 0.137(valid), 0.133(test), lr:0.01000 || time consumption: 9.96s(train), 7.81s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.807(valid), 0.767(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 11.14s(train), 6.68s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.796(valid), 0.776(test), loss: 0.135(train), 0.124(valid), 0.122(test), lr:0.01000 || time consumption: 8.51s(train), 8.02s(val & test)
+[32m[I 2023-04-13 16:17:16,591][0m Trial 76 pruned. [0m
+Epoch: 004, rocauc: 0.760(train), 0.813(valid), 0.778(test), loss: 0.131(train), 0.120(valid), 0.119(test), lr:0.01000 || time consumption: 9.51s(train), 6.89s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:17:31,232][0m Trial 77 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 8.06s(train), 5.01s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.738(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 7.89s(train), 7.25s(val & test)
+[32m[I 2023-04-13 16:18:02,869][0m Trial 78 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.800(valid), 0.763(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 8.11s(train), 7.30s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:18:21,633][0m Trial 79 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.42s(train), 7.69s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 10.69s(train), 7.04s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.805(valid), 0.766(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 9.57s(train), 9.69s(val & test)
+Epoch: 003, rocauc: 0.742(train), 0.800(valid), 0.777(test), loss: 0.135(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 10.27s(train), 8.54s(val & test)
+Epoch: 004, rocauc: 0.760(train), 0.801(valid), 0.781(test), loss: 0.131(train), 0.120(valid), 0.118(test), lr:0.01000 || time consumption: 10.63s(train), 5.81s(val & test)
+[32m[I 2023-04-13 16:19:52,376][0m Trial 80 pruned. [0m
+Epoch: 005, rocauc: 0.768(train), 0.818(valid), 0.795(test), loss: 0.129(train), 0.117(valid), 0.115(test), lr:0.01000 || time consumption: 10.23s(train), 6.81s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:20:06,864][0m Trial 81 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.699(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 7.66s(train), 5.74s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:20:25,789][0m Trial 82 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.730(valid), 0.699(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 8.83s(train), 8.36s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:20:41,996][0m Trial 83 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.91s(train), 5.80s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 8.16s(train), 7.66s(val & test)
+Epoch: 002, rocauc: 0.727(train), 0.803(valid), 0.765(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 7.83s(train), 5.43s(val & test)
+Epoch: 003, rocauc: 0.743(train), 0.801(valid), 0.777(test), loss: 0.135(train), 0.123(valid), 0.120(test), lr:0.01000 || time consumption: 10.14s(train), 7.81s(val & test)
+Epoch: 004, rocauc: 0.759(train), 0.802(valid), 0.780(test), loss: 0.131(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 8.63s(train), 5.88s(val & test)
+[32m[I 2023-04-13 16:22:02,815][0m Trial 84 pruned. [0m
+Epoch: 005, rocauc: 0.768(train), 0.811(valid), 0.791(test), loss: 0.129(train), 0.120(valid), 0.117(test), lr:0.01000 || time consumption: 10.58s(train), 7.19s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.619(train), 0.737(valid), 0.704(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.88s(train), 6.67s(val & test)
+Epoch: 002, rocauc: 0.728(train), 0.806(valid), 0.767(test), loss: 0.139(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 10.22s(train), 6.98s(val & test)
+Epoch: 003, rocauc: 0.740(train), 0.797(valid), 0.776(test), loss: 0.135(train), 0.122(valid), 0.120(test), lr:0.01000 || time consumption: 9.31s(train), 8.12s(val & test)
+Epoch: 004, rocauc: 0.757(train), 0.804(valid), 0.787(test), loss: 0.131(train), 0.125(valid), 0.122(test), lr:0.01000 || time consumption: 8.60s(train), 7.09s(val & test)
+Epoch: 005, rocauc: 0.770(train), 0.812(valid), 0.800(test), loss: 0.129(train), 0.118(valid), 0.115(test), lr:0.01000 || time consumption: 10.59s(train), 7.83s(val & test)
+Epoch: 006, rocauc: 0.786(train), 0.833(valid), 0.799(test), loss: 0.125(train), 0.117(valid), 0.116(test), lr:0.01000 || time consumption: 9.98s(train), 7.85s(val & test)
+Epoch: 007, rocauc: 0.794(train), 0.822(valid), 0.792(test), loss: 0.123(train), 0.123(valid), 0.121(test), lr:0.01000 || time consumption: 11.00s(train), 6.45s(val & test)
+Epoch: 008, rocauc: 0.792(train), 0.831(valid), 0.792(test), loss: 0.123(train), 0.115(valid), 0.114(test), lr:0.01000 || time consumption: 8.43s(train), 7.47s(val & test)
+Epoch: 009, rocauc: 0.794(train), 0.816(valid), 0.799(test), loss: 0.122(train), 0.119(valid), 0.116(test), lr:0.01000 || time consumption: 7.56s(train), 7.17s(val & test)
+[32m[I 2023-04-13 16:24:49,378][0m Trial 85 pruned. [0m
+Epoch: 010, rocauc: 0.799(train), 0.834(valid), 0.811(test), loss: 0.120(train), 0.114(valid), 0.113(test), lr:0.01000 || time consumption: 8.70s(train), 6.51s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:25:07,357][0m Trial 86 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 8.36s(train), 7.88s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:25:24,911][0m Trial 87 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.701(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.09s(train), 7.14s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:25:45,175][0m Trial 88 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.35s(train), 8.35s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:26:05,926][0m Trial 89 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.699(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 10.80s(train), 8.12s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:26:22,302][0m Trial 90 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.735(valid), 0.699(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.45s(train), 6.24s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:26:40,957][0m Trial 91 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.37s(train), 8.71s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:26:59,948][0m Trial 92 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.738(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.12s(train), 8.01s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.736(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.81s(train), 9.81s(val & test)
+[32m[I 2023-04-13 16:27:38,006][0m Trial 93 pruned. [0m
+Epoch: 002, rocauc: 0.727(train), 0.805(valid), 0.762(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 9.80s(train), 7.84s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:27:58,267][0m Trial 94 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.700(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 11.20s(train), 7.58s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:28:20,051][0m Trial 95 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.733(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.135(test), lr:0.01000 || time consumption: 9.86s(train), 10.22s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:28:35,915][0m Trial 96 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.736(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.133(test), lr:0.01000 || time consumption: 7.83s(train), 6.16s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:28:53,060][0m Trial 97 pruned. [0m
+Epoch: 001, rocauc: 0.619(train), 0.734(valid), 0.702(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 8.09s(train), 7.72s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+Epoch: 001, rocauc: 0.618(train), 0.735(valid), 0.703(test), loss: 0.161(train), 0.138(valid), 0.134(test), lr:0.01000 || time consumption: 9.41s(train), 8.97s(val & test)
+Epoch: 002, rocauc: 0.726(train), 0.803(valid), 0.767(test), loss: 0.139(train), 0.126(valid), 0.123(test), lr:0.01000 || time consumption: 8.76s(train), 10.04s(val & test)
+[32m[I 2023-04-13 16:29:49,882][0m Trial 98 pruned. [0m
+Epoch: 003, rocauc: 0.740(train), 0.791(valid), 0.768(test), loss: 0.135(train), 0.126(valid), 0.124(test), lr:0.01000 || time consumption: 8.28s(train), 9.78s(val & test)
+MODEL DETAILS:
+PNA Total parameters: 323040
+[32m[I 2023-04-13 16:30:07,806][0m Trial 99 pruned. [0m
+Epoch: 001, rocauc: 0.618(train), 0.733(valid), 0.701(test), loss: 0.161(train), 0.139(valid), 0.134(test), lr:0.01000 || time consumption: 6.70s(train), 9.64s(val & test)
+Study statistics: 
+  Number of finished trials:  100
+  Number of pruned trials:  93
+  Number of complete trials:  7
+Best trial:
+  Value:  0.8305644765179281
+  Params: 

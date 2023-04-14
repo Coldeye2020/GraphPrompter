@@ -11,6 +11,11 @@ def get_split_loader(name, root, train_ratio, val_ratio, batch_size, num_workers
     if name.lower() in ogb_list:
         dataset = PygGraphPropPredDataset(name="ogbg-mol" + name.lower(), root=root)
         split_idx = dataset.get_idx_split()
+        # num_graphs = len(dataset)
+        # perm = torch.randperm(num_graphs)
+        # train_num = len(dataset.get_idx_split()['train'])
+        # val_num = len(dataset.get_idx_split()['valid'])
+        # split_idx = {'train': perm[:train_num].long(), 'valid': perm[train_num:train_num+val_num].long(), 'test': perm[train_num+val_num:].long()}
     elif name.lower() in tu_list:
         dataset = TUDataset(name=name.upper(), root=root)
         num_graphs = len(dataset)

@@ -2,7 +2,9 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 from torch_geometric.nn import GINConv, GINEConv, global_add_pool, global_mean_pool, global_max_pool
-from torch_geometric.nn import PNAConv as PNALayer
+from torch_geometric.nn.aggr import DegreeScalerAggregation
+from torch_geometric.nn.inits import reset
+from torch_geometric.nn.conv import MessagePassing
 from ogb.graphproppred.mol_encoder import AtomEncoder, BondEncoder
 
 
@@ -11,6 +13,8 @@ def make_gine_conv(in_dim, out_dim):
     return GINEConv(nn.Sequential(nn.Linear(in_dim, out_dim*2), torch.nn.BatchNorm1d(out_dim*2), nn.ReLU(), nn.Linear(out_dim*2, out_dim)))
 def make_gin_conv(in_dim, out_dim):
     return GINConv(nn.Sequential(nn.Linear(in_dim, out_dim), nn.ReLU(), nn.Linear(out_dim, out_dim)))
+
+    
 
 
 class GConv_E(nn.Module):
@@ -257,7 +261,6 @@ class GConv(nn.Module):
 #         return ret, y
 
 
-
 class PNAConv(nn.Module):
     def __init__(self, in_dim, h_dim, n_layers, drop_ratio, deg=None, args=None):
         super(PNAConv, self).__init__()
@@ -275,25 +278,25 @@ class PNAConv(nn.Module):
         self.layers = nn.ModuleList()
         self.batch_norms = nn.ModuleList()
 
-        for i in range(n_layers):
-            self.layers.append(PNALayer(in_channels=self.h_dim, out_channels=self.out_dim, aggregators=self.aggregators, scalers=self.scalers,
+        for i in range(n_layers - 1):
+            self.layers.append(PNAConvSimple(in_dim=self.h_dim, out_dim=self.h_dim, aggregators=self.aggregators, scalers=self.scalers,
                                     deg=self.deg))
             self.batch_norms.append(nn.BatchNorm1d(h_dim))
+        self.layers.append(PNAConvSimple(in_dim=self.h_dim, out_dim=self.out_dim, aggregators=self.aggregators, scalers=self.scalers,
+                                    deg=self.deg))
+        self.batch_norms.append(nn.BatchNorm1d(h_dim))
 
-    def forward(self, x, edge_index, batch, edge_attr=None):
+    def forward(self, x, edge_index, batch, edge_attr=None, edge_atten=None):
         z = self.atom_encoder(x)
         if edge_attr is not None:
+            print("G")
             edge_attr = self.bond_encoder(edge_attr)
 
         for layer, (conv, bn) in enumerate(zip(self.layers, self.batch_norms)):
             z_in = z
-            z = conv(z, edge_index, edge_attr)
+            z = conv(z, edge_index, edge_attr, edge_atten=edge_atten)
             z = bn(z)
-
-            if layer == self.n_layers -1:
-                z = F.dropout(z, self.dropout, training=self.training)
-            else:
-                z = F.dropout(z_in + F.relu(z), self.dropout, training=self.training)
+            z = F.dropout(z_in + F.relu(z), self.dropout, training=self.training)
         
         if self.readout == "sum":
             g = global_add_pool(z, batch)
@@ -301,6 +304,7 @@ class PNAConv(nn.Module):
             g = global_max_pool(z, batch)
         else:
             g = global_mean_pool(z, batch)
+
         return z, g
     
     @torch.no_grad()
@@ -322,3 +326,48 @@ class PNAConv(nn.Module):
         y = torch.cat(y, dim=0).cpu().numpy()
 
         return x, y
+
+
+                
+class PNAConvSimple(MessagePassing):
+
+    def __init__(self, in_dim, out_dim, aggregators, scalers, deg, post_layers=1):
+        aggr = DegreeScalerAggregation(aggregators, scalers, deg)
+        super(PNAConvSimple, self).__init__(aggr=aggr, node_dim=0)
+        self.aggregators = aggregators
+        self.scalers = scalers
+        self.in_dim = in_dim
+        self.out_dim = out_dim
+        in_channels = (len(aggregators) * len(scalers)) * self.in_dim * 2
+        modules = [nn.Linear(in_channels, self.out_dim)]
+        for _ in range(post_layers - 1):
+            modules += [nn.ReLU()]
+            modules += [nn.Linear(self.out_dim, self.out_dim)]
+        self.post_nn = nn.Sequential(*modules)
+
+        self.reset_parameters()
+
+    def reset_parameters(self):
+        reset(self.post_nn)
+
+
+    def forward(self, x, edge_index, edge_attr = None, edge_atten=None):
+        # propagate_type: (x: Tensor)
+        out = self.propagate(edge_index, x=x, edge_attr=edge_attr, size=None, edge_atten=edge_atten)
+        return self.post_nn(out)
+
+    def message(self, x_i, x_j, edge_attr=None, edge_atten=None):
+        if edge_attr is not None:
+            m = torch.cat([x_i, x_j, edge_attr], dim=-1)
+        else:
+            m = torch.cat([x_i, x_j], dim=-1)
+
+        if edge_atten is not None:
+            return m * edge_atten
+        else:
+            return m
+
+    def __repr__(self):
+        return (f'{self.__class__.__name__}({self.in_channels}, '
+                f'{self.out_channels}')
+        raise NotImplementedError

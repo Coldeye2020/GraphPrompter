@@ -123,6 +123,7 @@ def create_objective(args):
         
         if args.use_scheduler:
             optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+            # scheduler = CosineDecayScheduler(max_val=args.lr, warmup_steps=args.epochs//10, total_steps=args.epochs)
             scheduler = CosineDecayScheduler(max_val=args.lr, warmup_steps=args.epochs//10, total_steps=args.epochs)
         else:
             optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
@@ -161,6 +162,7 @@ def create_objective(args):
                     loss.backward()
                     optimizer.step()
                     epoch_loss += loss.item()
+
 
             t_1 = time.time()
             # if args.model == "GPrompter":
